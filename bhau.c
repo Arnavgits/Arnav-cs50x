@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    int i=1;
-    while(i > 2)
+    int i=6;
+    while(i > 5)
     {
     printf("bhau\n");
     i--;
