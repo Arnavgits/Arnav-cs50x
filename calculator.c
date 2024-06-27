@@ -10,7 +10,8 @@ int main(void)
 
     printf("%i\n", x + y);
 }
-int add(void);
-{
 
+int add(int a,int b)
+{
+  return a + b;
 }
