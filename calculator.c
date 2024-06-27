@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int add(void);
+int add(int a, int b);
 
 int main(void)
 {
@@ -12,5 +12,5 @@ int main(void)
 }
 int add(void);
 {
-    
+
 }
