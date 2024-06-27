@@ -2,7 +2,6 @@
 
 void bhau(void)
 {
-    {
     printf("bhau\n");
     }
     {
