@@ -6,7 +6,7 @@ int main(void)
 {
     for(i=0; i<n ; i++)
     {
-        bhau(n);
+        bhau(4);
     }
 }
 void bhau(int n)
