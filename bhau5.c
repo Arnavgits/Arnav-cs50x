@@ -4,12 +4,12 @@ void bhau(int n);
 
 int main(void)
 {
-    for(i=0; i<n ; i++)
-    {
-        bhau(4);
-    }
+    bhau(4);
 }
 void bhau(int n)
 {
-    for(i=)
+    for(i=0; i<3 ; i++)
+    {
+    printf("bhau\n");
+    }
 }
