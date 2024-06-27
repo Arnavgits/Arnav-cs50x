@@ -4,9 +4,9 @@ void bhau(int n);
 
 int main(void)
 {
-    for(i=0; i<4 ; i++)
+    for(i=0; i<n ; i++)
     {
-        bhau(3);
+        bhau(n);
     }
 }
 void bhau(int n)
