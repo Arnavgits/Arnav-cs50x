@@ -6,10 +6,10 @@ int main(void)
 {
     for(i=0; i<4 ; i++)
     {
-        bhau(n);
+        bhau(3);
     }
 }
 void bhau(int n)
 {
-    
+    printf("bhau\n");
 }
