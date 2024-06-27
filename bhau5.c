@@ -6,6 +6,7 @@ int main(void)
 {
     bhau(4);
 }
+
 void bhau(int n)
 {
     for(i=0; i<3 ; i++)
