@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void bhau(void)
+void bhau(void);
 {
     printf("bhau\n");
     }
