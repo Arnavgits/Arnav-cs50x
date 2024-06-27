@@ -11,5 +11,5 @@ int main(void)
 }
 void bhau(int n)
 {
-    printf("bhau\n");
+    for(i=)
 }
