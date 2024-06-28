@@ -11,7 +11,7 @@ int main(void)
     }
     while (n<3);
 
-    //
+    //print an n-by-n grid of bricks
     for (int i = 0;i < n; i++)
     {
         for(int j = 0;j<n; j++)
