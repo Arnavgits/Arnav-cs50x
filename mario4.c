@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    //prompt user for number greater than 0
     int n;
     do
     {
@@ -10,6 +11,7 @@ int main(void)
     }
     while (n<3);
 
+    //
     for (int i = 0;i < n; i++)
     {
         for(int j = 0;j<n; j++)
