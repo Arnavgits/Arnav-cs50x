@@ -7,5 +7,5 @@ int main(void)
     int y = get_int("y: ");
 
     float z = (float) x / (float) y;
-    printf("%f\n", z);
+    printf("%10f\n", z);
 }
