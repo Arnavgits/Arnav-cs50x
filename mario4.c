@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    int n;
     do
     {
       int n = get_int("size: ");
