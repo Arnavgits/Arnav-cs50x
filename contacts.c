@@ -3,9 +3,9 @@
 
 int main(void)
 {
-    string name = get_string("what is your name?.\n");
-    int age  = get_int("what is your age?\n");
-    int phone no = get_int("Whta is your Phone no?\n");
+    string name = get_string("what is your name?.");
+    int age  = get_int("what is your age?");
+    int phone no = get_int("Whta is your Phone no?");
 
     printf("Hello, %s\n" name);
     printf("Your age is %i\n" age);
