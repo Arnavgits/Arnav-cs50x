@@ -5,9 +5,12 @@ void print_row(int m);
 
 int main(void)
 {
-int n = get_int("n:");
+    int n = get_int("n:");
+    for(i=0; i<n; i++)
 
-print_row(i + 1);
+    {
+    print_row(i + 1);
+    }
 }
 
 void print_row(int m)
