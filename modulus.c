@@ -3,8 +3,8 @@
 
 int main(void)
 {
-    int x = 27 % 2;
+    int x = 27 % 5;
     {
-        printf("x");
+        printf("%i\n", x);
     }
 }
