@@ -2,5 +2,10 @@
 
 int main(void)
 {
-    printf("####\n");
+    int x = 0;
+while(x < 10)
+{
+    printf("#\n");
+    x++;
+}
 }
