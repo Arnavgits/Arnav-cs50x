@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+void print_column(int height);
 int main(void)
 {
     int h = get_int("Height: ");
@@ -9,8 +10,8 @@ int main(void)
 
 void print_column(int height)
 {
-    for(int i= 0; i < Height ; i++)
+    for(int i= 0; i < height ; i++)
     {
-        printf("#");
+        printf("#\n");
     }
 }
