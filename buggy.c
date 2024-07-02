@@ -9,7 +9,7 @@ int main(void)
 
 void print_column(int height)
 {
-    for(int i= 0; i<4 ; i++)
+    for(int i= 0; i < Height ; i++)
     {
         printf("#");
     }
