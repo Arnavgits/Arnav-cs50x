@@ -18,9 +18,9 @@ int main(void)
 
 }
 
-int calculate_change(int quarters)
+int calculate_change(int cents)
 {
-      quarters = 0;
+     int quarters = 0;
     while(cents >= 25);
     {
         quarters++
