@@ -14,7 +14,7 @@ int main(void)
 
     for(int i=0 ; i<n ; i++)
     {
-        row(n-i, i+1 );
+        row(n-i-1 , i+1 );
     }
 }
 
