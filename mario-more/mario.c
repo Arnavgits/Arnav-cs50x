@@ -9,9 +9,9 @@ int main(void)
     {
        n = get_int("height ");
     }
-    while( i < 1 || i > 8);
+    while(n < 1 || n > 8);
 
-    for( i = 0; i < n; i++)
+    for( int i = 0; i < n; i++)
     {
         row( n - i - 1, i + 1, i + 1);
     }
@@ -19,20 +19,21 @@ int main(void)
 
 void row(int m, int o, int p)
 {
-    for( i = 0; i < m; i++)
+    for( int i = 0; i < m; i++)
     {
         printf(" ");
     }
 
-    for( j = 0; j < o; i++)
+    for( int j = 0; j < o; j++)
     {
         printf("#");
     }
 
     printf("  ");
 
-    for(i = 0; i < p; i++)
+    for( int k = 0; k < p; k++)
     {
         printf("#");
     }
+    printf("\n");
 }
