@@ -14,7 +14,7 @@ int main(void)
 
     for(int i=0 ; i<n ; i++)
     {
-        row(i+1, n-i );
+        row(n-i, i+1 );
     }
 }
 
@@ -28,6 +28,7 @@ void row(int m, int o)
         {
             printf("#");
         }
+        printf("\n");
     }
 }
 
