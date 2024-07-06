@@ -11,9 +11,14 @@ int main(void)
     }
     while (cents < 0);
 
-    int quarters = calculate_change(cents);
-
+    int quarters = calculate_quarters(cents);
     cents = cents - (quarters * 25);
+
+    int dimes = calculate_dimes(cents);
+    cents = cents - (dimes * 10);
+
+    int nickel = calculate_nickel(cents);
+    cents = cents - (nickel * 5);
 
 
 }
@@ -27,4 +32,15 @@ int calculate_change(int cents)
         cents = cents - 25;
     }
     return quarters;
+}
+
+int calculate_dimes(int cents)
+{
+    int dimes = 0;
+    while(cents >= 10);
+    {
+        dimes++;
+        cents = cents - 10;
+    }
+    return dimes;
 }
