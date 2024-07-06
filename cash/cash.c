@@ -27,7 +27,7 @@ int main(void)
     int pennie = calculate_pennie(cents);
     cents = cents - (pennie * 1);
 
-    return int quarters + int dimes + int nickel + int pennie
+    return(int quarters + int dimes + int nickel + int pennie)
 }
 
 int calculate_quarters(int cents)
