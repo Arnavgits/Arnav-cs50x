@@ -27,7 +27,9 @@ int main(void)
     int pennie = calculate_pennie(cents);
     cents = cents - (pennie * 1);
 
-    printf("%i", add())
+    int sum = quarters + dimes + nickel + pennie;
+
+    printf("%i " , sum);
 }
 
 int calculate_quarters(int cents)
