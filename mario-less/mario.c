@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <cs50.h>
 
-void row(int m);
+void row(int m, int o);
 int main(void)
 
 {
     int n;
     do
     {
-        int n= get_int("height: ");
+       n= get_int("height: ");
     }
     while( n > 0 && n < 9);
 
