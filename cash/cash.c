@@ -12,6 +12,10 @@ int main(void)
 
     int quarters = calculate_change(cents);
 
+    cents = cents - (quarters * 25);
+
+    int dimes = calculate_dimes()
+
 }
 
 int calculate_change(int cents)
