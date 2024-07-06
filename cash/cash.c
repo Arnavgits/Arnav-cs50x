@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int calculate_change(int quarters);
 int main(void)
 {
     int cents;
@@ -14,13 +15,12 @@ int main(void)
 
     cents = cents - (quarters * 25);
 
-    int dimes = calculate_dimes(cents);
 
 }
 
-int calculate_change(int cents)
+int calculate_change(int quarters)
 {
-    int quarters = 0;
+      quarters = 0;
     while(cents >= 25);
     {
         quarters++
