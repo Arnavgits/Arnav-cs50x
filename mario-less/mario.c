@@ -6,11 +6,7 @@ int main(void)
 
 {
     int n= get_int("height:");
-
-    for(int i=0; i<n; i++)
-    {
-        row(i+1);
-    }
+    do
 }
 
 void row(int m)
