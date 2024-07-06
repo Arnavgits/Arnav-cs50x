@@ -44,3 +44,16 @@ int calculate_dimes(int cents)
     }
     return dimes;
 }
+
+int calculate_nickel(int cents)
+{
+    int nickel = 0;
+    while(cents >= 5);
+    {
+        nickel++;
+        cents = cents - 5;
+    }
+    return nickel;
+}
+
+
