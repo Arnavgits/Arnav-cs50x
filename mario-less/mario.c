@@ -5,8 +5,11 @@ void row(int m);
 int main(void)
 
 {
-    int n= get_int("height:");
     do
+    {
+        int n= get_int("height:");
+    }
+    while(n)
 }
 
 void row(int m)
