@@ -10,14 +10,16 @@ int main(void)
         int n= get_int("height:");
     }
     while(n < 8 && n > 0);
+
+    for(i=0 ; i<n ; i++)
+    {
+        row()
+    }
 }
 
 void row(int m)
 {
-    for(int i=0 ; i<m ; i++)
-    {
-        printf("#");
-    }
-      printf("\n");
+    for(i=0 ; i < m ; i++)
+
 }
 
