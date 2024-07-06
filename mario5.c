@@ -15,7 +15,7 @@ int main(void)
 
 void print_row(int m)
 {
-    for(int i=0 ; i<m ; i++)
+    for(int j=0 ; j<m ; j++)
     {
         printf("#");
     }
