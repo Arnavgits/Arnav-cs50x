@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+void row(int m, int o, int p);
 int main(void)
 {
     int n;
@@ -12,19 +13,26 @@ int main(void)
 
     for( i = 0; i < n; i++)
     {
-        row( n - i - 1, i + 1);
+        row( n - i - 1, i + 1, i + 1);
     }
 }
 
-void row(int m, int o)
+void row(int m, int o, int p)
 {
     for( i = 0; i < m; i++)
     {
         printf(" ");
     }
+
     for( j = 0; j < o; i++)
     {
         printf("#");
     }
+
     printf("  ");
+
+    for(i = 0; i < p; i++)
+    {
+        printf("#");
+    }
 }
