@@ -22,7 +22,7 @@ void row(int m, int o)
 {
     for(int i=0 ; i < m ; i++)
     {
-        printf("");
+        printf(" ");
 
         for(int j=0 ; j< o ; j++ )
         {
