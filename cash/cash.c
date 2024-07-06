@@ -1,7 +1,11 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int calculate_change(int quarters);
+int calculate_quarters(int cents);
+int calculate_dimes(int cents);
+int calculate_nickel(int cents);
+int calculate_pennie(int cents);
+
 int main(void)
 {
     int cents;
@@ -26,7 +30,7 @@ int main(void)
     return int quarters + int dimes + int nickel + int pennie
 }
 
-int calculate_change(int cents)
+int calculate_quarters(int cents)
 {
      int quarters = 0;
     while(cents >= 25)
