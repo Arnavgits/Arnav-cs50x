@@ -57,4 +57,10 @@ int calculate_nickel(int cents)
     return nickel;
 }
 
+int calculate_pennie(int cents)
+{
+    int pennie = 0;
+    
+}
+
 
