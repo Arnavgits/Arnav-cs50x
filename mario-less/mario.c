@@ -5,9 +5,14 @@ int main(void)
 
 {
     int n= get_int("height:");
+    
+    for(int i=0 ; i<n ; i++)
+    {
     for(int i=0; i<n; i++)
     {
         printf("#");
+    }
+    printf("\n");
     }
 }
 
