@@ -14,7 +14,7 @@ int main(void)
 
     cents = cents - (quarters * 25);
 
-    int dimes = calculate_dimes()
+    int dimes = calculate_dimes(cents);
 
 }
 
