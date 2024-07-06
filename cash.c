@@ -3,5 +3,10 @@
 
 int main(void)
 {
-    if
+    int cash = get_int("cash: ");
+
+    if()
+    {
+
+    }
 }
