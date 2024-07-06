@@ -11,7 +11,6 @@ int main(void)
     {
         row(i+1);
     }
-    printf("\n");
 }
 
 void row(int m)
@@ -20,5 +19,6 @@ void row(int m)
     {
         printf("#");
     }
+      printf("\n");
 }
 
