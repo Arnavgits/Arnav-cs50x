@@ -3,10 +3,11 @@
 
 int main(void)
 {
-    int change = get_int("change: ");
-
-    if(cash >= 25)
+    int cents;
+    do
     {
-     return
+        cents = get_int("Change: ");
     }
+    while (cents < 0);
+    
 }
