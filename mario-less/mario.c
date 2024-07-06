@@ -10,7 +10,7 @@ int main(void)
     {
         int n= get_int("height:");
     }
-    while(n < 9 && n > 0);
+    while( n > 0 && n < 9);
 
     for(i=0 ; i<n ; i++)
     {
