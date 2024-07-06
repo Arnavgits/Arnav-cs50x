@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
+void row(int m);
 int main(void)
 
 {
@@ -16,5 +17,11 @@ int main(void)
     }
 }
 
-void row()
+void row(int m)
+{
+    for(i=0 ; i<m ; i++)
+    {
+        printf("#");
+    }
+}
 
