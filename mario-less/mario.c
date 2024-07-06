@@ -4,8 +4,10 @@
 int main(void)
 
 {
-    int height= get_int("height:");
+    int n= get_int("height:");
+    for(int i=0; i<n; i++)
     {
         printf("#");
     }
 }
+
