@@ -3,5 +3,23 @@
 
 int main(void)
 {
-    
+    int n;
+    do
+    {
+       n = get_int("height ");
+    }
+    while( i < 1 || i > 8);
+
+    for( i = 0; i < n; i++)
+    {
+        row( n - i - 1, );
+    }
+}
+
+void row(int m, int o)
+{
+    for( i = 0; i < m; i++)
+    {
+        printf(" ");
+    }
 }
