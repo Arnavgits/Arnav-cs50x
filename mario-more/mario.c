@@ -12,7 +12,7 @@ int main(void)
 
     for( i = 0; i < n; i++)
     {
-        row( n - i - 1, );
+        row( n - i - 1, i + 1);
     }
 }
 
@@ -21,5 +21,9 @@ void row(int m, int o)
     for( i = 0; i < m; i++)
     {
         printf(" ");
+    }
+    for( j = 0; j < o; i++)
+    {
+        printf("#");
     }
 }
