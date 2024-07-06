@@ -9,11 +9,11 @@ int main(void)
     {
         int n= get_int("height:");
     }
-    while(n < 8 && n > 0);
+    while(n < 9 && n > 0);
 
     for(i=0 ; i<n ; i++)
     {
-        row()
+        row(i+1);
     }
 }
 
@@ -22,7 +22,11 @@ void row(int m, int o)
     for(i=0 ; i < m ; i++)
     {
         printf("");
-    }
 
+        for(i=0 ; i< o ; i++ )
+        {
+            printf("#");
+        }
+    }
 }
 
