@@ -20,11 +20,11 @@ int main(void)
 
 void row(int m, int o)
 {
-    for(i=0 ; i < m ; i++)
+    for(int i=0 ; i < m ; i++)
     {
         printf("");
 
-        for(i=0 ; i< o ; i++ )
+        for(int j=0 ; j< o ; j++ )
         {
             printf("#");
         }
