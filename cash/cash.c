@@ -20,7 +20,7 @@ int main(void)
     int nickel = calculate_nickel(cents);
     cents = cents - (nickel * 5);
 
-
+    int pennie = calculate
 }
 
 int calculate_change(int cents)
