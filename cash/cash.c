@@ -22,14 +22,16 @@ int main(void)
 
     int pennie = calculate_pennie(cents);
     cents = cents - (pennie * 1);
+
+    add(int quarters + int dimes + int nickel + int pennie)
 }
 
 int calculate_change(int cents)
 {
      int quarters = 0;
-    while(cents >= 25);
+    while(cents >= 25)
     {
-        quarters++
+        quarters++;
         cents = cents - 25;
     }
     return quarters;
@@ -38,7 +40,7 @@ int calculate_change(int cents)
 int calculate_dimes(int cents)
 {
     int dimes = 0;
-    while(cents >= 10);
+    while(cents >= 10)
     {
         dimes++;
         cents = cents - 10;
@@ -49,7 +51,7 @@ int calculate_dimes(int cents)
 int calculate_nickel(int cents)
 {
     int nickel = 0;
-    while(cents >= 5);
+    while(cents >= 5)
     {
         nickel++;
         cents = cents - 5;
@@ -60,7 +62,12 @@ int calculate_nickel(int cents)
 int calculate_pennie(int cents)
 {
     int pennie = 0;
-    
+    while( cents >= 1)
+    {
+        pennie++;
+        cents = cents - 1;
+    }
+    return pennie;
 }
 
 
