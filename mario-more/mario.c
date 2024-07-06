@@ -26,4 +26,5 @@ void row(int m, int o)
     {
         printf("#");
     }
+    printf("  ");
 }
