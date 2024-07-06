@@ -8,11 +8,11 @@ int main(void)
     int n;
     do
     {
-        int n= get_int("height:");
+        int n= get_int("height: ");
     }
     while( n > 0 && n < 9);
 
-    for(i=0 ; i<n ; i++)
+    for(int i=0 ; i<n ; i++)
     {
         row(i+1);
     }
