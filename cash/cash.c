@@ -10,7 +10,7 @@ int main(void)
     }
     while (cents < 0);
 
-    int quarters = void calculate_change(cents)
+    int quarters = calculate_change(cents);
 
 }
 
