@@ -3,5 +3,9 @@
 
 int main(void)
 {
-    long credit = get_long("Number: ");
+    long credit:
+    do
+    {
+        credit = get_long("Number: ");
+    }
 }
