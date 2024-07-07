@@ -13,7 +13,7 @@ int main(void)
     {
         cents = get_int("Change: ");
     }
-    while (cents < 0);
+    while (cents < 1);
 
     int quarters = calculate_quarters(cents);
     cents = cents - (quarters * 25);
