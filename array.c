@@ -5,5 +5,6 @@ int main(void)
 {
     int doble[5];
 
-    doble[0] = 
+    doble[0] = 1;
+    
 }
