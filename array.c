@@ -7,9 +7,9 @@ int main(void)
 
     doble[0] = 1;
 
-    for(int i = 1, i < 5, i++)
+    for(int i = 1; i < 5; i++)
     {
-        doble[i] = doble[i - 1];
+        doble[i] = doble[i - 1] * 2;
         printf("%i\n", doble[i]);
     }
 }
