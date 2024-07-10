@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int doble[i];
+    int doble[5];
 
     for(int i = 0; i < 5; i++)
     {
