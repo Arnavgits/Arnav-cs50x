@@ -5,9 +5,9 @@ int main(void)
 {
     int doble[5];
 
-    for(doble[i] = 0; i < 5; i++)
+    for(doble[i] = 1; i <= 5; i++)
     {
-        doble[i] = doble[i - 1] * 2;
+        doble[i] = doble[i] * 2;
         printf("%i\n", doble[i]);
     }
 }
