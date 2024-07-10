@@ -3,11 +3,7 @@
 
 int main(void)
 {
-    int doble[i];
+    int doble[5];
 
-    for(i = 0, i <= 5, i++)
-    {
-        get_int("enter number:");
-
-    }
+    doble[0] = 
 }
