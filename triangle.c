@@ -5,10 +5,11 @@ valid_triangle(float a ,float b ,float c);
 
 int main(void)
 {
-    for(int i = 1; i < 4; i++)
-    {
-        printf("Enter side%i:\n", i);
-    }
+    float x = get_float("side1:\n");
+    float y = get_float("side2:\n");
+    float z = get_float("side3:\n");
+
+    valid_triangle(x ,y ,x);
 }
 
 valid_triangle(float a ,float b,float c)
