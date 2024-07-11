@@ -9,15 +9,16 @@ int main(void)
     float y = get_float("side2:\n");
     float z = get_float("side3:\n");
 
-    valid_triangle(x ,y ,x);
+    float valid_triangle(x ,y ,z);
 }
 
 float valid_triangle(float a ,float b,float c)
 {
-    float sum_two_sides = a + b;
-    return sum_two_sides;
+    float sum_side1_side2 = a + b;
+    float sum_side2_side3 = b + c;
+    float sum_side3_side1 = c + a;
 
-    if(sum_two_sides > c || a,b > 0)
+    if(sum_side1_side2 > c || sum_side2_side3 > a || sum_side3_side1 > b || a,b,c > 0)
     {
         printf("True\n");
     }
