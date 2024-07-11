@@ -1,4 +1,4 @@
-#include <cs40.h>
+#include <cs50.h>
 #include <stdio.h>
 
 valid_triangle(float a ,float b ,float c);
