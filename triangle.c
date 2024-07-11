@@ -5,7 +5,8 @@ valid_triangle(float a ,float b);
 
 int main(void)
 {
-
+    
+    if()
 }
 
 valid_triangle(float a ,float b)
