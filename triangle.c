@@ -15,6 +15,7 @@ valid_triangle(float a ,float b,float c)
 
     if(sum_two_sides > c)
     {
-        
+        printf("True");
     }
+    else 
 }
