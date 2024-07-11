@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-float valid_triangle(float a ,float b ,float c);
+bool valid_triangle(float a ,float b ,float c);
 
 int main(void)
 {
@@ -12,18 +12,14 @@ int main(void)
     valid_triangle(x ,y ,z);
 }
 
-float valid_triangle(float a ,float b,float c)
+bool valid_triangle(float a ,float b,float c)
 {
-    float sum_side1_side2 = a + b;
-    float sum_side2_side3 = b + c;
-    float sum_side3_side1 = c + a;
-
-    if(sum_side1_side2 > c || sum_side2_side3 > a || sum_side3_side1 > b || a,b,c > 0)
+    if(a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && a + c > b)
     {
-        printf("True\n");
+        return true;
     }
     else
     {
-        printf("False\n");
+        return false;
     }
 }
