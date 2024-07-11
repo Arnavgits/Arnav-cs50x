@@ -9,7 +9,8 @@ int main(void)
     float y = get_float("side2:\n");
     float z = get_float("side3:\n");
 
-    valid_triangle(x ,y ,z);
+   bool m = valid_triangle(x ,y ,z);
+   printf("%b")
 }
 
 bool valid_triangle(float a ,float b,float c)
