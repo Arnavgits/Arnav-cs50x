@@ -9,7 +9,7 @@ int main(void)
     float y = get_float("side2:\n");
     float z = get_float("side3:\n");
 
-    float valid_triangle(x ,y ,z);
+    valid_triangle(x ,y ,z);
 }
 
 float valid_triangle(float a ,float b,float c)
