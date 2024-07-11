@@ -1,12 +1,15 @@
 #include <cs40.h>
 #include <stdio.h>
 
-valid_triangle(float a ,float b);
+valid_triangle(float a ,float b ,float c);
 
 int main(void)
 {
-    
-    if()
+
+    if(float a,b,c > 0)
+    {
+        
+    }
 }
 
 valid_triangle(float a ,float b)
