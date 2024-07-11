@@ -5,12 +5,12 @@ bool valid_triangle(float a ,float b ,float c);
 
 int main(void)
 {
-    float x = get_float("side1:\n");
-    float y = get_float("side2:\n");
-    float z = get_float("side3:\n");
+    float x = get_float("side1: ");
+    float y = get_float("side2: ");
+    float z = get_float("side3: ");
 
    bool m = valid_triangle(x ,y ,z);
-   printf("%b")
+   printf("%i\n", m);
 }
 
 bool valid_triangle(float a ,float b,float c)
