@@ -11,14 +11,14 @@ int main(void)
 
    int b = strlen(a);
 
-   for(i = 0; i < b; i++)
+   for(int i = 0; i < b; i++)
    {
    if(i < i + 1)
    {
    printf("alphabetical");
    }
    else
-   printf("")
+   printf("not alphabetical")
    }
 
     // print 'alphabetical' if it is and 'not alphabetical' if not
