@@ -13,7 +13,7 @@ int main(void)
 
    for(int i = 0; i < b; i++)
    {
-   if(i < i + 1)
+   if(a[i] < a[i + 1])
    {
    printf("alphabetical");
    }
