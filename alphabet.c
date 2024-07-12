@@ -9,7 +9,7 @@ int main(void)
 
     // check if it's alphabetical
 
-    
+    if(i < )
 
     // print 'alphabetical' if it is and 'not alphabetical' if not
 }
