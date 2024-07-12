@@ -5,6 +5,7 @@ int main(void)
 {
     int a = get_int("enter your no: ");
     arr[i];
+    arr[0] = 1;
 
     for(int i = 1; i<= a; i++)
     {
