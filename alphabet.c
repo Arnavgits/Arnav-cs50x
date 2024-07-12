@@ -11,7 +11,15 @@ int main(void)
 
    int b = strlen(a);
 
-   if(arg[0] >)
+   for(i = 0; i < b; i++)
+   {
+   if(i < i + 1)
+   {
+   printf("alphabetical");
+   }
+   else
+   printf("")
+   }
 
     // print 'alphabetical' if it is and 'not alphabetical' if not
 }
