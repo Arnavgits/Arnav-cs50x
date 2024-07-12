@@ -9,11 +9,16 @@ int main(void)
 
     // assign the two values from A-Z to as given.
 
-    
+
 
 
     // operate on the two values and compare which is greater
 
 
     //print out "player 1 wins" or "player 2" wins.
+}
+
+int compute_value(void)
+{
+    
 }
