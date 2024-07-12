@@ -3,5 +3,10 @@
 
 int main(void)
 {
+    int a = get_int(""enter no: );
+
+    int arr[4];
+    arr[0] = 1;
+
     
 }
