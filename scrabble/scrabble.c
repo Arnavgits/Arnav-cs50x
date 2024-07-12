@@ -21,5 +21,4 @@ int main(void)
 int compute_value(string c)
 {
     
-
 }
