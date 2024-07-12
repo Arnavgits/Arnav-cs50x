@@ -12,7 +12,7 @@ int main(void)
 
    int b = strlen(a);
 
-   for(int i = 0; i < b; i++)
+   for(int i = 0; i < b - 1; i++)
    {
    if( a[i] <  a[i + 1])
    {
