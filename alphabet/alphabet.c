@@ -14,13 +14,13 @@ int main(void)
 
    for(int i = 0; i < b - 1; i++)
    {
-   if( a[i] <  a[i + 1])
+   if( a[i] >  a[i + 1])
    {
-   printf("alphabetical\n");
-   
+   printf("not alphabetical\n");
+
    }
    else
-   printf("not alphabetical\n");
+   printf("alphabetical\n");
    return 0;
    }
 
