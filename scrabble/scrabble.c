@@ -18,7 +18,8 @@ int main(void)
     //print out "player 1 wins" or "player 2" wins.
 }
 
-int compute_value(void)
+int compute_value(string c)
 {
     
+
 }
