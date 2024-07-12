@@ -7,12 +7,13 @@ int main(void)
     string a = get_string("player 1: ");
     string b = get_string("player 2: ");
 
+    // assign the two values from A-Z to as given.
+
     
-    int linking[26];
 
-    for(i = 0; i < 26; i++)
-    {
-       linking[i] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
-    }
 
+    // operate on the two values and compare which is greater
+
+
+    //print out "player 1 wins" or "player 2" wins.
 }
