@@ -3,11 +3,14 @@
 
 int main(void)
 {
-    \\ get input from user
-    string a 
+    // get input from user
 
-    \\ check if it's alphabetical
+    string a = get_string("input: ");
 
-    \\ print 'alphabetical' if it is and 'not alphabetical' if not
+    // check if it's alphabetical
+
+    
+
+    // print 'alphabetical' if it is and 'not alphabetical' if not
 }
 
