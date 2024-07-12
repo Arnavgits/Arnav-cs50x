@@ -4,7 +4,10 @@
 int main(void)
 {
     \\ get input from user
+    string a 
 
-    \\ 
+    \\ check if it's alphabetical
+
+    \\ print 'alphabetical' if it is and 'not alphabetical' if not
 }
 
