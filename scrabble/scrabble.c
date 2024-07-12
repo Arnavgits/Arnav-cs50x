@@ -8,4 +8,9 @@ int main(void)
 
     int linking[26];
 
+    for(i = 0; i < 26; i++)
+    {
+        
+    }
+
 }
