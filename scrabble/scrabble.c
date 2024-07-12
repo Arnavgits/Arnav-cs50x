@@ -7,5 +7,8 @@ int main(void)
     int b = get_int("player 2: ");
 
     for(char i = 65; i <= 91; i++)
+    {
+        
+    }
 
 }
