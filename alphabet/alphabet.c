@@ -21,7 +21,9 @@ int main(void)
    }
    }
    else
+   {
    printf("alphabetical\n");
+   }
     // print 'alphabetical' if it is and 'not alphabetical' if not
 }
 
