@@ -11,10 +11,7 @@ int main(void)
 
    int b = strlen(a);
 
-   for(i = 0; i < b; i++)
-   {
-    
-   }
+   if(arg[0] >)
 
     // print 'alphabetical' if it is and 'not alphabetical' if not
 }
