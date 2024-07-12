@@ -16,10 +16,11 @@ int main(void)
    {
    if( a[i] <  a[i + 1])
    {
-   printf("alphabetical");
+   printf("alphabetical\n");
    }
+   return 0;
    else
-   printf("not alphabetical");
+   printf("not alphabetical\n");
    }
 
     // print 'alphabetical' if it is and 'not alphabetical' if not
