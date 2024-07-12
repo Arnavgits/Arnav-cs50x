@@ -3,6 +3,8 @@
 
 int main(void)
 {
-    
+    \\ get input from user
+
+    \\ 
 }
 
