@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    string a = get_string("player 1: ");
-    string b = get_string("player 2: ");
-    
+    int a = get_int("player 1: ");
+    int b = get_int("player 2: ");
+
 }
