@@ -13,5 +13,4 @@ int main(void)
         arr[i] = arr[i - 1] * 2;
         printf("%i\n", arr[i]);
     }
-
 }
