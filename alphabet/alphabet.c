@@ -17,7 +17,6 @@ int main(void)
    if( a[i] >  a[i + 1])
    {
    printf("not alphabetical\n");
-
    }
    else
    printf("alphabetical\n");
