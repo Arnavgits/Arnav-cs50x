@@ -3,9 +3,11 @@
 
 int main(void)
 {
+    // get two input from user
     string a = get_string("player 1: ");
     string b = get_string("player 2: ");
 
+    
     int linking[26];
 
     for(i = 0; i < 26; i++)
