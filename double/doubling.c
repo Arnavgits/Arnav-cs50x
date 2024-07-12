@@ -3,15 +3,12 @@
 
 int main(void)
 {
-    int arr[4];
+    int a = get_int("enter your no: ");
+    arr[i];
 
-    arr[0] = 1;
-    printf("%i\n", arr[0]);
-
-    for(int i = 1; i< 4; i++)
+    for(int i = 1; i<= a; i++)
     {
         arr[i] = arr[i - 1] * 2;
-        return arr[i];
         printf("%i\n", arr[i]);
     }
 
