@@ -9,7 +9,12 @@ int main(void)
 
     // check if it's alphabetical
 
-    if(i < )
+   int b = strlen(a);
+
+   for(i = 0; i < b; i++)
+   {
+    
+   }
 
     // print 'alphabetical' if it is and 'not alphabetical' if not
 }
