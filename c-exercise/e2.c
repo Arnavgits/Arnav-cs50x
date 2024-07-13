@@ -9,6 +9,6 @@ int main(void)
     float item_2_weight = get_float("Weight - Item2: ");
     int item_2_number = get_float("No. of item2: ");
 
-    float average = item_1_weight * item_1_number + item_2_weight * item_2_number / item_2_number + item_1_number;
+    float average = (item_1_weight * item_1_number + item_2_weight * item_2_number) / (item_2_number + item_1_number);
     printf("Average: %f\n", average);
 }
