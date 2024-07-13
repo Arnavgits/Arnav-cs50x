@@ -4,8 +4,7 @@
 int main(void)
 {
     char a[10];
-    
-    string a = get_string("Input the Employees ID(Max. 10 chars): ");
+    a[] = get_string("Input the Employees ID(Max. 10 chars): ");
     int hours = get_int("Input the working hrs: ");
     int salary = get_int("Salary amount/hr: ");
 
