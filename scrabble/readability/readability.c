@@ -3,7 +3,5 @@
 
 int main(void)
 {
-
+    
 }
-0
-0
