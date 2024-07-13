@@ -34,6 +34,8 @@ int main(void)
 int compute_value(string c)
 {
    // operate on the two values
-   
+   int score = 0;
+
+   score = score + 
 
 }
