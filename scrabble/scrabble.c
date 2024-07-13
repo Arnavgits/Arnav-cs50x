@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
+int compute_value(string c);
 int main(void)
 {
 
@@ -32,8 +33,6 @@ int main(void)
 int compute_value(string c)
 {
    // operate on the two values and compare which is greater
-
-
-
+   
 
 }
