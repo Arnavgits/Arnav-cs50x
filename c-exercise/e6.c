@@ -8,6 +8,6 @@ int main(void)
     int c = get_int("x2: ");
     int d = get_int("y2: ");
 
-    
+    float d = sqrt(c - a)
 
 }
