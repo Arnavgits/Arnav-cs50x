@@ -34,6 +34,9 @@ int compute_value(string c, string d)
 {
    int score = 0;
    for(i = 0;i < strlen(a); i++)
-   score = score + scrab[]
+   score = score + scrab[c[i] - 65];
+   return score;
+
+   int 
 
 }
