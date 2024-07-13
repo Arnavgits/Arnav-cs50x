@@ -33,7 +33,7 @@ int main(void)
 int compute_value(string c)
 {
    int score = 0;
-   for(int i = 0;i < strlen(c); i++)
+   for (int i = 0;i < strlen(c); i++)
    {
       if(isupper(c[i]))
       {
