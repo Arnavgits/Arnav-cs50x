@@ -7,12 +7,12 @@ int main(void)
     string a = get_string("player 1: ");
     string b = get_string("player 2: ");
 
-    // assign the two values from A-Z to as given.
+    int a = compute_value(word)
 
 
 
 
-    // operate on the two values and compare which is greater
+
 
 
     //print out "player 1 wins" or "player 2" wins.
@@ -20,5 +20,8 @@ int main(void)
 
 int compute_value(string c)
 {
-    
+     // operate on the two values and compare which is greater
+
+
+
 }
