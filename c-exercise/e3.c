@@ -9,6 +9,6 @@ int main(void)
     int hours = get_int("Input the working hrs: ");
     int salary = get_int("Salary amount/hr: ");
 
-    printf("Employees ID = %i", a[10]);
+    printf("Employees ID = %i", a[]);
     printf("Salary =  U$ %i", hours * salary);
 }
