@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
@@ -8,6 +9,6 @@ int main(void)
     int c = get_int("x2: ");
     int d = get_int("y2: ");
 
-    float d = sqrt(c - a)
-
+    float e = sqrt((c - a)^2 + (d - b)^2);
+    printf("%f", e);
 }
