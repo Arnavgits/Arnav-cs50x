@@ -3,20 +3,20 @@
 
 int main(void)
 {
-    int a = get_int("Enter first Number:")
-    int b = get_int("Enter second Number:")
-    int c = get_int("Enter third Number:")
+    int a = get_int("Enter first Number: ");
+    int b = get_int("Enter second Number: ");
+    int c = get_int("Enter third Number: ");
 
     if(a > b && a > c)
     {
-        printf("%i", a);
+        printf("%i\n", a);
     }
     else if(b > c && b > a)
     {
-        printf("%i", b);
+        printf("%i\n", b);
     }
     else
     {
-        printf("%i", c);
+        printf("%i\n", c);
     }
 }
