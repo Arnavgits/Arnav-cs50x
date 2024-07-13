@@ -35,7 +35,7 @@ int compute_value(string c)
 {
    // operate on the two values
    int score = 0;
-
-   score = score + 
+   for(i = 0;i < strlen(a))
+   score = score +
 
 }
