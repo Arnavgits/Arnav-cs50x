@@ -3,5 +3,5 @@
 
 int main(void)
 {
-    
+    long id[10] = get_long("")
 }
