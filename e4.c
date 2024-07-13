@@ -7,7 +7,10 @@ int main(void)
     int b = get_int("Enter second Number:")
     int c = get_int("Enter third Number:")
 
-    
+    if(a > b )
+    {
+
+    }
 
 
 }
