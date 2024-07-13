@@ -4,5 +4,5 @@
 int main(void)
 {
     //get weight of 2 items from the user and no of those two items purchased
-    float :
+    float i1w1 = get_float("")
 }
