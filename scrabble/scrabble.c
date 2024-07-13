@@ -34,8 +34,15 @@ int compute_value(string c)
 {
    int score = 0;
    for(i = 0;i < strlen(a); i++)
-   if()
+
+   if(isupper(word[i]))
+   {
    score = score + scrab[c[i] - 65];
+   }
+   else if(islower(word[i]))
+   {
+    score = score + scrab[c[i] - 65];
+   }
 
 
    int
