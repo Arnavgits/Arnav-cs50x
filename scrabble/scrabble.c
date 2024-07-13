@@ -28,14 +28,12 @@ int main(void)
     {
         printf("Tie!!");
     }
-    //print out "player 1 wins" or "player 2" wins.
 }
 
-int compute_value(string c)
+int compute_value(string c, string d)
 {
-   // operate on the two values
    int score = 0;
-   for(i = 0;i < strlen(a))
-   score = score +
+   for(i = 0;i < strlen(a); i++)
+   score = score + 
 
 }
