@@ -3,10 +3,12 @@
 #include <stdio.h>
 #include <string.h>
 
+int scrab[] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
+
 int compute_value(string c);
 int main(void)
 {
-    scrab[] = {1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10}
+
 
     string a = get_string("player 1: ");
     string b = get_string("player 2: ");
@@ -31,13 +33,13 @@ int main(void)
 int compute_value(string c)
 {
    int score = 0;
-   for(i = 0;i < strlen(a); i++)
+   for(int i = 0;i < strlen(c); i++)
    {
-      if(isupper(word[i]))
+      if(isupper(c[i]))
       {
       score = score + scrab[c[i] - 65];
       }
-      else if(islower(word[i]))
+      else if(islower(c[i]))
       {
       score = score + scrab[c[i] - 91];
       }
