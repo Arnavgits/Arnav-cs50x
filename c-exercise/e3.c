@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    long d[10] = get_long("Input the Employees ID(Max. 10 chars): ");
+    int id[10] = get_int("Input the Employees ID(Max. 10 chars): ");
     int hours = get_int("Input the working hrs: ");
-    int salary = get_int("Salary amount/hr: ")
+    int salary = get_int("Salary amount/hr: ");
 }
