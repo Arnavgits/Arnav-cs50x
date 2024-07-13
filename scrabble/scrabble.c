@@ -33,7 +33,7 @@ int main(void)
 
 int compute_value(string c)
 {
-   // operate on the two values and compare which is greater
+   // operate on the two values
    
 
 }
