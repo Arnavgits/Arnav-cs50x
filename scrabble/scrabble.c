@@ -41,7 +41,7 @@ int compute_value(string c)
       }
       else if(islower(c[i]))
       {
-      score = score + scrab[c[i] - 91];
+      score = score + scrab[c[i] - 97];
       }
    }
    return 0;
