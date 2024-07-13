@@ -44,5 +44,5 @@ int compute_value(string c)
       score = score + scrab[c[i] - 97];
       }
    }
-   return 0;
+   return score;
 }
