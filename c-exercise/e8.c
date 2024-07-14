@@ -8,6 +8,7 @@ int main(void)
     int hour = a / 3600;
     a = a - hour * 3600;
 
-    int min = 
+    int min = a / 60;
+    sec = 
     printf("There are: H:M:S - %i:%i:%i\n",hour ,min ,sec);
 }
