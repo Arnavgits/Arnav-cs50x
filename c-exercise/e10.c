@@ -5,6 +5,6 @@ int main(void)
 {
     int p = get_int("p: ");
     unsigned q = get_int("q: ");
-    int r = get_int("r: ");
-    int s = get_int("s: ");
+    unsigned r = get_int("r: ");
+    unsigned s = get_int("s: ");
 }
