@@ -9,7 +9,7 @@ int main(void)
     {
      p = get_int("p: ");
     }
-    while (p % 2 == 0)
+    while (p % 2 == 0);
 
     do
     {
@@ -17,5 +17,5 @@ int main(void)
      r = get_int("r: ");
      s = get_int("s: ");
     }
-    while (q> 0)
+    while (q > 0 && r > 0 && s > 0);
 }
