@@ -3,13 +3,19 @@
 
 int main(void)
 {
+    int p;
+    unsigned int q,r,s;
     do
     {
-    int p = get_int("p: ");
+     p = get_int("p: ");
     }
     while (p % 2 = 0)
 
-    unsigned q = get_int("q: ");
-    unsigned r = get_int("r: ");
-    unsigned s = get_int("s: ");
+    do
+    {
+     q = get_int("q: ");
+     r = get_int("r: ");
+     s = get_int("s: ");
+    }
+    while (q,r,s > 0)
 }
