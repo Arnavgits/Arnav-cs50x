@@ -3,11 +3,13 @@
 
 int main(void)
 {
+    int a;
+
     do
     {
-    int a = get_int("Enter your no: ");
+    a = get_int("Enter your no: ");
     }
-    while(a < 0)
+    while(a < 0);
 
     if(a >= 0 && a <= 20)
     {
@@ -19,7 +21,7 @@ int main(void)
     }
     else if(a > 40 && a <= 60)
     {
-        printf("Range (40,60]");
+        printf("Range (40,60]\n");
     }
     else if(a > 60 && a <= 80)
     {
