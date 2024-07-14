@@ -17,5 +17,14 @@ int main(void)
      r = get_int("r: ");
      s = get_int("s: ");
     }
-    while (q <= 0 && r > 0 && s > 0);
+    while (q <= 0 && r <= 0 && s <= 0);
+
+    if (q > r && s > p && r + s > p + q)
+    {
+        printf("Correct values\n");
+    }
+    else
+    {
+        printf("Wrong values\n");
+    }
 }
