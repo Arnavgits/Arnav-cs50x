@@ -4,7 +4,7 @@
 int main(void)
 {
     int p = get_int("p: ");
-    int q = get_int("q: ");
+    unsigned q = get_int("q: ");
     int r = get_int("r: ");
     int s = get_int("s: ");
 }
