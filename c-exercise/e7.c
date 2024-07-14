@@ -33,7 +33,7 @@ int main(void)
     printf("%i Note(s) of 5.00", f);
 
     a = a - f * 5;
-    retunr a;
+    return a;
 
     int g = a / 2;
     printf("%i Note(s) of 2.00", g);
