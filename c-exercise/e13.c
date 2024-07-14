@@ -6,7 +6,9 @@ int main(void)
     int a[5];
     for(int i = 1;i <= 5; i++)
     {
-        a = get_int("Enter %i no: ", i);
+        a[i] = get_int("Enter %i no: ", i);
     }
+
+    
 
 }
