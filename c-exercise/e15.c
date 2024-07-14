@@ -3,5 +3,8 @@
 
 int main(void)
 {
+    int a = get_int("first number: ");
+    int b = get_int("second number ");
+
     
 }
