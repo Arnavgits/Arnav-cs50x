@@ -9,5 +9,10 @@ int main(void)
     int d = get_int("Enter 4th no: ");
     int e = get_int("Enter 5th no: ");
 
-    
+    for(i = 0;i < 5; i++)
+    {
+        if()
+    }
+
+
 }
