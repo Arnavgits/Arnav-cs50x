@@ -5,10 +5,9 @@ int main(void)
 {
     int a = get_int("Enter Seconds: ");
 
-    int total_min = a / 60;
-    int sec = a - min * 60;
+    int hour = a / 3600;
+    a = a - hour * 3600;
 
-    int hour = min / 60;
-
+    int min = 
     printf("There are: H:M:S - %i:%i:%i\n",hour ,min ,sec);
 }
