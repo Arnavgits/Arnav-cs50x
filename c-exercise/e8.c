@@ -5,7 +5,7 @@ int main(void)
 {
     int a = get_int("Enter Seconds: ");
 
-    int min = a / 60;
+    int total_min = a / 60;
     int sec = a - min * 60;
 
     int hour = min / 60;
