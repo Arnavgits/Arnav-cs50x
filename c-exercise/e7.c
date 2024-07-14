@@ -5,6 +5,11 @@ int main(void)
 {
     int a = get_int("Enter your Amount:");
 
-    a = a / 100
+    int b = a / 100;
+    printf("%i Note(s) of 100.00 \n");
+
+    a = a - b * 100;
+    
+
 
 }
