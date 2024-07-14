@@ -15,5 +15,6 @@ int main(void)
             b = b + a[i];
         }
     }
+    printf("Total sum: %i\n", b);
 
 }
