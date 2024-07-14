@@ -6,8 +6,12 @@ int main(void)
     int a = get_int("first number: ");
     int b = get_int("second number ");
 
-    if(b % a == 0)
+    if((a < b && b % a == 0 ) || (b > a && a % b == 0))
     {
         printf("Multiplied!\n");
+    }
+    else
+    {
+        printf("not multiplied!\n");
     }
 }
