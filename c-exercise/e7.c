@@ -36,7 +36,11 @@ int main(void)
     retunr a;
 
     int g = a / 2;
-    
+    printf("%i Note(s) of 2.00", g);
 
+    a = a - g * 2;
+    return a;
 
+    int h = a / 1;
+    printf("%i Note(s) of 1.00", h);
 }
