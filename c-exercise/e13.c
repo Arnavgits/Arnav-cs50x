@@ -4,9 +4,9 @@
 int main(void)
 {
     int a[5];
-    for(i = 0;i < 5; i++)
+    for(int i = 1;i <= 5; i++)
     {
-        a[] = get_int("Enter %i no: ")
+        a = get_int("Enter %i no: ", i);
     }
 
 }
