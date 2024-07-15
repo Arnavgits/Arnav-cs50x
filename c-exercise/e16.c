@@ -9,11 +9,7 @@ int main(void)
     do
     {
         b = get_int("eNTER no to get month: ");
+        printf("%s\n", a[b - 1]);
     }
     while(b < 0 || b > 13);
-
-    for(i = 0; i < 12; i++)
-    {
-        printf("%s", a[i-1]);
-    }
 }
