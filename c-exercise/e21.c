@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    int d = 0:
     int b[a];
 
     int a = ("No of integers to input: ");
@@ -15,7 +16,7 @@ int main(void)
     {
         if(b[i] = b[c] && i != c)
         {
-            c = c + 1;
+            d = d + 1;
         }
     }
     }
