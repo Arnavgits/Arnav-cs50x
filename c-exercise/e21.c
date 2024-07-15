@@ -3,5 +3,6 @@
 
 int main(void)
 {
+    int a[] = get_int("Enter your no: ");
     
 }
