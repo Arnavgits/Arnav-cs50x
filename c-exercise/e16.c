@@ -11,5 +11,5 @@ int main(void)
         b = get_int("eNTER no to get month: ");
         printf("%s\n", a[b - 1]);
     }
-    while(b < 0 || b > 13);
+    while(b < 1 || b > 12);
 }
