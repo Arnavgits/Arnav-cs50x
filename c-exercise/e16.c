@@ -11,7 +11,7 @@ int main(void)
     while(a > 0 && a < 13);
 
     switch(a)
-
+    {
     case 1 : printf("January\n");break;
     case 2 : printf("Feb\n");break;
     case 3 : printf("March0\n");break;
@@ -25,4 +25,5 @@ int main(void)
     case 11 : printf("nov\n");break;
     case 12 : printf("dec\n");break;
     default : printf("Enter only between 1 and 12\n");break;
+    }
 }
