@@ -25,7 +25,7 @@ int main(void)
     {
         if(a[i] < a[i + 1])
         {
-            int c = a[i]
+            int e = a[i]
         }
     }
 
