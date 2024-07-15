@@ -13,7 +13,7 @@ int main(void)
     {
     for(int c = 0; c <= a; c++)
     {
-        if(b[i] = b[c])
+        if(b[i] = b[c] && i != c)
         {
             c = c + 1;
         }
