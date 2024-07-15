@@ -3,9 +3,11 @@
 
 int mai(void)
 {
+    int a[i],i;
     do
     {
-        int i = get_int("Input a  number to get the month name: ");
-        
+         i = get_int("Input a  number to get the month name: ");
+         
+
     }
 }
