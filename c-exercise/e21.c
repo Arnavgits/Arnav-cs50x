@@ -3,9 +3,17 @@
 
 int main(void)
 {
-    int a = ("No of integers to input: ");
+    int c = 0;
     int b[a];
+
+    int a = ("No of integers to input: ");
+
     b[] = get_int("Enter no:");
+
+    for(int i = 0;i < a; i++)
+    {
+        if(a[i] )
+    }
 
     for(int i = 0; i <= a; i++);
     {
