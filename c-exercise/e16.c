@@ -8,7 +8,7 @@ int main(void)
     {
         a = get_int("Input a  number to get the month name: ");
     }
-    while(a < 0 && a > 13);
+    while(a < 0 || a > 13);
 
     switch(a)
     {
