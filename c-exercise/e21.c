@@ -7,6 +7,12 @@ int main(void)
     int b[a];
     b[] = get_int("Enter no:");
 
-    
+    for(int i = 0; i <= a; i++);
+    {
+        if(a[i] < a[i + 1])
+        {
+            int c = a[i]
+        }
+    }
 
 }
