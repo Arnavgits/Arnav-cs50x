@@ -12,7 +12,10 @@ int main(void)
 
     for(int i = 0;i < a; i++)
     {
-        if(a[i] )
+        if(a[i] = b[c])
+        {
+            c = c + 1;
+        }
     }
 
     for(int i = 0; i <= a; i++);
