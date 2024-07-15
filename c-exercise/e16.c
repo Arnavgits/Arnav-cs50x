@@ -13,6 +13,6 @@ int main(void)
 
     for(i = 0; i < 12; i++);
     {
-        
+        printf("%s", a[i-1]);
     }
 }
