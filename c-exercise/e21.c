@@ -3,7 +3,6 @@
 
 int main(void)
 {
-    int c = 0;
     int b[a];
 
     int a = ("No of integers to input: ");
@@ -12,10 +11,13 @@ int main(void)
 
     for(int i = 0;i < a; i++)
     {
-        if(a[i] = b[c])
+    for(int c = 0; c <= a; c++)
+    {
+        if(b[i] = b[c])
         {
             c = c + 1;
         }
+    }
     }
 
     for(int i = 0; i <= a; i++);
