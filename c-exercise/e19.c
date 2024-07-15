@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int a[5];
+    int a[5],b = 0;
 
     a[0] = get_int("Enter 1st no: ");
     a[1] = get_int("Enter 2nd no: ");
@@ -15,7 +15,8 @@ int main(void)
     {
         if(i % 2 != 0)
         {
-            a[i] = a[i] +
+            b = b + a[i];
         }
     }
+    printf("Total: %i\n", b);
 }
