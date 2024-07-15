@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int a[] = {J,F,M,A,MAY,JUNE,JULY,aug,dep,oct,nov,dec};
+    string a[] = {J,F,M,A,MAY,JUNE,JULY,aug,dep,oct,nov,dec};
 
     do
     {
@@ -11,5 +11,8 @@ int main(void)
     }
     while(a < 0 || a > 13);
 
-    
+    for(i = 0; i < 12; i++);
+    {
+        
+    }
 }
