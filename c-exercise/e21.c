@@ -18,6 +18,7 @@ int main(void)
             d = d + 1;
         }
     }
+    int f[a] = 
     }
 
     for(int i = 0; i <= a; i++);
