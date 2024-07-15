@@ -3,15 +3,16 @@
 
 int main(void)
 {
+    int b;
     string a[] = {"J","F","M","A","MAY","JUNE","JULY","aug","dep","oct","nov","dec"};
 
     do
     {
-        a = get_string("eNTER no to get month: ");
+        b = get_int("eNTER no to get month: ");
     }
-    while(a < 0 || a > 13);
+    while(b < 0 || b > 13);
 
-    for(i = 0; i < 12; i++);
+    for(i = 0; i < 12; i++)
     {
         printf("%s", a[i-1]);
     }
