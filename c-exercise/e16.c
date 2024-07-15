@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    string a[] = {J,F,M,A,MAY,JUNE,JULY,aug,dep,oct,nov,dec};
+    string a[] = {"J","F","M","A","MAY","JUNE","JULY","aug","dep","oct","nov","dec"};
 
     do
     {
