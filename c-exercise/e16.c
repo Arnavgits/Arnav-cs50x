@@ -7,7 +7,7 @@ int main(void)
 
     do
     {
-        a = get_int("eNTER no to get month: ");
+        a = get_string("eNTER no to get month: ");
     }
     while(a < 0 || a > 13);
 
