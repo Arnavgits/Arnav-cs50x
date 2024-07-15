@@ -16,5 +16,4 @@ int main(void)
             printf("%i^2 = %i\n",i , c);
         }
     }
-
 }
