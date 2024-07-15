@@ -3,18 +3,17 @@
 
 int main(void)
 {
-    int d = 0:
-    int b[a];
-
+    int d = 0;
     int a = ("No of integers to input: ");
 
+    int b[a];
     b[] = get_int("Enter no:");
 
     for(int i = 0;i < a; i++)
     {
     for(int c = 0; c <= a; c++)
     {
-        if(b[i] = b[c] && i != c)
+        if(b[i] == b[c] && i != c)
         {
             d = d + 1;
         }
