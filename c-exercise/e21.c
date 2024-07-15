@@ -4,7 +4,9 @@
 int main(void)
 {
     int a = ("No of integers to input: ");
-    int b[a] = get_int("Enter your no: ");
+    int b[a];
+    b[] = get_int("Enter no:");
+
     
 
 }
