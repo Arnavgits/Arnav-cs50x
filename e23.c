@@ -3,5 +3,12 @@
 
 int main(void)
 {
-    int a = get_int("")
+    int a = get_int("No of values to enter: ");
+
+    int b[a];
+
+    for(i = 0; i <= a; i++)
+    {
+        a[i] = get_int("element - %i : ");
+    }
 }
