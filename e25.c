@@ -11,7 +11,7 @@ int main(void)
     for(int i = 0; i < a; i++)
     {
         b[i] = get_int("element - %i : ", i );
-        b[i] = c[i];
+        c[i] = b[i];
     }
 
     printf("Elemets in first array: ");
@@ -21,11 +21,11 @@ int main(void)
         printf("%i ", b[j]);
     }
 
-    printf("Elements in 2nd array: ");
+    printf("\nElements in 2nd array: ");
 
     for(int k = 0; k < a; k++)
     {
         printf("%i ", c[k]);
     }
-
+    printf("\n");
 }
