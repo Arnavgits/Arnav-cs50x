@@ -16,13 +16,14 @@ int main(void)
 
     printf("Elemets in firs array: ");
 
-    for(int j = 0; j < a; j++);
+    for(int j = 0; j < a; j++)
     {
         printf("%i ", b[j]);
     }
 
     printf("Elements in 2nd array: ");
-    for(int k = 0; k < a; k++);
+    
+    for(int k = 0; k < a; k++)
     {
         printf("%i ", c[k]);
     }
