@@ -17,7 +17,7 @@ int main(void)
    {
    for(int j = 0; j < a; j++)
    {
-    if(b[i] == b[j] && i != j)
+    if(i != j && b[i] == b[j])
     {
         c = c + 1;
         break;
