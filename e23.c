@@ -20,8 +20,8 @@ int main(void)
     }
 
      printf("\n\nValue stored(reverse): ");
-    for(int i = 1; i < a; i++)
+    for(int i = 1; i <= a; i++)
     {
-         printf(" %i\n", b[a - i]);
+         printf(" %i ", b[a - i]);
     }
 }
