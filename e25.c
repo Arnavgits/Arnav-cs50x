@@ -14,7 +14,7 @@ int main(void)
         b[i] = c[i];
     }
 
-    printf("Elemets in firs array: ");
+    printf("Elemets in first array: ");
 
     for(int j = 0; j < a; j++)
     {
@@ -22,7 +22,7 @@ int main(void)
     }
 
     printf("Elements in 2nd array: ");
-    
+
     for(int k = 0; k < a; k++)
     {
         printf("%i ", c[k]);
