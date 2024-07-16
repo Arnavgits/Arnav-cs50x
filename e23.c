@@ -5,7 +5,7 @@ int main(void)
 {
     int a = get_int("No of values to enter: ");
 
-    int b[a];
+    int b[a ];
 
     for(int i = 0; i <= a; i++)
     {
@@ -13,10 +13,15 @@ int main(void)
     }
 
     printf("\nValue stored: ");
-    printf("\n\nValue stored(reverse): ");
+
     for(int i = 0; i <= a; i++)
     {
         printf(" %i", b[i]);
-        printf("\n %i", b[a - i]);
+    }
+
+     printf("\n\nValue stored(reverse): ");
+    for(int i = 0; i <= a; i++)
+    {
+         printf("\n %i", b[a - i]);
     }
 }
