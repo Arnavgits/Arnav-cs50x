@@ -2,7 +2,9 @@
 #include <stdio.h>
 int main(void)
 {
-    int a = get_int("enter your no :");
+    int a = get_int("How many values to enter :");
 
     
+
+
 }
