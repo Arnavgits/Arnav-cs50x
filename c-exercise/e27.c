@@ -21,9 +21,9 @@ int main(void)
                 c++;
             }
         }
-    }
     if(c == 0)
     {
     printf("Unique element: %i", b[c]);
+    }
     }
 }
