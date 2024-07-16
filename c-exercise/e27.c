@@ -13,8 +13,8 @@ int main(void)
     }
 
     for(int i = 0; i < a; i++)
-    c = 0;
     {
+        c = 0;
         for(int j = 0; j < a; j++)
         {
             if(i != j && b[i] == b[j])
@@ -24,7 +24,7 @@ int main(void)
         }
     if(c == 0)
     {
-    printf("Unique element: %i", b[i]);
+    printf("Unique element: %i\n", b[i]);
     }
     }
 }
