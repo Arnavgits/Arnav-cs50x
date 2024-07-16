@@ -16,12 +16,14 @@ int main(void)
     {
         for(int j = 0; j < a; j++)
         {
-            if(i != j && b[i] != b[j])
+            if(i != j && b[i] == b[j])
             {
                 c++;
-                break;
             }
         }
     }
-    printf("Unique element: %i", c);
+    if(c == 0)
+    {
+    printf("Unique element: %i", b[c]);
+    }
 }
