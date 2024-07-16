@@ -3,5 +3,14 @@
 
 int main(void)
 {
-    
+    int a = get_int("No of values to enter: ");
+    int b[a];
+
+    for(int i = 0; i < a; i++)
+    {
+        for(int j = 0; j < a; j++)
+        {
+            if(b[i] != b[j])
+        }
+    }
 }
