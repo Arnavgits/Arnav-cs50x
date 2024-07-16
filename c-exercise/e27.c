@@ -7,7 +7,7 @@ int main(void)
     int c = 0;
     int b[a];
 
-    for(i = 0;i < a; i++)
+    for(int i = 0;i < a; i++)
     {
         b[i] = get_int("element %i: ", i);
     }
@@ -22,4 +22,5 @@ int main(void)
             }
         }
     }
+    printf("Unique values: %i\n", c);
 }
