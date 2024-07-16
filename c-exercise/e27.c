@@ -4,10 +4,11 @@
 int main(void)
 {
     int a = get_int("No of values to enter: ");
-    int c = 0;
+    int c;
     int b[a];
 
     for(int i = 0;i < a; i++)
+    c = 0;
     {
         b[i] = get_int("element %i: ", i);
     }
