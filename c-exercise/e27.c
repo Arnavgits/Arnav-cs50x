@@ -23,4 +23,5 @@ int main(void)
             }
         }
     }
+    printf("Unique element: %i", c);
 }
