@@ -13,9 +13,9 @@ int main(void)
     b[i] = get_int("element- %i: ", i);
    }
 
-   for(int i = 0; i < a - 1; i++)
+   for(int i = 0; i < a; i++)
    {
-   for(int j = 0; j < a - 1; j++)
+   for(int j = 0; j < a; j++)
    {
     if(b[i] == b[j] && i != j)
     {
