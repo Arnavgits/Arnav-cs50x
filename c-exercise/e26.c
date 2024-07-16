@@ -13,7 +13,7 @@ int main(void)
     b[i] = get_int("element- %i: ", i);
    }
 
-   for(int i = 0; i < a - 1; i++)
+   for(int i = 0; i < a ; i++)
    {
     if(b[i] == b[i + 1])
     {
