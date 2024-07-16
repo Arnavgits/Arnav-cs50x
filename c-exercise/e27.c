@@ -8,12 +8,12 @@ int main(void)
     int b[a];
 
     for(int i = 0;i < a; i++)
-    c = 0;
     {
         b[i] = get_int("element %i: ", i);
     }
 
     for(int i = 0; i < a; i++)
+    c = 0;
     {
         for(int j = 0; j < a; j++)
         {
