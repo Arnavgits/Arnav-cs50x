@@ -23,7 +23,7 @@ int main(void)
         }
     if(c == 0)
     {
-    printf("Unique element: %i", b[c]);
+    printf("Unique element: %i", b[i]);
     }
     }
 }
