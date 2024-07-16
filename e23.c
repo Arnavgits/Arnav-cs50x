@@ -7,14 +7,16 @@ int main(void)
 
     int b[a];
 
-    for(i = 0; i <= a; i++)
+    for(int i = 0; i <= a; i++)
     {
-        a[i] = get_int("element - %i : ");
+        b[i] = get_int("element - %i : ", i);
     }
 
-    printf("\nValue stored: ")
-    for(i = 0; i <= a; i++)
+    printf("\nValue stored: ");
+    printf("\n\nValue stored(reverse): ");
+    for(int i = 0; i <= a; i++)
     {
-        printf(" %i", a[i]);
+        printf(" %i", b[i]);
+        printf("\n %i", b[a - i]);
     }
 }
