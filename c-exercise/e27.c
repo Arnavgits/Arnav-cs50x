@@ -19,8 +19,8 @@ int main(void)
             if(i != j && b[i] != b[j])
             {
                 c++;
+                break;
             }
         }
     }
-    printf("Unique values: %i\n", c);
 }
