@@ -14,6 +14,9 @@ int main(void)
 
    for(int i = 0; i < a - 1; i++)
    {
-    if(b[i] = b[i + 1])
+   for(int j = 0; j < a - 1; j++)
+   {
+    if(b[i] = b[j] && i != j)
+   }
    }
 }
