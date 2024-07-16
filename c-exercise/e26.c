@@ -15,14 +15,11 @@ int main(void)
 
    for(int i = 0; i < a - 1; i++)
    {
-   for(int j = 0; j < a - 1; j++)
-   {
     if(b[i] == b[i + 1])
     {
         c = c + 1;
         break;
     }
-   }
    }
 
    printf("%i \n", c);
