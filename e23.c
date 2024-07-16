@@ -11,4 +11,10 @@ int main(void)
     {
         a[i] = get_int("element - %i : ");
     }
+
+    printf("\nValue stored: ")
+    for(i = 0; i <= a; i++)
+    {
+        printf(" %i", a[i]);
+    }
 }
