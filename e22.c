@@ -11,9 +11,9 @@ int main(void)
     }
 
     printf("\nElements of array: ");
-    
+
     for(int i = 0; i < 10; i++)
     {
-        printf("%i ", a[i]);
+        printf("%i\n", a[i]);
     }
 }
