@@ -6,7 +6,7 @@ int main(void)
 {
     string a = get_string("Enter your text: ");
     int letters = 0;
-    int words = 0;
+    int c = 0;
     int sentences = 0;
 
     int b = strlen(a);
@@ -20,13 +20,15 @@ int main(void)
 
         if( a[i] == ' ')
         {
-            words++;
+            c++;
         }
+
+        int words = c + 1;
 
         if(a[i] == '.' || a[i] == '!' || a[i] == '?')
         {
             sentences++;
         }
     }
-    printf("Letter: %i\nwords: %i\nsentences: %i\n", letters, words + 1, sentences);
+    printf("Letter: %i\nwords: %i\nsentences: %i\n", letters, words, sentences);
 }
