@@ -6,5 +6,5 @@ int main(void)
 {
     string a = get_string("Enter your text: ");
 
-    
+    int b = strlen(a);
 }
