@@ -8,9 +8,8 @@ int main(void)
 {
     string a = get_string("Enter your text: ");
     float letters = 0;
-    float c = 0;
     float sentences = 0;
-    float words;
+    float words = 0;
 
     int b = strlen(a);
 
@@ -21,12 +20,10 @@ int main(void)
             letters++;
         }
 
-        if( a[i] == ' ')
+        if( isalpha(a[i]))
         {
-            c++;
+            words++;
         }
-
-        words = c + 1;
 
         if(a[i] == '.' || a[i] == '!' || a[i] == '?')
         {
