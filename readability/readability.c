@@ -5,8 +5,8 @@
 int main(void)
 {
     string a = get_string("Enter your text: ");
-    int c = 0;
-    int d = 0;
+    int words = 0;
+    int sentences = 0;
     int e;
 
     int b = strlen(a);
@@ -15,12 +15,14 @@ int main(void)
     {
         if( a[i] = ' ')
         {
-            c++;
+            words++;
         }
 
         if(a[i] = '.' || a[i] = '!' || a[i] = '?')
         {
-            d++;
+            sentences++;
         }
     }
+
+    
 }
