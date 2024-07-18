@@ -4,13 +4,14 @@
 
 int main(void)
 {
-    string cipher;
+    string cipher = 0;
 
     string plain = get_string("Enter text: ");
     int a = strlen(plain);
 
     for(int i = 0;i < a; i++)
     {
-        cipher[i] = (plain[i] + 10) % 36
+        cipher[i] = (plain[i] + 10) % 36;
     }
+    printf("%s\n", cipher);
 }
