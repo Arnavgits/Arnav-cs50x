@@ -5,13 +5,18 @@
 int main(void)
 {
     string a = get_string("Enter your text: ");
+    int letters = 0;
     int words = 0;
     int sentences = 0;
-    int e;
 
-    for(int i = 0; i < b; i ++)
+    int b = strlen(a);
+
+    for(int i = 0; i < b; i++ )
     {
-        if(a[i] != )
+        if(a[i] != ' ' || a[i] != '.' || a[i] != '!' || a[i] != '?' )
+        {
+            letters++;
+        }
         if( a[i] == ' ' || a[i] == '.' || a[i] == '!' || a[i] == '?')
         {
             words++;
