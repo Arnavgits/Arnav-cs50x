@@ -8,4 +8,6 @@ int main(void)
 
     int b = strlen(a);
     printf("%i\n", b);
+
+    for(i = 0; i < b)
 }
