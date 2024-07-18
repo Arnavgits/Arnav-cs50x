@@ -11,6 +11,6 @@ int main(void)
     for(int i = 0;i < a; i++)
     {
         cipher[i] = plain[i] + 2;
-         printf("%c\n", cipher[i]);
+         printf("%c", cipher[i]);
     }
 }
