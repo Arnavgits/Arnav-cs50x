@@ -3,5 +3,5 @@
 
 int main(void)
 {
-
+    string p = get_string("Enter text: ");
 }
