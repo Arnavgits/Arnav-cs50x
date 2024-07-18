@@ -6,7 +6,7 @@ int main(void)
 {
     string plain = get_string("Enter text: ");
     int a = strlen(plain);
-   int cipher[] = strlen(plain);
+   int cipher[];
 
     for(int i = 0;i < a; i++)
     {
