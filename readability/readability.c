@@ -8,22 +8,25 @@ int main(void)
 {
     string a = get_string("Enter your text: ");
     float letters = 0;
+    float c = 0;
     float sentences = 0;
-    float words = 0;
+    float words;
 
     int b = strlen(a);
 
     for(int i = 0; i < b; i++ )
     {
-        if(a[i] != ' ' && a[i] != '.' && a[i] != '!' && a[i] != '?' && a[i] != ',' && a[i] != '"' && a[i] != ':')
+        if(isalpha(a[i]))
         {
             letters++;
         }
 
-        if( isalpha(a[i]))
+        if( a[i] == ' ')
         {
-            words++;
+            c++;
         }
+
+        words = c + 1;
 
         if(a[i] == '.' || a[i] == '!' || a[i] == '?')
         {
