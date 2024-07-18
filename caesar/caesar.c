@@ -1,7 +1,16 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    string p = get_string("Enter text: ");
+    int 
+
+    string plain = get_string("Enter text: ");
+    int a = strlen(plain);
+
+    for(int i = 0;i < a; i++)
+    {
+
+    }
 }
