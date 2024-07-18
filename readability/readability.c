@@ -43,6 +43,12 @@ int main(void)
     {
         printf("Before Grade %i", d)
     }
-    else( d )
-
+    else if( d > 1 && d < 16)
+    {
+        printf("Grade %i" , d);
+    }
+    else( d >= 16 )
+    {
+        printf("Grade %i", d)
+    }
 }
