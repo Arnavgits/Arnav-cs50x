@@ -17,6 +17,7 @@ int main(void)
         {
             letters++;
         }
+        
         if( a[i] == ' ' || a[i] == '.' || a[i] == '!' || a[i] == '?')
         {
             words++;
