@@ -39,5 +39,10 @@ int main(void)
     float index = 0.0588 * L - 0.296 * S - 15.8;
     int d = round(index);
 
-    printf("Grade %i\n", d);
+    if( d <= 1 )
+    {
+        printf("Before Grade %i", d)
+    }
+    else( d )
+
 }
