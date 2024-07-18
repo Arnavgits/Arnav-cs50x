@@ -7,14 +7,18 @@ int main(argc, argv[])
     string plain = get_string("Enter text: ");
     int a = strlen(plain);
    char cipher[strlen(plain)];
-   int k = 0;
+   int k = get_int("enter no");
 
     for(int i = 0;i < a; i++)
     {
         if(k <= 26)
         {
-        cipher[i] = (plain[i] + 2;
+        cipher[i] = (plain[i] + k) % 26;
          printf("%c", cipher[i]);
+        }
+        else if(k > 26)
+        {
+            
         }
     }
 }
