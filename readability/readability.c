@@ -5,10 +5,10 @@
 int main(void)
 {
     string a = get_string("Enter your text: ");
-    int letters = 0;
-    int c = 0;
-    int sentences = 0;
-    int words;
+    float letters = 0;
+    float c = 0;
+    float sentences = 0;
+    float words;
 
     int b = strlen(a);
 
@@ -31,7 +31,6 @@ int main(void)
             sentences++;
         }
     }
-    printf("Letter: %i\nwords: %i\nsentences: %i\n", letters, words, sentences);
 
     float L = (letters/words) * 100;
     float S = (sentences/words) * 100;
