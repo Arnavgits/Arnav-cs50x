@@ -9,10 +9,9 @@ int main(void)
     int sentences = 0;
     int e;
 
-    int b = strlen(a) - ' ';
-
     for(int i = 0; i < b; i ++)
     {
+        if(a[i] != )
         if( a[i] == ' ' || a[i] == '.' || a[i] == '!' || a[i] == '?')
         {
             words++;
@@ -23,5 +22,5 @@ int main(void)
             sentences++;
         }
     }
-    printf("Letter: %i\nwords: %i\nsentences: %i ", b, words, sentences);
+    printf("Letter: %i\nwords: %i\nsentences: %i ", letters, words, sentences);
 }
