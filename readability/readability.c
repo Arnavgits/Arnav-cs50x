@@ -23,4 +23,5 @@ int main(void)
             sentences++;
         }
     }
+    printf("words: %i\n sentences: %i ", words, sentences);
 }
