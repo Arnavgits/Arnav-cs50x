@@ -4,13 +4,13 @@
 
 int main(void)
 {
-    int 
+    int cipher = 0;
 
     string plain = get_string("Enter text: ");
     int a = strlen(plain);
 
     for(int i = 0;i < a; i++)
     {
-
+        cipher = ()
     }
 }
