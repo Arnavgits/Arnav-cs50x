@@ -13,16 +13,16 @@ int main(void)
 
     for(int i = 0; i < b; i ++)
     {
-        if( a[i] = ' ')
+        if( a[i] == ' ')
         {
             words++;
         }
 
-        if(a[i] = '.' || a[i] = '!' || a[i] = '?')
+        if(a[i] == '.' || a[i] == '!' || a[i] == '?')
         {
             sentences++;
         }
     }
 
-    int L = 
+    int L =
 }
