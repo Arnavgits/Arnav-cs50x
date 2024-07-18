@@ -4,10 +4,9 @@
 
 int main(void)
 {
-    string cipher = 0;
-
     string plain = get_string("Enter text: ");
     int a = strlen(plain);
+    string cipher = strlen(plain);
 
     for(int i = 0;i < a; i++)
     {
