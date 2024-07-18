@@ -11,14 +11,14 @@ int main(argc, argv[])
 
     for(int i = 0;i < a; i++)
     {
-        if(k <= 26)
+        if(cipher[i] <= 26)
         {
-        cipher[i] = (plain[i] + k) % 26;
+        cipher[i] = (plain[i] + k) % 26 + 'A';
          printf("%c", cipher[i]);
         }
         else if(k > 26)
         {
-            
+
         }
     }
 }
