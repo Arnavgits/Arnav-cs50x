@@ -9,7 +9,7 @@ int main(void)
     int sentences = 0;
     int e;
 
-    int b = strlen(a);
+    int b = strlen(a) 
 
     for(int i = 0; i < b; i ++)
     {
