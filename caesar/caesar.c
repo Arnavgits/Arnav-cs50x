@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(argc, argv[])
+int main(void)
 {
     string plain = get_string("Enter text: ");
     int a = strlen(plain);
@@ -11,14 +11,19 @@ int main(argc, argv[])
 
     for(int i = 0;i < a; i++)
     {
-        if(cipher[i] <= 26)
+        if(isupper(plain[i]))
         {
-        cipher[i] = (plain[i] + k) % 26 + 'A';
-         printf("%c", cipher[i]);
+             cipher[i] = (plain[i] + k) % 26 + 'A';
+             printf("%c", cipher[i]);
         }
-        else if(k > 26)
+        else if(islower[plain[i]])
         {
-
+            cipher[i] = (plain[i] + k) % 26 + 'a';
+            printf("%c", cipher[i]);
+        }
+        else
+        {
+            printf("invalid text");
         }
     }
 }
