@@ -47,7 +47,7 @@ int main(void)
     {
         printf("Grade %i" , d);
     }
-    else( d >= 16 )
+    else( d >= 16 );
     {
         printf("Grade %i", d);
     }
