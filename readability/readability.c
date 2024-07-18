@@ -32,4 +32,9 @@ int main(void)
         }
     }
     printf("Letter: %i\nwords: %i\nsentences: %i\n", letters, words, sentences);
+
+    float L = (letters/words) * 100;
+    float S = (sentences/words) * 100;
+
+    
 }
