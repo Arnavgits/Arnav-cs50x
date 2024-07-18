@@ -9,5 +9,8 @@ int main(void)
     int b = strlen(a);
     printf("%i\n", b);
 
-    for(i = 0; i < b)
+    for(int i = 0; i < b; i ++)
+    {
+        a[i] = 
+    }
 }
