@@ -9,6 +9,7 @@ int main(void)
     for (int i = 0; i < a; i++)
     {
     b[i] = get_int("array element %i: ", i);
-    int c = (b[i] == b[i + 1] == b[])
+    int c = (b[i] == b[i + 1] == b[i + 2]) ? true : false;
+    printf("%i\n", c);
     }
 }
