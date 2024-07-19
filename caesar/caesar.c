@@ -7,6 +7,12 @@
 int main(int argc, string argv[])
 {
 \\aceept a single non-negative integer in command line argumemt
+     if(argc != 2)
+     {
+        printf("more or less than 2 command line arguments");
+        return 1;
+     }
+
 
     for(int i = 0;i < a; i++)
     {
