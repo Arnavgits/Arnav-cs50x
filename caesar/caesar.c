@@ -26,19 +26,19 @@ int main(int argc, string argv[])
      string plain = get_string("plaintext: ");
      char cipher[strlen(plain)];
 
+     printf("ciphertext: ");
+
      for(int i = 0; i < strlen(plain); i++)
      {
         if(isupper(plain[i]))
         {
              cipher[i] = (plain[i] - 'A' + k) % 26 + 'A';
-             printf("\nciphertext: ");
              printf("%c", cipher[i]);
 
         }
         else if(islower(plain[i]))
         {
             cipher[i] = (plain[i] - 'a' + k) % 26 + 'a';
-            printf("\nciphertext: ");
             printf("%c", cipher[i]);
 
         }
@@ -47,5 +47,5 @@ int main(int argc, string argv[])
             printf("invalid text");
         }
      }
-
+     printf("\n");
 }
