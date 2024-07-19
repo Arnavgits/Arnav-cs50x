@@ -14,10 +14,10 @@ int main(void)
 
     if((a > 9 && b > 9 && a % 10 == b % 10) || a == b)
     {
-        return true;
+        printf("1\n");
     }
     else
     {
-        return false;
+        printf("0\n");
     }
 }
