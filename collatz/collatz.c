@@ -18,6 +18,10 @@ int collatz(int n)
         {
             n = n / 2
         }
-        while()
+        while(n == 2 * i)
+    }
+    else if(n == (2 * i) + 1)
+    {
+        
     }
 }
