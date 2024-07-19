@@ -9,7 +9,7 @@ int main(void)
          a = get_int("a: ");
          b = get_int("b: ");
     }
-    while(a < 0 && b < 0)
+    while(a < 0 && b < 0);
 
     if(((a >= 20 && a <= 30) || (b >= 20 && b <= 30)) && a > b)
     {
