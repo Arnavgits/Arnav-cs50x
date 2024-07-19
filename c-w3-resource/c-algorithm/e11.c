@@ -14,7 +14,7 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        c = (b[i] == b[i + 1] == b[i + 2] && i + 2 < a) ? true : false;
+        c = (i + 2 < a && b[i] == b[i + 1] && b[i + 1] == b[i + 2]) ? true : false;
     }
     printf("%i\n", c);
 }
