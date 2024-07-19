@@ -24,19 +24,24 @@ int main(int argc, string argv[])
 
      int k = atoi(argv[1]);
 
-     string plaintext = get_string("plaintext: ");
+     string plain = get_string("plaintext: ");
 
      for(int i = 0; i < strlen(plaintext); i++)
      {
-        if(isupper(plaintext[1][i]))
+        if(isupper(plain[i]))
         {
-             cipher[1][i] = (plaintext[1][i] + k) % 26 + 'A';
-             printf("%c", cipher[1][i]);
+             cipher[i] = (plain[i] + k) % 26 + 'A';
+             printf("%c", cipher[i]);
         }
-        else if(islower(plaintext[1][i]))
+        else if(islower(plain[i]))
         {
-            cipher[1][i] = (plaintext[1][i] + k) % 26 + 'a';
-            printf("%c", cipher[1][i]);
+            cipher[i] = (plain[i] + k) % 26 + 'a';
+            printf("%c", cipher[i]);
+        }
+        else
+        {
+            printf("invalid text");
         }
      }
+
 }
