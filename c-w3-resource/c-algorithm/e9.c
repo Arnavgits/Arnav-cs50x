@@ -9,8 +9,8 @@ int main(void)
     int b = get_int("no of elements to enter: ");
     int c[b];
 
-    for( i = 0; i < b; i++)
+    for(int i = 0; i < b; i++)
     {
-        c[i] = get_int("array element %i: ", i)
+        c[i] = get_int("array element %i: ", i);
     }
 }
