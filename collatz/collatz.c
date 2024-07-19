@@ -7,7 +7,7 @@ int main(int n)
 
 int collatz(int n)
 {
-
+    for (int i = 0; i < )
     if( n == 1)
     {
         return 1;
