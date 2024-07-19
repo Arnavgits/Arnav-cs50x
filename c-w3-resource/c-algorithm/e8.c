@@ -12,6 +12,12 @@ int main(void)
     }
     while(a < 0 && b < 0);
 
-    if(a > 9 && b > 9 && a % 10 = b % 10)
-    
+    if((a > 9 && b > 9 && a % 10 = b % 10) || a = b)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
