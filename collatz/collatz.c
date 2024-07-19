@@ -13,4 +13,7 @@ int collatz(int n)
         return 1;
     }
     else if(n == 2 * i)
+    {
+        
+    }
 }
