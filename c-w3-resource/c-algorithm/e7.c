@@ -3,17 +3,17 @@
 
 int main(void)
 {
+    int a,b;
     do
     {
-        int a = get_int("a: ");
-        int b = get_int("b: ");
+         a = get_int("a: ");
+         b = get_int("b: ");
     }
     while(a < 0 && b < 0)
 
-    int c = abs(a - b);
-
-    if((a >= 20 && a <= 30) || (b >= 20 && b <= 30))
+    if(((a >= 20 && a <= 30) || (b >= 20 && b <= 30)) && a > b)
     {
-        print
+        printf("%i\n", a);
     }
+    else if()
 }
