@@ -11,4 +11,7 @@ int mai(void)
         printf("30\n");
     }
     else
+    {
+        printf("%i\n", c);
+    }
 }
