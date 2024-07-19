@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -7,4 +8,9 @@ int main(void)
 
     int b = get_int("no of elements to enter: ");
     int c[b];
+
+    for( i = 0; i < b; i++)
+    {
+        c[i] = get_int("array element %i: ", i)
+    }
 }
