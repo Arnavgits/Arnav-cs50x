@@ -25,8 +25,9 @@ int main(int argc, string argv[])
      int k = atoi(argv[1]);
 
      string plain = get_string("plaintext: ");
+     string cipher[strlen(plain)];
 
-     for(int i = 0; i < strlen(plaintext); i++)
+     for(int i = 0; i < strlen(plain); i++)
      {
         if(isupper(plain[i]))
         {
