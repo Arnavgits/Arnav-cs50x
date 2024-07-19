@@ -9,6 +9,14 @@ int main(void)
 
     if(abs(a - 100) > abs(b - 100))
     {
-        
+        printf("nearest to 100: %i\n", b);
+    }
+    else if(abs(a - 100) < abs(b - 100))
+    {
+        printf("nearest to 100: %i\n", a);
+    }
+    else
+    {
+        return 0;
     }
 }
