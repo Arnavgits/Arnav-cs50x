@@ -7,10 +7,10 @@ int main(int n)
 
 int collatz(int n)
 {
-    for (int i = 0; i < )
+    for (int i = 0; i > 0; i++)
     if( n == 1)
     {
         return 1;
     }
-    else if(n )
+    else if(n == 2 * i)
 }
