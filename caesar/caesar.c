@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-    
+\\aceept a single non-negative integer in command line argumemt
 
     for(int i = 0;i < a; i++)
     {
