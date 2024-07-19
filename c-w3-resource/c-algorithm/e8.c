@@ -3,10 +3,15 @@
 
 int main(void)
 {
+    int a,b;
+
     do
     {
-        int a = get_int("a: ");
-        int b = get_int("b: ");
+        a = get_int("a: ");
+        b = get_int("b: ");
     }
     while(a < 0 && b < 0);
+
+    if(a > 9 && b > 9 && a % 10 = b % 10)
+    
 }
