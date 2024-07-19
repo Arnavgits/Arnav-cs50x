@@ -8,6 +8,6 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-    b[i] = get_int("array element %i", i);
+    b[i] = get_int("array element %i: ", i);
     }
 }
