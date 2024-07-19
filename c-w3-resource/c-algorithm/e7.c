@@ -15,5 +15,12 @@ int main(void)
     {
         printf("%i\n", a);
     }
-    else if()
+    else if(((a >= 20 && a <= 30) || (b >= 20 && b <= 30)) && a < b)
+    {
+        printf("%i\n", b);
+    }
+    else
+    {
+        printf("0\n");
+    }
 }
