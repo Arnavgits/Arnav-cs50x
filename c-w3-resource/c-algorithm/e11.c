@@ -16,5 +16,5 @@ int main(void)
     {
         c = (b[i] == b[i + 1] == b[i + 2] && i + 2 < a) ? true : false;
     }
-    printf(")
+    printf("%i\n", c);
 }
