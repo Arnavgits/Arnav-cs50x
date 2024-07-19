@@ -6,13 +6,20 @@
 
 int main(int argc, string argv[])
 {
-\\aceept a single non-negative integer in command line argumemt
+//aceept a single non-negative integer in command line argumemt
      if(argc != 2)
      {
         printf("more or less than 2 command line arguments");
         return 1;
      }
-     else if(argc !=)
+     else if(isdigit(argv[1]))
+     {
+        return 0;
+     }
+     else
+     {
+        printf("Usage: ./caesar key");
+     }
 
 
     for(int i = 0;i < a; i++)
