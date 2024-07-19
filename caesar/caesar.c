@@ -31,12 +31,12 @@ int main(int argc, string argv[])
         if(isupper(plain[i]))
         {
              cipher[i] = (plain[i] - 'A' + k) % 26 + 'A';
-             printf("ciphertext: %c\n", cipher[i]);
+             printf("ciphertext: %c", cipher[i]);
         }
         else if(islower(plain[i]))
         {
             cipher[i] = (plain[i] - 'a' + k) % 26 + 'a';
-            printf("ciphertext: %c\n", cipher[i]);
+            printf("ciphertext: %c", cipher[i]);
         }
         else
         {
