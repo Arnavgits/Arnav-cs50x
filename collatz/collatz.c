@@ -16,7 +16,7 @@ int collatz(int n)
     {
         do
         {
-            2 * i = (2 * i) / 2
+            n = n / 2
         }
         while()
     }
