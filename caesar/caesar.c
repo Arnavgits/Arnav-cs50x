@@ -17,8 +17,8 @@ int main(int argc, string argv[])
         if(isalpha(argv[1][i]))
         {
             printf("Usage: ./caesar key");
+            return 1;
         }
-        return 1;
      }
 
      int k = atoi(argv[1]);
@@ -31,12 +31,12 @@ int main(int argc, string argv[])
         if(isupper(plain[i]))
         {
              cipher[i] = (plain[i] - 'A' + k) % 26 + 'A';
-             printf("%c", cipher[i]);
+             printf("%c\n", cipher[i]);
         }
         else if(islower(plain[i]))
         {
             cipher[i] = (plain[i] - 'a' + k) % 26 + 'a';
-            printf("%c", cipher[i]);
+            printf("%c\n", cipher[i]);
         }
         else
         {
