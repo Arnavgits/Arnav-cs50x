@@ -19,6 +19,10 @@ int main(void)
                 printf("1\n");
                 return 0;
             }
+            else
+            {
+                printf("0\n");
+            }
         }
     }
 }
