@@ -12,6 +12,7 @@ int main(int argc, string argv[])
         printf("more or less than 2 command line arguments");
         return 1;
      }
+     else if(argc !=)
 
 
     for(int i = 0;i < a; i++)
