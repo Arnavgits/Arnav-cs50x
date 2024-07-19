@@ -1,0 +1,17 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(int n)
+{
+}
+
+int collatz(int n)
+{
+
+    if( n == 1)
+    {
+        return 1;
+    }
+
+    if(n 
+}
