@@ -16,7 +16,8 @@ int main(void)
     {
         if(i + 2 < a && b[i] == b[i + 1] && b[i + 1] == b[i + 2])
         {
-            
+            printf("1\n");
+            break;
         }
         else
         {
