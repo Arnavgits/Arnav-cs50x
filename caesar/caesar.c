@@ -28,9 +28,15 @@ int main(int argc, string argv[])
 
      for(int i = 0; i < strlen(plaintext); i++)
      {
-        
+        if(isupper(plaintext[1][i]))
+        {
+             cipher[1][i] = (plaintext[1][i] + k) % 26 + 'A';
+             printf("%c", cipher[1][i]);
+        }
+        else if(islower(plaintext[1][i]))
+        {
+            cipher[1][i] = (plaintext[1][i] + k) % 26 + 'a';
+            printf("%c", cipher[1][i]);
+        }
      }
-
-
-
 }
