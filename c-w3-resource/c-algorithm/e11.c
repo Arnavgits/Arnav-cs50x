@@ -10,8 +10,11 @@ int main(void)
     for (int i = 0; i < a; i++)
     {
     b[i] = get_int("array element %i: ", i);
-    c = (b[i] == b[i + 1] == b[i + 2]) ? true : false;
-    return 0;
     }
-    printf("%i\n", c);
+
+    for (int i = 0; i < a; i++)
+    {
+        c = (b[i] == b[i + 1] == b[i + 2] && i + 2 < a) ? true : false;
+    }
+    printf(")
 }
