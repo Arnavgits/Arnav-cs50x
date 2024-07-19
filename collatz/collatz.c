@@ -14,6 +14,10 @@ int collatz(int n)
     }
     else if(n == 2 * i)
     {
-        
+        do
+        {
+            2 * i = (2 * i) / 2
+        }
+        while()
     }
 }
