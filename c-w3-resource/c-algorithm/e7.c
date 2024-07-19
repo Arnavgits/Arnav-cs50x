@@ -10,5 +10,10 @@ int main(void)
     }
     while(a < 0 && b < 0)
 
-    int c = ((a >= 20 && a <= 30) || (b >= 20 && b <= 30)) ?
+    int c = abs(a - b);
+
+    if((a >= 20 && a <= 30) || (b >= 20 && b <= 30))
+    {
+        print
+    }
 }
