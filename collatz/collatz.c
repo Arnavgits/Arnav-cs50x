@@ -12,6 +12,5 @@ int collatz(int n)
     {
         return 1;
     }
-
-    if(n 
+    else if(n )
 }
