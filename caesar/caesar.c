@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
+int main(argc, argv[])
 {
     string plain = get_string("Enter text: ");
     int a = strlen(plain);
