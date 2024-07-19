@@ -14,7 +14,10 @@ int main(void)
         c[i] = get_int("array element %i: ", i);
         for(int j = 0;j < 3; j++)
         {
-            
+            if(a[j] = c[i])
+            {
+                
+            }
         }
     }
 }
