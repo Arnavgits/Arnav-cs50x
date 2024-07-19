@@ -5,11 +5,11 @@ int main(void)
 {
     int a = get_int("Input a: ");
     int b = get_int("Input b: ");
+    int c = a + b;
 
     if( a == b )
-    int c = a + b;
-    printf("Output: %i", 3 * c);
+    printf("Output: %i\n", 3 * c);
     else
-        printf("Output: %i", c);
+        printf("Output: %i\n", c);
 }
 
