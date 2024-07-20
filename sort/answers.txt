@@ -1,8 +1,15 @@
 sort1 uses: TODO
-random 5k:
-real    0m0.067s
-user    0m0.039s
-sys     0m0.024s
+random 50k:
+real    0m6.774s
+user    0m5.029s
+sys     0m0.287s
+
+sorted 50k:
+real    0m0.963s
+user    0m0.012s
+sys     0m0.251s
+
+reversed 50k:
 
 How do you know?: TODO
 
