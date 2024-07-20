@@ -9,16 +9,22 @@ real    0m4.830s
 
 How do you know?: TODO
 
+
+sort2 uses: TODO
+
 random 50k:
 real    0m0.641s
 sorted 50k:
 real    0m0.550s
 reversed 50k:
-
-sort2 uses: TODO
+real    0m0.458s
 
 How do you know?: TODO
 
 sort3 uses: TODO
+
+random 50k:
+sorted 50k:
+reversed 50k:
 
 How do you know?: TODO
