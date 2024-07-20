@@ -1,5 +1,4 @@
-sort1 uses: selection sort
-
+sort1 uses: bubble sort
 How do you know?: there is a huge difference between sort time for sorted and reversed text.
 
 random 50k:
@@ -14,7 +13,7 @@ sort2 uses: TODO
 random 50k:
 real    0m0.641s
 sorted 50k:
-real    0m0.550s least time for sorted(maybe bubble sort)
+real    0m0.550s
 reversed 50k:
 real    0m0.458s
 
