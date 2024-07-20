@@ -15,11 +15,11 @@ int main(void)
     {
         for(int j = 0;j < a; j++)
         {
-            if(i != j && b[i] == b[j])
+            if(i != j || b[i] == b[j])
             {
                 break;
             }
-            else if(i != j && j == a - 1 && b[i] != b[j])
+            else if( j == a - 1 && b[i] != b[j])
             {
                 printf("%i ", b[i]);
             }
