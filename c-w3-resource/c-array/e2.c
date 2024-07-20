@@ -10,21 +10,21 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        b = get_int("element %i: ");
+        b[i] = get_int("element %i: ");
     }
     //apply condition to check for duplicate elements
     for(int i = 0;i < a; i++)
     {
-       for(int j = 0; j < i; j--);
+       for(int j = 0; j < i; j++);
        {
-        if(b[i] = b[j])
+        if(b[i] == b[j])
        {
         break;
        }
        }
         for( int k = 0; k < a ; k++)
       {
-        if(i != k && b[i] = b[k])
+        if(i != k && b[i] == b[k])
         {
             c = c + 1;
         }
