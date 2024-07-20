@@ -23,9 +23,10 @@ int main(void)
         c = true;
         break;
        }
+
         if(c = false)
         {
-            
+            for(int k = )
         }
       }
     }
