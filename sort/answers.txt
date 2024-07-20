@@ -24,6 +24,7 @@ How do you know?: TODO
 sort3 uses: TODO
 
 random 50k:
+real    0m3.135s
 sorted 50k:
 reversed 50k:
 
