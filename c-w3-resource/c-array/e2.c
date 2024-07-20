@@ -10,7 +10,7 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        b[i] = get_int("element %i: ");
+        b[i] = get_int("element %i: ", i);
     }
     //apply condition to check for duplicate elements
     for(int i = 0;i < a; i++)
