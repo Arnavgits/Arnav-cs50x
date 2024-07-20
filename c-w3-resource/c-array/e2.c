@@ -23,12 +23,9 @@ int main(void)
         c = true;
         break;
        }
-       }
-        for( int k = 0; k < a ; k++)
-      {
-        if(i != k && b[i] == b[k])
+        if(c = false)
         {
-            c = c + 1;
+            
         }
       }
     }
