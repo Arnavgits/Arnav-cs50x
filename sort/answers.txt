@@ -1,4 +1,6 @@
-sort1 uses: TODO
+sort1 uses: selection sort
+
+How do you know?: there is a huge difference between sort time for sorted and reversed text.
 
 random 50k:
 real    0m6.774s
@@ -6,9 +8,6 @@ sorted 50k:
 real    0m0.963s
 reversed 50k:
 real    0m4.830s
-
-How do you know?: TODO
-
 
 sort2 uses: TODO
 
