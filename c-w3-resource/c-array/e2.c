@@ -15,9 +15,10 @@ int main(void)
     //apply condition to check for duplicate elements
     for(int i = 0;i < a; i++)
     {
-        if(b[i + 1] < a && b[i] == b[i + 1])
+        for( int j = 0; j < a ; j++)
+        if()
         {
-            c
+            c = c + 1;
         }
     }
 
