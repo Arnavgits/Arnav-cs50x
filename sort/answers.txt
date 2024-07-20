@@ -26,6 +26,7 @@ sort3 uses: TODO
 random 50k:
 real    0m3.135s
 sorted 50k:
+real    0m2.136s
 reversed 50k:
 
 How do you know?: TODO
