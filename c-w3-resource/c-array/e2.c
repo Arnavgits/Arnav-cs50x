@@ -22,6 +22,13 @@ int main(void)
         break;
        }
        }
+        for( int k = 0; k < a ; k++)
+      {
+        if(i != k && b[i] = b[k])
+        {
+            c = c + 1;
+        }
+      }
     }
 
     //print the no of duplicate elements
