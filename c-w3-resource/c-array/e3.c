@@ -17,7 +17,11 @@ int main(void)
         {
             if(i != j && b[i] == b[j])
             {
-                
+                break;
+            }
+            else
+            {
+                printf("%i ", b[i]);
             }
         }
     }
