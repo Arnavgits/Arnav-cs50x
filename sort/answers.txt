@@ -10,6 +10,9 @@ user    0m0.012s
 sys     0m0.251s
 
 reversed 50k:
+real    0m4.830s
+user    0m4.257s
+sys     0m0.271s
 
 How do you know?: TODO
 
