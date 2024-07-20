@@ -7,6 +7,7 @@ int main(void)
     int a = get_int("Array elements to enter: ");
     int b[a];
     int c = 0;
+    int j;
 
     for (int i = 0; i < a; i++)
     {
@@ -16,7 +17,7 @@ int main(void)
     for(int i = 0;i < a; i++)
     {
        c = false;
-       for(int j = 0; j < i; j++);
+       for( j = 0; j < i; j++)
        {
         if(b[i] == b[j])
        {
@@ -24,7 +25,7 @@ int main(void)
         break;
        }
 
-        if(c = false)
+        if(c == false)
         {
             for(int k = 0; k < a; k++)
             {
