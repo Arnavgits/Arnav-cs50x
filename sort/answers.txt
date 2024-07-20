@@ -8,7 +8,7 @@ real    0m0.963s
 reversed 50k:
 real    0m4.830s
 
-sort2 uses: TODO
+sort2 uses: Merge sort
 
 random 50k:
 real    0m0.641s
@@ -17,9 +17,9 @@ real    0m0.550s
 reversed 50k:
 real    0m0.458s
 
-How do you know?: TODO
+How do you know?: Since, sorted and reversed are almost equal and compared o sort 3,time for sort is less.(since n is a large value)
 
-sort3 uses: TODO
+sort3 uses: Selection ssort
 
 random 50k:
 real    0m3.135s
@@ -28,4 +28,4 @@ real    0m2.136s
 reversed 50k:
 real    0m2.849s
 
-How do you know?: TODO
+How do you know?: because time for both sorted and reversed is almost equal and selection is the only one remaining.
