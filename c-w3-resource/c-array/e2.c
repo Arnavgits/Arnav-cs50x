@@ -16,6 +16,12 @@ int main(void)
     for(int i = 0;i < a; i++)
     {
        for(int j = 0; j < i; j--);
+       {
+        if(b[i] = b[j])
+       {
+        break;
+       }
+       }
     }
 
     //print the no of duplicate elements
