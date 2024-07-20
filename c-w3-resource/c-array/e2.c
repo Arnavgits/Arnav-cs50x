@@ -26,7 +26,13 @@ int main(void)
 
         if(c = false)
         {
-            for(int k = )
+            for(int k = 0; k < a; k++)
+            {
+                if(i != k && b[i] == b[k])
+                {
+                    c = c + 1;
+                }
+            }
         }
       }
     }
