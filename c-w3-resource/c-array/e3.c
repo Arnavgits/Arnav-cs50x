@@ -19,7 +19,7 @@ int main(void)
             {
                 break;
             }
-            else
+            else if()
             {
                 printf("%i ", b[i]);
             }
