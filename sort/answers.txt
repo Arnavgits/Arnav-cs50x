@@ -15,7 +15,7 @@ sort2 uses: TODO
 random 50k:
 real    0m0.641s
 sorted 50k:
-real    0m0.550s
+real    0m0.550s least time for sorted(maybe bubble sort)
 reversed 50k:
 real    0m0.458s
 
