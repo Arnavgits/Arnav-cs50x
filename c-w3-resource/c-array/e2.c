@@ -15,10 +15,12 @@ int main(void)
     //apply condition to check for duplicate elements
     for(int i = 0;i < a; i++)
     {
+       c = false;
        for(int j = 0; j < i; j++);
        {
         if(b[i] == b[j])
        {
+        c = true;
         break;
        }
        }
