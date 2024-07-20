@@ -1,4 +1,8 @@
 sort1 uses: TODO
+random 5k:
+real    0m0.067s
+user    0m0.039s
+sys     0m0.024s
 
 How do you know?: TODO
 
