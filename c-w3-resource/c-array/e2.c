@@ -16,10 +16,12 @@ int main(void)
     for(int i = 0;i < a; i++)
     {
         for( int j = 0; j < a ; j++)
-        if()
+      {
+        if(i != j && b[i] = b[j])
         {
             c = c + 1;
         }
+      }
     }
 
     //print the no of duplicate elements
