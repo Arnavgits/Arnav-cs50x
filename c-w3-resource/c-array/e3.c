@@ -19,7 +19,7 @@ int main(void)
             {
                 break;
             }
-            else if()
+            else if(j == a - 1 && b[i] != b[j])
             {
                 printf("%i ", b[i]);
             }
