@@ -15,13 +15,7 @@ int main(void)
     //apply condition to check for duplicate elements
     for(int i = 0;i < a; i++)
     {
-        for( int j = 0; j < a ; j++)
-      {
-        if(i != j && b[i] = b[j])
-        {
-            c = c + 1;
-        }
-      }
+       for(int j = 0; j < i; j--);
     }
 
     //print the no of duplicate elements
