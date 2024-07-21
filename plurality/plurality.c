@@ -95,7 +95,7 @@ void print_winner(void)
             }
             else( i != j && candidates[i].votes > candidates[j].votes)
             {
-                printf("Winner: %s\n", candidate[i].name);
+                printf("Winner: %s\n", candidates[i].name);
             }
         }
     }
