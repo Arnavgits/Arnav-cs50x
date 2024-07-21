@@ -85,15 +85,15 @@ void print_winner(void)
     {
         for(int j = 0; j < candidate_count; j++)
         {
-            if(i != j && candidate[i].votes < candidate[j].votes)
+            if(i != j && candidates[i].votes < candidates[j].votes)
             {
                 break;
             }
-            else if(i != j && candidate[i].votes == candidate[j].votes)
+            else if(i != j && candidates[i].votes == candidates[j].votes)
             {
-                printf("Tie between %i and %i\n", candidate[i].name , candidate[j].name);
+                printf("Tie between %i and %i\n", candidates[i].name , candidates[j].name);
             }
-            else( i != j && candidate[i].votes > candidate[j].votes)
+            else( i != j && candidates[i].votes > candidates[j].votes)
             {
                 printf("Winner: %s\n", candidate[i].name);
             }
