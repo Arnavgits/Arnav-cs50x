@@ -92,7 +92,7 @@ void print_winner(void)
             {
                 break;
             }
-            
+            else if(i != j && candidate[i].votes > candidate[j].votes)
         }
     }
     return;
