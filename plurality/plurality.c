@@ -74,7 +74,8 @@ bool vote(string name)
             return true;
         }
     }
-    else
+    
+    if(name != candidate[i].name)
     {
     return false;
     }
