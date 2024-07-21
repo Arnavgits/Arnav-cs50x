@@ -94,7 +94,11 @@ void print_winner(void)
             }
             else if(i != j && candidate[i].votes == candidate[j].votes)
             {
-                printf("Tie between %i and %i", candidate[i].name , candidate[j].name);
+                printf("Tie between %i and %i\n", candidate[i].name , candidate[j].name);
+            }
+            else( i != j && candidate[i].votes == candidate[j].votes)
+            {
+                printf("Winner: %i\n", )
             }
         }
     }
