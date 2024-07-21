@@ -93,7 +93,7 @@ void print_winner(void)
             {
                 printf("Tie between %s and %s\n", candidates[i].name , candidates[j].name);
             }
-            else( i != j && candidates[i].votes > candidates[j].votes)
+            else if( i != j && candidates[i].votes > candidates[j].votes)
             {
                 printf("Winner: %s\n", candidates[i].name);
             }
