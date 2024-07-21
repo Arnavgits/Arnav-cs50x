@@ -99,7 +99,7 @@ void print_winner(void)
             }
             else( i != j && candidate[i].votes > candidate[j].votes)
             {
-                printf("Winner: %i\n", candidate[i].name);
+                printf("Winner: %s\n", candidate[i].name);
             }
         }
     }
