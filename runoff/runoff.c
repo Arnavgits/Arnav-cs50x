@@ -12,7 +12,7 @@ int preferences[MAX_VOTERS][MAX_CANDIDATES];
 // Candidates have name, vote count, eliminated status
 typedef struct
 {
-    string name;
+    trings name;
     int votes;
     bool eliminated;
 } candidate;
