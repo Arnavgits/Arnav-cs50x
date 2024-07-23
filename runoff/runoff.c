@@ -145,7 +145,10 @@ void tabulate(void)
     // TODO
     for(int i= 0; i < voter_count; i++)
     {
-        if(!eliminated && preference[i][1]  )
+        for( int j = 0;j < candidate_count; j++)
+        {
+        if(!eliminated && preference[i][1] )
+        }
     }
     return;
 }
