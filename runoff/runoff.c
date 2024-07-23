@@ -128,9 +128,15 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    for(int i = 0; i < candidate_count; i++)
+    for(int i = 0; i < voter_count ; i++)
     {
-        if (strcmp(name , ))
+        for(int j = 0; j < candidate_count; j++)
+        {
+            if (strcmp(name, preference[i][j]) == 0)
+            {
+                return true;
+            }
+        }
     }
     return false;
 }
