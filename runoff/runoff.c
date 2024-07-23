@@ -12,7 +12,7 @@ int preferences[MAX_VOTERS][MAX_CANDIDATES];
 // Candidates have name, vote count, eliminated status
 typedef struct
 {
-    trings name;
+    string name;
     int votes;
     bool eliminated;
 } candidate;
@@ -134,6 +134,7 @@ bool vote(int voter, int rank, string name)
         {
             if (strcmp(name, preference[i][j]) == 0)
             {
+                preference[i][j] = name;
                 return true;
             }
         }
