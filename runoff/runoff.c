@@ -167,7 +167,7 @@ bool print_winner(void)
     {
         for(int j = 0; j < candidate_count ; j++)
         {
-            
+            if(i != j && candidates[i].votes > candidates[j].votes)
         }
     }
 
