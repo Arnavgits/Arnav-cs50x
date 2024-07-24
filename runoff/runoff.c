@@ -163,8 +163,9 @@ bool print_winner(void)
 {
     // TODO
     // check if any candidate has more than 50% votes
-
     
+
+    // print out their name
     return false;
 }
 
