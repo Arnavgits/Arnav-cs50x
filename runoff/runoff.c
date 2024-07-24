@@ -168,6 +168,7 @@ bool print_winner(void)
         if( candidates[i].votes > (50/100) * voter_count)
         {
             printf("Winner: %s", candidates[i].name);
+            return true;
         }
     }
     return false;
