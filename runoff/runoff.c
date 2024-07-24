@@ -165,9 +165,9 @@ bool print_winner(void)
     // check if any candidate has more than 50% votes
     for(int i = 0; i < candidate_count ; i++)
     {
-        for(int j = 0; j < candidate_count ; j++)
+        if( candidates[i].votes > (50/100) * voter_count)
         {
-            if(i != j && candidates[i].votes > candidates[j].votes)
+            printf("Winner: %i", candidates[i].name);
         }
     }
 
