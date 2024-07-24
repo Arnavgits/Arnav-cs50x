@@ -170,8 +170,6 @@ bool print_winner(void)
             printf("Winner: %i", candidates[i].name);
         }
     }
-
-    // print out their name
     return false;
 }
 
