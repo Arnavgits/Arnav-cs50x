@@ -162,6 +162,8 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
+    // check if any candidate has more than 50% votes
+
     
     return false;
 }
