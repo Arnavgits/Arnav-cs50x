@@ -10,7 +10,7 @@ int main(void)
 
     char *b = malloc(strlen(a) + 1);
 
-    for(int i = 0, n = strlen(a); i < n; i++)
+    for(int i = 0, n = strlen(a); i <= n; i++)
     {
         a[i] = b[i];
     }
