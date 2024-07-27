@@ -3,6 +3,6 @@
 int main(void)
 {
     int n = 074;
-    int *p = &n;
+    int p = &n;
     printf("%i\n", p);
 }
