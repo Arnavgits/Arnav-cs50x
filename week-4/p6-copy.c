@@ -20,7 +20,10 @@ int main(void)
 
     strcpy(b , a);
 
-    b[0] = toupper(b[0]);
+    if(strlen(a) > 0)
+    {
+       b[0] = toupper(b[0]);
+    }
 
     printf("%s\n", a);
     printf("%s\n", b);
