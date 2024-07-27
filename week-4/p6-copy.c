@@ -12,11 +12,11 @@ int main(void)
 
     for(int i = 0, n = strlen(a); i <= n; i++)
     {
-        a[i] = b[i];
+        b[i] = a[i];
     }
 
     b[0] = toupper(b[0]);
 
-    printf("%s", a);
-    printf("%s", b);
+    printf("%s\n", a);
+    printf("%s\n", b);
 }
