@@ -15,7 +15,7 @@ int main(void)
         a[i] = b[i];
     }
 
-    a[0] = toupper(a[0]);
+    b[0] = toupper(b[0]);
 
     printf("%s", a);
     printf("%s", b);
