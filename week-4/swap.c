@@ -12,5 +12,8 @@ int main(void)
 
 void swap(int *c, int *d)
 {
+    int e = *c;
+    *d = *c;
     
+
 }
