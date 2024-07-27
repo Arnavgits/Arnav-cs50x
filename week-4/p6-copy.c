@@ -7,13 +7,11 @@
 int main(void)
 {
     char *a = get_string("a: ");
+    if()
 
     char *b = malloc(strlen(a) + 1);
 
-    for(int i = 0, n = strlen(a); i <= n; i++)
-    {
-        b[i] = a[i];
-    }
+    strcpy(b , a);
 
     b[0] = toupper(b[0]);
 
