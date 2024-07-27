@@ -15,5 +15,5 @@ int main(void)
 
     fprintf(file, "%s,%s\n", name ,number);
 
-    fcolse(file);
+    fclose(file);
 }
