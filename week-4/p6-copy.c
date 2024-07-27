@@ -27,4 +27,7 @@ int main(void)
 
     printf("%s\n", a);
     printf("%s\n", b);
+
+    free(b);
+    return 0;
 }
