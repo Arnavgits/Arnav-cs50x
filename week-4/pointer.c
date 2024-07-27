@@ -3,5 +3,6 @@
 int main(void)
 {
     int n = 074;
-    printf("%p\n", &n);
+    int *p = &n;
+    printf("%i\n", *p);
 }
