@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int n = 074;
+    int n = 98;
     int *p = &n;
-    printf("%i\n", *p);
+    printf("%i\n", p);
 }
