@@ -22,6 +22,6 @@ int main(void)
     }
     int d = c / b;
     printf("No of positive numbers: %i", b);
-    printf("Average of all positive numbers: %i", );
+    printf("Average of all positive numbers: %i", d);
 
 }
