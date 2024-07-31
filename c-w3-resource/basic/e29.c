@@ -13,7 +13,7 @@ int main(void)
     for(int i = 0; i < a, i++)
     {
         printf("Enter %i number: ");
-        scanf("%i ", a[i]);
+        scanf("%i ", &number[i]);
 
         if(number[i] > 0)
         {
