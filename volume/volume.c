@@ -39,6 +39,9 @@ int main(int argc, char *argv[])
     fwrite(a, HEADER_SIZE, 1, output );
 
     // TODO: Read samples from input file and write updated data to output file
+    char b;
+    while
+    
 
     // Close files
     fclose(input);
