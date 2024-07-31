@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     b *= factor;
     fwrite(&b, sizeof(int16_t), 1, output);
 
-    while(fread(&b , sizeof(int16_t), 1, input) != EOF)
+    while(fread(&b , sizeof(int16_t), 1, input))
     {
         b *= factor;
         fwrite(&b, sizeof(int16_t), 1, output);
