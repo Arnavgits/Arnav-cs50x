@@ -45,6 +45,8 @@ int main(int argc, char *argv[])
     b *= factor;
     fwrite(&b, sizeof(int16_t), 1, output);
 
+    while(fread())
+
 
     // Close files
     fclose(input);
