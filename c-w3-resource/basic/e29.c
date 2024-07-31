@@ -2,7 +2,8 @@
 
 int main(void)
 {
-    int a = printf("hOW MANY NUMBERS TO ENTER: ");
+    int *a;
+    printf("hOW MANY NUMBERS TO ENTER: ");
     scanf("%i ", a);
 
     int number[a];
@@ -14,10 +15,10 @@ int main(void)
         printf("Enter %i number: ");
         scanf("%i ", a[i]);
 
-        if(a[i] > 0)
+        if(number[i] > 0)
         {
             b++;
-            c += a[i];
+            c += number[i];
         }
     }
     int d = c / b;
