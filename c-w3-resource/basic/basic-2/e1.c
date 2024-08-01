@@ -22,7 +22,7 @@ int main(void)
         ctr[i] = 0;
         for( int j = 0 ; j < a; j++)
         {
-            if(a != j && b[i] = b[j])
+            if(i != j && b[i] == b[j])
             {
                 ctr[i]++;
             }
