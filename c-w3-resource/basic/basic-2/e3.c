@@ -14,5 +14,7 @@ int main(void)
     printf("Input second number: ");
     scanf("%i", &c);
 
-    
+    temp = b;
+    b = c;
+    c = temp;
 }
