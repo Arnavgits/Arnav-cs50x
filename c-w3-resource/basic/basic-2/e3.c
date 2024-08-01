@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    char a[100];
+    char a[100],d;
     int b,c,temp;
 
     printf("Input String: ");
@@ -14,7 +14,7 @@ int main(void)
     printf("Input second number: ");
     scanf("%i", &c);
 
-    temp = b;
+    d = a[b  - 1];
     a[b - 1] = a[c - 1];
-    c = temp;
+    c = d;
 }
