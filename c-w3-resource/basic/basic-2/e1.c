@@ -17,8 +17,9 @@ int main(void)
         scanf("%i", &b[i]);
     }
 
-    for(int i = 0, ctr[i] = 0; i < a ; i++)
+    for(int i = 0; i < a ; i++)
     {
+        ctr[i] = 0;
         for( int j = 0 ; j < a; j++)
         {
             if(a != j && b[i] = b[j])
