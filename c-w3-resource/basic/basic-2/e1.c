@@ -8,6 +8,7 @@ int main(void)
 
     int b[a];
     int ctr[a];
+    int c = 0;
 
     for ( int i = 0; i < a; i++)
     {
@@ -30,7 +31,10 @@ int main(void)
     {
         for( int j = 0 ; j < a; j++)
         {
-            if( i != j && ctr[i]  )
+            if( i != j && ctr[i] < ctr[j])
+            {
+                c = ctr[i];
+            }
         }
     }
 
