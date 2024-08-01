@@ -9,6 +9,6 @@ int main(void)
 
     for (int i = 1; i <= a; i++)
     {
-        printf("%d %d %d\n", i, pow(i , 2), pow(i , 3));
+        printf("%i %f %f\n", i, pow(i , 2), pow(i , 3));
     }
 }
