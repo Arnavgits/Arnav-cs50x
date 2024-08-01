@@ -13,9 +13,10 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        for( int j = (b * i) + 1; j <= (b * i) + b; j++ )
+        for( int j = 0; j <b; j++ )
         {
-            printf("%i ", j);
+            printf("%i ", c);
+            c++;
         }
         printf("\n");
     }
