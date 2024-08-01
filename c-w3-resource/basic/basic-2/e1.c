@@ -9,6 +9,7 @@ int main(void)
     int b[a];
     int ctr[a];
     int c = 0;
+    int d = 0;
 
     for ( int i = 0; i < a; i++)
     {
@@ -44,7 +45,7 @@ int main(void)
         {
             if(i != j && b[i] != b[j] && c == ctr[i] && c == ctr[j] && b[i] < b[j])
             {
-                printf("%i", b[i]);
+                d = b[i];
             }
             else if(i != j && b[i] != b[j] && c == ctr[i] && c == ctr[j] && b[i] > b[j])
             {
