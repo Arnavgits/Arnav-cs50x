@@ -26,5 +26,13 @@ int main(void)
         }
     }
 
-    
+    for(int i = 0, ctr[i] = 0; i < a ; i++)
+    {
+        for( int j = 0 ; j < a; j++)
+        {
+            if( i != j && ctr[i]  )
+        }
+    }
+
+
 }
