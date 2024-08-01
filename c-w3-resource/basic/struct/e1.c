@@ -28,7 +28,11 @@ int main(void)
 
      a = (student1.Total_marks + student2.Total_marks) / 2;
 
-     printf("%s\n%i\n%i\naverage: %f", student1.name, student1.age, student1.Total_marks);
-     
+     printf("%s\n%i\n%i\n", student1.name, student1.age, student1.Total_marks);
+
+     printf("%s\n%i\n%i\n", student1.name, student1.age, student1.Total_marks);
+
+     printf("Average: %f", a);
+
 
 }
