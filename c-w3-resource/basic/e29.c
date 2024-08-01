@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int *a;
+    int a;
     printf("hOW MANY NUMBERS TO ENTER: ");
     scanf("%i ", a);
 
