@@ -16,7 +16,7 @@ int main(void)
 
     d = a[b  - 1];
     a[b - 1] = a[c - 1];
-    a[d - 1] = d;
+    a[ - 1] = d;
 
     printf("New string: %s\n", a);
 }
