@@ -3,7 +3,7 @@
 int main(void)
 {
     char a[100];
-    int b,c;
+    int b,c,temp;
 
     printf("Input String: ");
     scanf("%c", a);
@@ -15,6 +15,4 @@ int main(void)
     scanf("%i", &c);
 
     
-
-
 }
