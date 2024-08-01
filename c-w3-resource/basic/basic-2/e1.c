@@ -21,7 +21,7 @@ int main(void)
         {
             if(a != j && b[i] = b[j])
             {
-                
+                ctr[i]++;
             }
         }
     }
