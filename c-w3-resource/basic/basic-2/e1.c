@@ -7,6 +7,7 @@ int main(void)
     scanf("%i", &a);
 
     int b[a];
+    int ctr[a];
 
     for ( int i = 0; i < a; i++)
     {
@@ -14,6 +15,8 @@ int main(void)
         scanf("%i", &b[i]);
     }
 
-
-    
+    for(int i = 0; i < a ; i++)
+    {
+        
+    }
 }
