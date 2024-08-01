@@ -9,4 +9,9 @@ int main(void)
     printf("Input second number: ");
     scanf("%i", b);
 
+    for (int i = a; i < b; i++)
+    {
+        
+    }
+
 }
