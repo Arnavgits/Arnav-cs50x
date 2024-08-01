@@ -31,7 +31,7 @@ int main(void)
     {
         for( int j = 0 ; j < a; j++)
         {
-            if( i != j && ctr[i] < ctr[j])
+            if( i != j && b[i] != b[j] && ctr[i] < ctr[j])
             {
                 c = ctr[i];
             }
@@ -44,7 +44,7 @@ int main(void)
         {
             if(i != j && c == ctr[i] && c == ctr[j])
             {
-                
+
             }
         }
     }
