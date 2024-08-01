@@ -14,7 +14,13 @@ int main(void)
     {
         for(int j = 0; j < 3; j++)
         {
-            if(i != j && )
+            for(int k = 0; k < 3; k++)
+            {
+                if(i != j && j != k && a[i] > a[j] && a[i] < a[k])
+                {
+                    printf("%i", )
+                }
+            }
         }
     }
 }
