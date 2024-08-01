@@ -39,7 +39,7 @@ int main(void)
         }
     }
 
-    for(int i = 0, ctr[i] = 0; i < a ; i++)
+    for(int i = 0; i < a ; i++)
     {
         for( int j = 0 ; j < a; j++)
         {
@@ -49,7 +49,7 @@ int main(void)
             }
             else if(i != j && b[i] != b[j] && c == ctr[i] && c == ctr[j] && b[i] > b[j])
             {
-                printf("%i", b[j]);
+                d = b[j];
             }
         }
     }
