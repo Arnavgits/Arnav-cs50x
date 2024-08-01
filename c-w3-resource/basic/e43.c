@@ -13,6 +13,10 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        for( int j = b * i; j <  )
+        for( int j = (b * i) + 1; j <= (b * i) + b; j++ )
+        {
+            printf("%i ", j);
+        }
+        printf("\n");
     }
 }
