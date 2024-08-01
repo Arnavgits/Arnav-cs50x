@@ -6,7 +6,7 @@ int main(void)
     int b,c;
 
     printf("Input String: ");
-    scanf("%c", a);
+    scanf("%s", a);
 
     printf("Input first number: ");
     scanf("%i", &b);
@@ -17,4 +17,6 @@ int main(void)
     d = a[b  - 1];
     a[b - 1] = a[c - 1];
     a[d - 1] = d;
+
+    printf("New string: %s\n", a);
 }
