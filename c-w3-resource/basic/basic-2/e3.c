@@ -2,5 +2,6 @@
 
 int main(void)
 {
-    char a[]
+    char a[100];
+    
 }
