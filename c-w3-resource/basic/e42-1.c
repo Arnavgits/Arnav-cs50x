@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
@@ -8,6 +9,6 @@ int main(void)
 
     for (int i = 1; i <= a; i++)
     {
-        printf("%i %i %i\n", i, power(i , 2), power(i , 3));
+        printf("%i %i %i\n", i, pow(i , 2), pow(i , 3));
     }
 }
