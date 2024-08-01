@@ -6,5 +6,5 @@ int main(void)
     printf("No of lines to enter:");
     scanf("%i", &a);
 
-    
+    ............
 }
