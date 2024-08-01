@@ -42,7 +42,10 @@ int main(void)
     {
         for( int j = 0 ; j < a; j++)
         {
-            if(i != j && c ==)
+            if(i != j && c == ctr[i] && c == ctr[j])
+            {
+                
+            }
         }
     }
 }
