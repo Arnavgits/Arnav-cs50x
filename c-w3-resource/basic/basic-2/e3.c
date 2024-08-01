@@ -15,6 +15,6 @@ int main(void)
     scanf("%i", &c);
 
     temp = b;
-    b = c;
+    a[b - 1] = a[c - 1];
     c = temp;
 }
