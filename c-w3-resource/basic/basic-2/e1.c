@@ -46,6 +46,10 @@ int main(void)
             {
                 printf("%i", b[i]);
             }
+            else if(i != j && b[i] != b[j] && c == ctr[i] && c == ctr[j] && b[i] > b[j])
+            {
+                printf("%i", b[j]);
+            }
         }
     }
 }
