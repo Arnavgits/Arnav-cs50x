@@ -3,6 +3,7 @@
 int main(void)
 {
     int a,b;
+    int c = 1;
 
     printf("Input no of lines:");
     scanf("%i", &a);
@@ -12,9 +13,9 @@ int main(void)
 
     for (int i = 1; i <= a; i++)
     {
-        for (int j = 1; j <= 6 * i; j++)
+        for (int j = c; j <= 6 * i; j++)
         {
-            printf("%i",  );
+            printf("%i", j );
         }
         printf("\n");
     }
