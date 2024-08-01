@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-int main(void)
+typedef struct
 {
     
+}
+int main(void)
+{
+
 }
