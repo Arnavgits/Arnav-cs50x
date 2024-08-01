@@ -40,19 +40,12 @@ int main(void)
         }
     }
 
+    d = b[0];
     for(int i = 0; i < a ; i++)
     {
-        for( int j = 0 ; j < a; j++)
+        if(c == ctr[i])
         {
-            if(i != j && b[i] != b[j] && c == ctr[i] && c == ctr[j] && b[i] < b[j])
-            {
-                d = b[i];
-            }
-            else if(i != j && b[i] != b[j] && c == ctr[i] && c == ctr[j] && b[i] > b[j])
-            {
-                d = b[j];
-            }
+            d = b[i];
         }
     }
-    printf("%i", d);
 }
