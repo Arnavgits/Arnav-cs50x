@@ -6,7 +6,7 @@ int main(void)
     int c = 0;
     int a;
     printf("hOW MANY NUMBERS TO ENTER: ");
-    scanf("%i ", &a);
+    scanf("%i", &a);
 
     int number[a];
 
@@ -14,7 +14,7 @@ int main(void)
     for(int i = 0; i < a; i++)
     {
         printf("Enter %i number: ", i + 1);
-        scanf("%i ", &number[i]);
+        scanf("%i", &number[i]);
 
         if(number[i] > 0)
         {
