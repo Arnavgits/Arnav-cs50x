@@ -22,8 +22,8 @@ int main(void)
             c += number[i];
         }
     }
-    int d = c / b;
-    printf("No of positive numbers: %i", b);
-    printf("Average of all positive numbers: %i", d);
+    float d = c / b;
+    printf("No of positive numbers: %i\n", b);
+    printf("Average of all positive numbers: %f\n", d);
 
 }
