@@ -40,6 +40,9 @@ int main(void)
 
     for(int i = 0, ctr[i] = 0; i < a ; i++)
     {
-        if(c == )
+        for( int j = 0 ; j < a; j++)
+        {
+            if(i != j && c ==)
+        }
     }
 }
