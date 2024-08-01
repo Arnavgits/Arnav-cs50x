@@ -7,7 +7,7 @@ int main(void)
     for (int i = 0; i < 3; i++)
     {
         printf(" Enter %i integer: ", i + 1);
-        scanf("%i", a[i]);
+        scanf("%i", &a[i]);
     }
 
     for (int i = 0; i < 3; i++)
@@ -18,7 +18,7 @@ int main(void)
             {
                 if(i != j && j != k && a[i] > a[j] && a[i] < a[k])
                 {
-                    printf("%i", )
+                    printf("%i\n", a[i]);
                 }
             }
         }
