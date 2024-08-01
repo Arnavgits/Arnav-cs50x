@@ -13,5 +13,6 @@ int main(void)
         printf("Enter %i element: ", i + 1);
         scanf("%i", &b[i]);
     }
+
     
 }
