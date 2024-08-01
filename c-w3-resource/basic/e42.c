@@ -6,8 +6,8 @@ int main(void)
     printf("No of lines to enter:");
     scanf("%i", &a);
 
-    for (int i = 0; i <= a; i++)
+    for (int i = 0; i < a; i++)
     {
-        for (int i = 0; )
+        printf("%i %i %i\n", (3 * i) + 1, (3 * i) + 2, (3 * i) + 3);
     }
 }
