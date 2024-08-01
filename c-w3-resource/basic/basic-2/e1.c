@@ -10,7 +10,7 @@ int main(void)
     int ctr[a];
     int c = 0;
     int d = 0;
-    
+
     for ( int i = 0; i < a; i++)
     {
         printf("Enter %i element: ", i + 1);
@@ -54,4 +54,5 @@ int main(void)
             }
         }
     }
+    printf("%i", d);
 }
