@@ -14,5 +14,6 @@ int main(void)
         scanf("%i", &b[i]);
     }
 
+
     
 }
