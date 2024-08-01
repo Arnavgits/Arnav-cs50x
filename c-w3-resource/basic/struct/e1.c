@@ -11,13 +11,19 @@ int main(void)
 {
     students student1,student2;
 
-    student1.name[0] = 'Aditya';
-    student1.age = 19;
-    student1.Total_marks = 50;
+     printf("Name:");
+     scanf("%s", student1.name);
+     printf("age:");
+     scanf("%s", student1.age);
+     pritnf("Total marks:");
+     scanf("%s", student1.Total_marks);
 
-    student2.name[1] = 'priyam';
-    student2.age = 20;
-    student2.Total_marks = 80;
+     printf("Name:");
+     scanf("%s", student2.name);
+     printf("age:");
+     scanf("%s", student2.age);
+     pritnf("Total marks:");
+     scanf("%s", student2.Total_marks);
 
-    
+     
 }
