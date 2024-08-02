@@ -11,5 +11,6 @@ int main(void)
 {
     Book book1,book2,book3;
 
-    
+    printf("book1.title: ");
+    scanf("%")
 }
