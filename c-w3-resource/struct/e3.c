@@ -17,5 +17,8 @@ int main(void)
     printf("Book2 (title, author, price): ");
     scanf("%s , %s, %i", book2.title, book2.author, book2.price);
 
+    printf("Book3 (title, author, price): ");
+    scanf("%s , %s, %i", book3.title, book3.author, book3.price);
+
     
 }
