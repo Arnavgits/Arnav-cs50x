@@ -21,7 +21,7 @@ int main(void)
     scanf("%s , %s, %i", &book3.title, &book3.author, &book3.price);
 
     if(max(book1.price, book2.price, book3.price))
-    printf("")
+    printf("%i")
 
     for (int i = 0; i < 3; i++)
     {
