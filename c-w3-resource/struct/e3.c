@@ -20,6 +20,8 @@ int main(void)
     printf("Book3 (title, author, price): ");
     scanf("%s , %s, %i", book3.title, book3.author, book3.price);
 
+    
+
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -34,5 +36,12 @@ int main(void)
 
 int max(int x, int y, int z)
 {
-    
+    if(x > y && x > z)
+    return x;
+}
+
+int min(int x, int y, int z)
+{
+    if(x > y && x < z)
+    return x;
 }
