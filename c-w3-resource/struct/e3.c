@@ -21,7 +21,11 @@ int main(void)
     scanf("%s , %s, %i", &book3.title, &book3.author, &book3.price);
 
     if(max(book1.price, book2.price, book3.price))
-    printf("%i")
+    {
+    printf("%i", book1.price);
+    
+    else if(max(book1.price, book2.price, book3.price))
+    printf("%i", book2.price);
 
 int max(int x, int y, int z)
 {
@@ -31,6 +35,6 @@ int max(int x, int y, int z)
 
 int min(int x, int y, int z)
 {
-    if(x > y && x < z)
+    if(x < y && x < z)
     return x;
 }
