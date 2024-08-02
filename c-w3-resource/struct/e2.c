@@ -26,6 +26,6 @@ int main(void)
     if(Total_seconds >= 60)
     {
         Total_minutes = Total_minutes + 1;
-        Total_seconds = Total_seconds - (Total_seconds % 60) + 1;
+        Total_seconds = Total_seconds - (Total_seconds % 60) - 1;
     }
 }
