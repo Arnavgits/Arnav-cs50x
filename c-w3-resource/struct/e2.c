@@ -25,7 +25,15 @@ int main(void)
 
     if(Total_seconds >= 60)
     {
-        Total_minutes = Total_minutes + Total_minutes / 60;
-        Total_seconds = Total_seconds - (Total_seconds % 60) - 1;
+        Total_minutes = Total_minutes + Total_seconds / 60;
+        Total_seconds = Total_seconds % 60;
     }
+
+    if(Total_minutes >= 60)
+    {
+        Total_hours = Total_hours + Total_minutes / 60;
+        Total_minutes = Total_minutes % 60;
+    }
+
+    printf("Resultant Time: %i : %i : %i", Total_hours, Total_minutes, Total_seconds);
 }
