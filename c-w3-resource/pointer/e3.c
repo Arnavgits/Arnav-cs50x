@@ -18,6 +18,9 @@ int main(void)
     printf("value at address of fx = %f\n", *b);
     printf("value at adrress of cht = %c\n\n", *c);
 
-    
+    printf("address of m: %p", a);
+    printf("address of fx = %p", b);
+
+
 
 }
