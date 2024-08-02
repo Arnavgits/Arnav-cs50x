@@ -11,6 +11,11 @@ int main(void)
 {
     Book book1,book2,book3;
 
-    printf("book1.title: ");
-    scanf("%")
+    printf("Book1 (title, author, price): ");
+    scanf("%s , %s, %i", book1.title, book1.author, book1.price);
+
+    printf("Book2 (title, author, price): ");
+    scanf("%s , %s, %i", book2.title, book2.author, book2.price);
+
+    
 }
