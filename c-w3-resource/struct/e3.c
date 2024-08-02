@@ -2,8 +2,8 @@
 
 typedef struct
 {
-    char title;
-    char author;
+    char title[100];
+    char author[100];
     int price;
 }Book;
 
