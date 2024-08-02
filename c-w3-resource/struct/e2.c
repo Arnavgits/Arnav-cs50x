@@ -20,5 +20,8 @@ int main(void)
     scanf("%i %i %i", student2.hours, student2.minutes, student2.seconds);
 
     Total_hours = student1.hours + student2.hours;
+    Total_minutes = student1.minutes + student2.minutes;
+    Total_seconds = student1.seconds + student2.seconds;
+
     
 }
