@@ -22,9 +22,7 @@ int main(void)
 
 
     if(max(book1.price, book2.price, book3.price))
-    {
     printf("%s , %s, %i\n", book1.title, book1.author, book1.price);
-    }
     else if(max(book2.price, book1.price, book3.price))
     printf("%s , %s, %i\n", book2.title, book2.author, book2.price);
     else
