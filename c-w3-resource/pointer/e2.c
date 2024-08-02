@@ -13,7 +13,12 @@ int main(void)
     printf("Content of pointer ab: %i", *ab);
 
     m = 34;
-    printf("Address of pointer ab: %p", &ab)
-    printf("Content of pointer ab: ")
+    printf("Address of pointer ab: %p", &ab);
+    printf("Content of pointer ab: %i", *ab);
+
+    ab = 7;
+    printf("Address of m: %p", &ab);
+    printf("Value of m: %i", *ab);
+
 
 }
