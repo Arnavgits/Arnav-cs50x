@@ -30,6 +30,9 @@ int main(void)
             }
         }
     }
+}
 
-
+int max(int x, int y, int z)
+{
+    
 }
