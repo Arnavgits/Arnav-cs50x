@@ -14,5 +14,6 @@ int main(void)
     int *b = &fx;
     char *c = &cht;
 
-    printf("value at address of m = %")
+    printf("value at address of m = %i", *a);
+    
 }
