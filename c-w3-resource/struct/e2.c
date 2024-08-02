@@ -10,20 +10,15 @@ typedef struct
 int main(void)
 {
     Time student1,student2;
+    int Total_hours,Total_minutes,Total_seconds;
 
-    printf("student1.hours: ");
-    scanf("%i", &student1.hours);
-    printf("student1.minutes ");
-    scanf("%i", &student1.minutes);
-    printf("student1.seconds: ");
-    scanf("%i", &student1.seconds);
+    pritnf("Enter Student 1 Time(Hours, min ,seconds): ");
+    scanf("%i %i %i", student1.hours, student1.minutes, student1.seconds);
 
-    printf("student2.hours: ");
-    scanf("%i", &student2.hours);
-    printf("student2.minutes ");
-    scanf("%i", &student2.minutes);
-    printf("student2.seconds: ");
-    scanf("%i", &student2.seconds);
 
+    pritnf("Enter Student 2 Time(Hours, min ,seconds): ");
+    scanf("%i %i %i", student2.hours, student2.minutes, student2.seconds);
+
+    Total_hours = student1.hours + student2.hours;
     
 }
