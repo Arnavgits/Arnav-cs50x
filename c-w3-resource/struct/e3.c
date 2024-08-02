@@ -29,6 +29,13 @@ int main(void)
     else
     printf("%s , %s, %i", book3.title, book3.author, book3.price);
 
+    if(min(book1.price, book2.price, book3.price))
+    printf("%s , %s, %i", book1.title, book1.author, book1.price);
+    else if(min(book2.price, book1.price, book3.price))
+    printf("%s , %s, %i", book2.title, book2.author, book2.price);
+    else
+    printf("%s , %s, %i", book3.title, book3.author, book3.price);
+
 int max(int x, int y, int z)
 {
     if(x > y && x > z)
