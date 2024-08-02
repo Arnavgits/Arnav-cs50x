@@ -12,4 +12,3 @@ int main(void)
     float average = (item_1_weight * item_1_number + item_2_weight * item_2_number) / (item_2_number + item_1_number);
     printf("Average: %f\n", average);
 }
-/workspaces/171603537/c-w3-resource/e2.c
