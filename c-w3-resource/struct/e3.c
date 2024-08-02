@@ -20,7 +20,16 @@ int main(void)
     printf("Book3 (title, author, price): ");
     scanf("%s , %s, %i", book3.title, book3.author, book3.price);
 
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            for(int k = 0; k < 3; k++)
+            {
+                if(i > j && i > k)
+            }
+        }
+    }
+
 
 }
-
-void 
