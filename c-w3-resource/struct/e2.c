@@ -15,6 +15,10 @@ int main(void)
     student1.minutes = 40;
     student1.seconds = 30;
 
+    student2.hours = 3;
+    student2.minutes = 30;
+    student2.seconds = 10;
 
+    
 
 }
