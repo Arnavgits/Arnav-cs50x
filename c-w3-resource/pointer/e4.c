@@ -6,5 +6,7 @@ int main(void)
     int z = &m;
     int *z = m;
 
+    printf("value of m:%i\naddress of m: %i\n")
+
 
 }
