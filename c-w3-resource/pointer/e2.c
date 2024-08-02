@@ -17,8 +17,8 @@ int main(void)
     printf("Content of pointer ab: %i", *ab);
 
     ab = 7;
-    printf("Address of m: %p", &ab);
-    printf("Value of m: %i", *ab);
+    printf("Address of m: %p", &m);
+    printf("Value of m: %i", );
 
 
 }
