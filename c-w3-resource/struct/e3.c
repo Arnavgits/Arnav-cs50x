@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+int max(int x, int y, int z);
+int min(int x, int y, int z);
+
 typedef struct
 {
     char title[100];
