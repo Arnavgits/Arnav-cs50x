@@ -5,20 +5,25 @@ typedef struct
     int hours;
     int minutes;
     int seconds;
-}Student;
+}Time;
 
 int main(void)
 {
-    student student1,student2;
+    Time student1,student2;
 
-    student1.hours = 2;
-    student1.minutes = 40;
-    student1.seconds = 30;
+    printf("student1.hours: ");
+    scanf("%i", &student1.hours);
+    printf("student1.minutes ");
+    scanf("%i", &student1.minutes);
+    printf("student1.seconds: ");
+    scanf("%i", &student1.seconds);
 
-    student2.hours = 3;
-    student2.minutes = 30;
-    student2.seconds = 10;
+    printf("student2.hours: ");
+    scanf("%i", &student2.hours);
+    printf("student2.minutes ");
+    scanf("%i", &student2.minutes);
+    printf("student2.seconds: ");
+    scanf("%i", &student2.seconds);
 
     
-
 }
