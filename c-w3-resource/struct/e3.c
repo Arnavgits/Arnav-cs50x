@@ -44,10 +44,14 @@ int max(int x, int y, int z)
 {
     if(x > y && x > z)
     return x;
+    else
+    return 1;
 }
 
 int min(int x, int y, int z)
 {
     if(x < y && x < z)
     return x;
+    else
+    return 1;
 }
