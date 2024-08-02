@@ -23,18 +23,6 @@ int main(void)
     if(max(book1.price, book2.price, book3.price))
     printf("%i")
 
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            for(int k = 0; k < 3; k++)
-            {
-                if(i > j && i > k)
-            }
-        }
-    }
-}
-
 int max(int x, int y, int z)
 {
     if(x > y && x > z)
