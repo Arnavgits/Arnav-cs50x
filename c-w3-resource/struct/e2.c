@@ -9,5 +9,12 @@ typedef struct
 
 int main(void)
 {
-    
+    student student1,student2;
+
+    student1.hours = 2;
+    student1.minutes = 40;
+    student1.seconds = 30;
+
+
+
 }
