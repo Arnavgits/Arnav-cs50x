@@ -24,6 +24,7 @@ int main(void)
     {
     printf("%i", book1.price);
     
+    }
     else if(max(book1.price, book2.price, book3.price))
     printf("%i", book2.price);
 
