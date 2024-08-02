@@ -23,8 +23,8 @@ int main(void)
     Total_minutes = student1.minutes + student2.minutes;
     Total_seconds = student1.seconds + student2.seconds;
 
-    if(Total_seconds > 60)
+    if(Total_seconds >= 60)
     {
-        
+        Total_minutes = Total_minutes + 1;
     }
 }
