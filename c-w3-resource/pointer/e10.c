@@ -11,7 +11,7 @@ int main(void)
 
     for (int i = 0;i < 100; i++)
     {
-        if(str[i] != 0)
+        if(str[i] != '\0')
         {
             b++;
         }
