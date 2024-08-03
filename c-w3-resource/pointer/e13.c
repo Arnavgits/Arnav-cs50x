@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-    char *a;
+    char *a = malloc(sizeof(char) * 100);
     printf("Input a string: ");
-    scanf("%s", &*a);
+    scanf("%s", );
 }
