@@ -13,4 +13,6 @@ int main(void)
         printf("Number %i:", i + 1);
         scanf("%i", number[i]);
     }
+
+    
 }
