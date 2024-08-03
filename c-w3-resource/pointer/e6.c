@@ -13,10 +13,10 @@ int main(void)
     int *c = &a;
     int *d = &b;
 
-    if ( a == b)
+    if ( *c == *d)
         return 1;
-    else if ( a > b)
-    printf("Max no is: %i", *c);
+    else if ( *c > *d)
+    printf("Max no is: %i\n", *c);
     else
-    printf("Max no is: %i", *d);
+    printf("Max no is: %i\n", *d);
 }
