@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void swap(int *x, int *y);
+
 int main(void)
 {
     int a;
@@ -17,7 +19,15 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        swap(b[i], b[a - i -1]);
+        swap(&b[i], &b[a - i -1]);
+        
         printf("Element %i : %i\n", i + 1, b[i]);
     }
+}
+
+void swap(int *x, int *y)
+{
+    int tmp =  *x;
+    *x = *y;
+    *y = tmp;
 }
