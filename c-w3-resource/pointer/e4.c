@@ -10,5 +10,10 @@ int main(void)
     printf("Input the second no: ");
     scanf("%i", b);
 
+
+}
+
+int add(int x , int y);
+{
     
 }
