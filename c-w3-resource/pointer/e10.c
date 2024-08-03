@@ -6,5 +6,5 @@ int main(void)
     char *a = str;
 
     printf("Input a string: ");
-    scanf("%s", a);
+    scanf("%99s", a);
 }
