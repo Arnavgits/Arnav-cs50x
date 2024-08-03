@@ -8,7 +8,7 @@ int main(void)
 
     number[a];
 
-    int b[a] = malloc(sizeof(int) * a);
+    int *b = malloc(sizeof(int) * a);
 
     for (int i = 0; i < a; i++)
     {
