@@ -13,6 +13,11 @@ int main(void)
     for(int i = 0; i < a; i++)
     {
         printf("element %i: ");
-        scanf("%i")
+        scanf("%i", b[i]);
+    }
+
+    for(int i = 0; i < a; i++)
+    {
+        printf("The no you entered in the array are: %i", b[i]);
     }
 }
