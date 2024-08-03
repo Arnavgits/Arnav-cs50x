@@ -9,7 +9,7 @@ int main(void)
     scanf("%i", &a);
 
     int b = factorial(&a);
-    printf("%i", b);
+    printf("%i\n", b);
 }
 
 int factorial(int *x)
@@ -19,8 +19,8 @@ int factorial(int *x)
         return *x;
     }
     else
-    (
-        return (x * factorial(x - 1));
-    )
+    {
+        return (*x * factorial(&(*x - 1)));
+    }
 }
 
