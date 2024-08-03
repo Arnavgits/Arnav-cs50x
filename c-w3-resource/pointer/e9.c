@@ -8,11 +8,13 @@ int main(void)
 
     number[a];
 
+    int *b = malloc(sizeof(int) * a);
+
     for (int i = 0; i < a; i++)
     {
         printf("Number %i:", i + 1);
         scanf("%i", number[i]);
     }
 
-    
+
 }
