@@ -17,7 +17,7 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        b[i] = b[a - i - 1];
+        swap(b[i], b[a - i -1]);
         printf("Element %i : %i\n", i + 1, b[i]);
     }
 }
