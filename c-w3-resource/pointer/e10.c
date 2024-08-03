@@ -7,4 +7,6 @@ int main(void)
 
     printf("Input a string: ");
     scanf("%99s", a);
+
+    for (int i = 0;i < )
 }
