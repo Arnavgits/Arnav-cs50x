@@ -9,7 +9,7 @@ int main(void)
     int b = factorial(a);
 }
 
-int factorial(int x)
+int factorial(int *x)
 {
     if (x == 1)
     {
