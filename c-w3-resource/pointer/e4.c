@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int add(int *x , int *y);
+
 int main(void)
 {
     int a,b,c;
@@ -11,10 +13,10 @@ int main(void)
     scanf("%i", &b);
 
     c = add(&a , &b);
-    printf("Sum: %i", c);
+    printf("Sum: %i\n", c);
 }
 
-int add(int *x , int *y);
+int add(int *x , int *y)
 {
     int z = *x + *y;
     return z;
