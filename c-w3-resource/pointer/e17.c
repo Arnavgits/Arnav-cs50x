@@ -17,10 +17,10 @@ int main(void)
 
     printf("Reverse order array of elements: \n");
 
-    for (int i = 0; i < a; i++)
+    for (int i = 0; i < a / 2; i++)
     {
         swap(&b[i], &b[a - i -1]);
-        
+
         printf("Element %i : %i\n", i + 1, b[i]);
     }
 }
