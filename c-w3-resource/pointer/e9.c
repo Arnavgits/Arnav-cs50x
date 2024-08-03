@@ -3,6 +3,7 @@
 int main(void)
 {
     int a;
+    int d = 0;
     printf("No of elements to enter: ");
     scanf("%i", a);
 
@@ -12,7 +13,12 @@ int main(void)
     {
         printf("Number %i:", i + 1);
         scanf("%i", b[i]);
+
+        if (b[i] > d)
+        {
+            d = b[i];
+        }
     }
 
-
+    printf("Largest element: %i", d);
 }
