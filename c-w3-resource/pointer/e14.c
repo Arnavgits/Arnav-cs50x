@@ -16,9 +16,24 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        if (b[i] > b[i + 1])
+        for (int j = 0; j < a; j++);
         {
-            
+            if (b[i] > b[j])
+            swap(b[i], b[j]);
         }
     }
+
+    printf("Sorted array of elements: ");
+
+    for(int i = 0; i < a; i++)
+    {
+        printf("element %i: %i\n", i + 1, b[i]);
+    }
+}
+
+void swap(int *x, int *y)
+{
+    int tmp = *x;
+    *x = *y;
+    *y = tmp;
 }
