@@ -16,6 +16,9 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        
+        if (b[i] > b[i + 1])
+        {
+            
+        }
     }
 }
