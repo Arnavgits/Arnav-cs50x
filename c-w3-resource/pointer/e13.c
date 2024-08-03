@@ -5,5 +5,10 @@ int main(void)
 {
     char *a = malloc(sizeof(char) * 100);
     printf("Input a string: ");
-    scanf("%s", );
+    scanf("%s", a);
+
+    while(a[] != '\0')
+    {
+        
+    }
 }
