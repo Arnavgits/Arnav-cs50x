@@ -26,5 +26,6 @@ int main(void)
 
 int swap(int *x,int *y,int *z);
 {
+    int temp = *x;
     
 }
