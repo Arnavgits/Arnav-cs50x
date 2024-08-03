@@ -4,17 +4,20 @@ int main(void)
 {
     int a;
     printf("No of elements to enter: ");
-    scanf("%i", a);
+    scanf("%i", &a);
     int b[a];
 
     for (int i = 0; i < a; i++)
     {
-        printf("element - %i: ", i + 1)
+        printf("element - %i: ", i + 1);
         scanf("%i", &b[i]);
     }
 
+    printf("Reverse order array of elements: \n");
+
     for (int i = 0; i < a; i++)
     {
-        b[i] = b[a - i]
+        b[i] = b[a - i - 1];
+        printf("Element %i : %i\n", i + 1, b[i]);
     }
 }
