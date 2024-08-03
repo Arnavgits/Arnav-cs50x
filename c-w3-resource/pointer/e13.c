@@ -3,6 +3,8 @@
 
 int main(void)
 {
+    int c = 0;
+    int d = 0;
     int i = 0;
     char *a = malloc(sizeof(char) * 100);
     printf("Input a string: ");
@@ -10,6 +12,15 @@ int main(void)
 
     while(a[i] != '\0')
     {
-        if(a[i] = 'a' || )
+        if(a[i] == 'a' || a[i] == 'e' || a[i] == 'i' || a[i] == 'o' || a[i] == 'u'
+        || a[i] == 'A' || a[i] == 'E' || a[i] == 'I' || a[i] == 'O' || a[i] == 'U')
+        {
+            c++;
+        }
+        else
+        d++;
     }
+
+    printf("No of vowels: %i", c);
+    printf("No of consonants: %i", d);
 }
