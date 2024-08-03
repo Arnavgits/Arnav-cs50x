@@ -20,7 +20,8 @@ int factorial(int *x)
     }
     else
     {
-        return (*x * factorial(&(*x - 1)));
+        int c = *x - 1;
+        return (*x * factorial(&c));
     }
 }
 
