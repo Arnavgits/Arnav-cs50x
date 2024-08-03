@@ -20,7 +20,7 @@ int main(void)
     {
         for (int j = 0; j < a; j++)
         {
-            if (b[i] > b[j])
+            if (b[i] > b[j] && j > i)
             swap( &b[i], &b[j]);
         }
     }
