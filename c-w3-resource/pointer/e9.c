@@ -21,4 +21,5 @@ int main(void)
         }
     }
     printf("Largest element: %i\n", d);
+    free(b);
 }
