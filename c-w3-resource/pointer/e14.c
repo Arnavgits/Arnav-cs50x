@@ -7,5 +7,9 @@ int main(void)
     scanf("%i", a);
 
     int b[a];
-    
+
+    for (int i = 0; i < a; i++)
+    {
+        printf(""element - %i )
+    }
 }
