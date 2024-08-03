@@ -2,15 +2,20 @@
 
 int main(void)
 {
-    int a,b,c;
+    int a[3];
     printf("Input the value of 1st element: ");
-    scanf("%i", a);
+    scanf("%i", a[0]);
 
     printf("Input the calue of 2nd element: ");
-    scanf("%i", b);
+    scanf("%i", b[1]);
 
     printf("Input the value of 3rd element: ");
-    scanf("%i", c);
+    scanf("%i", c[2]);
 
-    printf("The value before swapping are")
+    printf("The value before swapping are: ");
+
+    for (int i = 0; i < 3; i++);
+    {
+        
+    }
 }
