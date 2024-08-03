@@ -28,7 +28,6 @@ int swap(int *x,int *y,int *z);
 {
     int tmp = *x;
     *x = *z;
-    *y = tmp;
+    *z = *y;
     
-
 }
