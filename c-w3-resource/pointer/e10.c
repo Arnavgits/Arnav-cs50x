@@ -16,5 +16,5 @@ int main(void)
             b++;
         }
     }
-    printf("Size of input string: %i", b);
+    printf("Size of input string: %i\n", b);
 }
