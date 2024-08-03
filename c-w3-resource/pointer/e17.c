@@ -17,8 +17,9 @@ int main(void)
 
     printf("Reverse order array of elements: \n");
 
-    for (int i = 0; i < a / 2; i++)
+    for (int i = 0; i < a; i++)
     {
+        if(i < a / 2)
         swap(&b[i], &b[a - i -1]);
 
         printf("Element %i : %i\n", i + 1, b[i]);
