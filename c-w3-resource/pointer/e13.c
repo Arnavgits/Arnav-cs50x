@@ -19,8 +19,10 @@ int main(void)
         }
         else
         d++;
+
+        i++;
     }
 
-    printf("No of vowels: %i", c);
-    printf("No of consonants: %i", d);
+    printf("No of vowels: %i\n", c);
+    printf("No of consonants: %i\n", d);
 }
