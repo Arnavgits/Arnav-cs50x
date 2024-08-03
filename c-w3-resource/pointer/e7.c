@@ -8,7 +8,7 @@ int main(void)
 
     int b[a];
 
-    printf("Input 5 elements in array: \n");
+    printf("Input %i elements in array: \n", a);
 
     for(int i = 0; i < a; i++)
     {
@@ -20,6 +20,6 @@ int main(void)
 
     for(int i = 0; i < a; i++)
     {
-        printf("element- %i : %i\n",i , b[i]);
+        printf("element- %i : %i\n",i , *(&b[i]));
     }
 }
