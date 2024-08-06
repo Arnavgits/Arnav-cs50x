@@ -18,5 +18,9 @@ int main(void)
     b->head = 2;
     b->next = malloc(sizeof(node));
 
+    b = b->next;
+    b->head = 3;
+    n->next = NULL;
+
     
 }
