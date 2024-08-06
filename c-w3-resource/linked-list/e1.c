@@ -25,7 +25,7 @@ int main(void)
 
     while (head != NULL)
     {
-        printf("%i", b->a);
-        b = b->next;
+        printf("%i\n", head->a);
+        head = head->next;
     }
 }
