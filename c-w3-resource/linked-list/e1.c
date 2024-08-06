@@ -15,5 +15,6 @@ int main(void)
     }
 
     node1.a = 1;
+    node1
 
 }
