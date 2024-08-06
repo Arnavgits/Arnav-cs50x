@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-typedef struct 
+typedef struct node
+{
+    int a;
+    
+}
 
 int main(void)
 {
