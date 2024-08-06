@@ -20,7 +20,11 @@ int main(void)
 
     b = b->next;
     b->head = 3;
-    n->next = NULL;
+    b->next = NULL;
 
-    
+    while (head != NULL)
+    {
+        printf("%i", b->head);
+        b->next;
+    }
 }
