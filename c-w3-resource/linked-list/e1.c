@@ -8,5 +8,9 @@ typedef struct nod
 
 int main(void)
 {
-    
+    node *head = malloc(sizeof(node));
+    node *b = a;
+
+    head -> a = 1;
+    head -> next = malloc(sizeof(node));
 }
