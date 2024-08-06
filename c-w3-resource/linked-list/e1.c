@@ -11,6 +11,12 @@ int main(void)
     node *head = malloc(sizeof(node));
     node *b = a;
 
-    head -> a = 1;
-    head -> next = malloc(sizeof(node));
+    b -> a = 1;
+    b -> next = malloc(sizeof(node));
+
+    b = b->next;
+    b->head = 2;
+    b->next = malloc(sizeof(node));
+
+    
 }
