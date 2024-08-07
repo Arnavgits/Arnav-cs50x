@@ -7,6 +7,8 @@ typedef struct nod
     struct nod *next;
 }node;
 
+void print_reverse(node *e);
+
 int main(void)
 {
     node *head = NULL;
@@ -14,22 +16,22 @@ int main(void)
     int a,b;
 
     printf("Input the number of nodes: ");
-    scanf("%i", a);
+    scanf("%i", &a);
 
     head = malloc(sizeof(node));
     temp = head;
 
-    printf("Data entered in the list are :\n")
+    printf("Data entered in the list are :\n");
     for (int i = 0; i < a; i++)
     {
-        if ( i = a - 1)
+        if ( i == a - 1)
         {
             temp -> next = NULL;
         }
         else
         {
         printf("Data = ");
-        scanf("%i", b);
+        scanf("%i", &b);
         temp -> number = b;
         temp -> next = malloc(sizeof(node));
         temp = temp -> next;
@@ -38,8 +40,20 @@ int main(void)
 
     printf("The list in reverse are : ");
 
+    temp = head;
     for (int i = 0; i < a; i++)
     {
-        print_reverse(head -> number);
+        print_reverse(temp);
     }
+}
+
+void print_reverse(node *e)
+{
+    if (e = NULL)
+    {
+        return;
+    }
+
+    print_reverse(e -> next);
+    printf("Data = %i\n", e -> number);
 }
