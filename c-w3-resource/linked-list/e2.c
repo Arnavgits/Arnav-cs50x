@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct nod
 {
     int number;
-    nod *next;
+    struct nod *next;
 }node;
 
 int main(void)
@@ -13,7 +14,7 @@ int main(void)
     int a,b;
 
     printf("Input the number of nodes: ");
-    scanf("%i", a);
+    scanf("%i", &a);
 
     head = malloc(sizeof(node));
     temp = head;
@@ -21,7 +22,7 @@ int main(void)
     for (int i = 0; i < a; i++)
     {
         printf("Input data for node %i: ", i + 1);
-        scanf("%i", b);
+        scanf("%i", &b);
         temp -> number = b;
         temp = temp -> next;
         temp = malloc(sizeof(node));
@@ -30,6 +31,7 @@ int main(void)
     temp = head;
     for (int i = 0; i < a; i++)
     {
-        
+        printf("Data = %i\n", temp -> number);
+        temp = temp -> next;
     }
 }
