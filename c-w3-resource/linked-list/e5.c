@@ -64,4 +64,18 @@ int main(void)
     }
 
     temp -> number = new_data;
+    temp -> next = NULL;
+
+    temp = head;
+    while(temp != NULL)
+    {
+        printf("Data = %i\n", temp -> number);
+        temp = temp -> next;
+    }
+
+    temp = head;
+    while(temp != NULL)
+    {
+        
+    }
 }
