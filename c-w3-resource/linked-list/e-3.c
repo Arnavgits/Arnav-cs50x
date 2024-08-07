@@ -50,6 +50,8 @@ int main(void)
     {
         c++;
         temp = temp -> next;
+        node *e = temp;
+        free(temp);
     }
     printf("%i\n", c);
 }
