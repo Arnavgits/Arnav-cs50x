@@ -71,6 +71,12 @@ int main(void)
     while ( temp != NULL)
     {
         printf("Data = %i\n", temp -> number);
-        node *f = temp -> next;
+        temp = temp -> next;
+    }
+
+    while ( temp != NULL)
+    {
+        node *e = temp;
+        
     }
 }
