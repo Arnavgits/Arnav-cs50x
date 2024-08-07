@@ -48,7 +48,9 @@ int main(void)
     temp = head;
     while (temp != NULL)
     {
+        node *d = temp;
         c++;
         temp = temp -> next;
+        node *d = temp;
     }
 }
