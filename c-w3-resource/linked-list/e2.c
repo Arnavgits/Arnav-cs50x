@@ -26,4 +26,9 @@ int main(void)
         temp = temp -> next;
         temp = malloc(sizeof(node));
     }
+
+    for (int i = 0; i < a; i++)
+    {
+        
+    }
 }
