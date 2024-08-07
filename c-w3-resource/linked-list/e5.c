@@ -76,6 +76,6 @@ int main(void)
     temp = head;
     while(temp != NULL)
     {
-        
+        node *e = temp -> next;
     }
 }
