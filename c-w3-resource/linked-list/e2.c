@@ -33,6 +33,10 @@ int main(void)
     {
         printf("Data = %i\n", temp -> number);
         temp = temp -> next;
+
+         if (i == a - 1)
+        {
+            temp->next = NULL;  // Set the next pointer of the last node to NULL
+        }
     }
-    temp = NULL;
 }
