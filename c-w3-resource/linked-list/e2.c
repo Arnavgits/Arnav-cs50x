@@ -45,6 +45,8 @@ int main(void)
     temp = head;
     while (temp -> next != NULL)
     {
-        
+        node *d = temp -> next;
+        free(temp);
+        temp = b;
     }
 }
