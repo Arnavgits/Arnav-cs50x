@@ -42,10 +42,7 @@ int main(void)
     printf("The list in reverse are : \n");
 
     temp = head;
-    for (int i = 0; i < a; i++)
-    {
-        print_reverse(temp);
-    }
+    print_reverse(temp);
 }
 
 void print_reverse(node *e)
