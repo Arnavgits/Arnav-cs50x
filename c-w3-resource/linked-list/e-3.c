@@ -51,7 +51,7 @@ int main(void)
         c++;
         node *e = temp -> next;
         free(temp);
-        temp = next;
+        temp = e;
     }
     printf("%i\n", c);
 }
