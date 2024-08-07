@@ -23,11 +23,15 @@ int main(void)
     {
         if ( i = a - 1)
         {
-        printf("Input data for node %i: ", i + 1);
-        scanf("%i", &b);
-        temp -> number = b;
-        temp -> next =  malloc(sizeof(node));
-        temp = temp -> next;
+            temp -> next = NULL;
+        }
+        else
+        {
+            printf("Input data for node %i: ", i + 1);
+            scanf("%i", &b);
+            temp -> number = b;
+            temp -> next =  malloc(sizeof(node));
+            temp = temp -> next;
         }
     }
 
@@ -38,5 +42,5 @@ int main(void)
         temp = temp -> next;
     }
 
-
+    while ()
 }
