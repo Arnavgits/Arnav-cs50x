@@ -76,7 +76,8 @@ int main(void)
 
     while ( temp != NULL)
     {
-        node *e = temp;
-        
+        node *e = temp -> next;
+        free(temp);
+        temp = e;
     }
 }
