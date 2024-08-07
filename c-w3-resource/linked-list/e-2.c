@@ -9,10 +9,29 @@ typedef struct nod
 
 int main(void)
 {
-    node *
-    int a;
+    node *head = NULL;
+    node *temp = NULL;
+    int a,b;
+
     printf("Input the number of nodes: ");
     scanf("%i", a);
 
+    head = malloc(sizeof(node));
+    temp = head;
 
+    for (int i = 0; i < a; i++)
+    {
+        if ( i = a - 1)
+        {
+            temp -> next = NULL;
+        }
+        else
+        {
+        printf("Input data for node %i", i + 1);
+        scanf("%i", b);
+        temp -> number = b;
+        temp -> next = malloc(sizeof(node));
+        temp = temp -> next;
+        }
+    }
 }
