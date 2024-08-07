@@ -16,7 +16,7 @@ int main(void)
     scanf("%i", &a);
 
     head = malloc(sizeof(node));
-    if (head = NULL)
+    if (head == NULL)
     {
         printf("memory allocation failed\n");
         return 1;
@@ -25,18 +25,18 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        printf("Input data for node %i", i + 1);
+        printf("Input data for node %i: ", i + 1);
         scanf("%i", &b);
         temp -> number = b;
 
-        if ( i = a - 1)
+        if ( i == a - 1)
         {
             temp -> next = NULL;
         }
         else
         {
             temp -> next = malloc(sizeof(node));
-            if ( temp -> next = NULL)
+            if ( temp -> next == NULL)
             {
                 printf("memory allocation failed\n");
                 return 1;
@@ -48,9 +48,8 @@ int main(void)
     temp = head;
     while (temp != NULL)
     {
-        node *d = temp;
         c++;
         temp = temp -> next;
-        node *d = temp;
     }
+    printf("%i\n", c);
 }
