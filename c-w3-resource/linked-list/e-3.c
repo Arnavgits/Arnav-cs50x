@@ -15,10 +15,23 @@ int main(void)
     printf("Input the no of nodes: ");
     scanf("%i", &a);
 
+    head = malloc(sizeof(node));
+    if (head = NULL)
+    {
+        printf("memory allocation failed\n");
+        return 1;
+    }
+    temp = head;
+
     for (int i = 0; i < a; i++)
     {
         printf("Input data for node %i", i + 1);
         scanf("%i", &b);
-        
+        temp -> number = b;
+
+        if ( i = a - 1)
+        {
+            
+        }
     }
 }
