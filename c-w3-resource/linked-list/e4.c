@@ -68,7 +68,7 @@ int main(void)
      printf("Data after inserted in the list are: \n");
 
      temp = head;
-    for (int i = 0; i < a + 1; i++)
+    while ( temp != NULL)
     {
         printf("Data = %i\n", temp -> number);
         temp = temp -> next;
