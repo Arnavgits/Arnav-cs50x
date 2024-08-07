@@ -10,17 +10,19 @@ int main(void)
 {
     node *head;
     node *temp;
-    int a;
+    int a,b;
 
     printf("Input the number of nodes: ")
     scanf("%i", a);
 
+    head = 
+    temp = head;
     for (int i = 0; i < a; i++)
     {
-        head = malloc(sizeof(node));
-        temp = head;
+        temp = malloc(sizeof(node));
         printf("Input data for node %i", i + 1);
-        scanf("%i", i);
-        temp -> number = i;
+        scanf("%i", b);
+        temp -> number = b;
+        temp
     }
 }
