@@ -24,7 +24,7 @@ int main(void)
         printf("Input data for node %i: ", i + 1);
         scanf("%i", &b);
         temp -> number = b;
-        temp = malloc(sizeof(node));
+        temp -> next =  malloc(sizeof(node));
         temp = temp -> next;
     }
 
