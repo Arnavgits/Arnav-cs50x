@@ -34,4 +34,6 @@ int main(void)
         printf("Data = %i\n", temp -> number);
         temp = temp -> next;
     }
+
+    free()
 }
