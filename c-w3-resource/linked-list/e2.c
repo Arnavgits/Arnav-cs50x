@@ -47,6 +47,6 @@ int main(void)
     {
         node *d = temp -> next;
         free(temp);
-        temp = next;
+        temp = temp -;
     }
 }
