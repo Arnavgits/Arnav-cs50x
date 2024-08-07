@@ -8,5 +8,12 @@ typedef struct nod
 
 int main(void)
 {
-    
+    int a;
+    printf("Input the number of nodes: ")
+    scanf("%i", a);
+
+    for (int i = 0; i < a; i++)
+    {
+        
+    }
 }
