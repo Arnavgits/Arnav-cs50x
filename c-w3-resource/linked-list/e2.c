@@ -21,15 +21,16 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
+        printf("Input data for node %i: ", i + 1);
+        scanf("%i", &b);
+        temp -> number = b;
+
         if ( i == a - 1)
         {
             temp -> next = NULL;
         }
         else
         {
-            printf("Input data for node %i: ", i + 1);
-            scanf("%i", &b);
-            temp -> number = b;
             temp -> next =  malloc(sizeof(node));
             temp = temp -> next;
         }
