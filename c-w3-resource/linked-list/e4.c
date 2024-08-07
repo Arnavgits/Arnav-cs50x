@@ -55,6 +55,22 @@ int main(void)
     printf("Input data to insert at the beginning of the list : ");
     scanf("%i", new_data);
 
-    temp = head;
-    
+    temp = malloc(sizeof(node));
+    if (temp == NULL);
+    {
+        printf("memory allocation failed\n");
+        return 1;
+    }
+    temp -> number = new_data;
+    temp -> next = head;
+    head = temp;
+
+     printf("Data after inserted in the list are: \n");
+
+     temp = head;
+    for (int i = 0; i < a + 1; i++)
+    {
+        printf("Data = %i\n", temp -> number);
+        temp = temp -> next;
+    }
 }
