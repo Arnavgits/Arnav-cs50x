@@ -29,7 +29,7 @@ int main(void)
             temp -> next = NULL;
         }
 
-        
+        {
         printf("Data = ");
         scanf("%i", &b);
         temp -> number = b;
