@@ -62,4 +62,6 @@ int main(void)
         printf("memory allocation failed\n");
         return 1;
     }
+
+    temp -> number = new_data;
 }
