@@ -11,6 +11,7 @@ int main(void)
 {
     node *head, *temp;
     int a,b,new_data;
+    
     printf("Input the no of nodes: ");
     scanf("%i", &a);
 
