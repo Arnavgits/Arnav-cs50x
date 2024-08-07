@@ -17,12 +17,13 @@ int main(void)
 
     head = malloc(sizeof(node));
     temp = head;
+
     for (int i = 0; i < a; i++)
     {
-        temp = malloc(sizeof(node));
-        printf("Input data for node %i", i + 1);
+        printf("Input data for node %i: ", i + 1);
         scanf("%i", b);
         temp -> number = b;
-        temp
+        temp = temp -> next;
+        temp = malloc(sizeof(node));
     }
 }
