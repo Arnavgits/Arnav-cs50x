@@ -42,5 +42,9 @@ int main(void)
         temp = temp -> next;
     }
 
-    while ()
+    temp = head;
+    while (temp -> next != NULL)
+    {
+        
+    }
 }
