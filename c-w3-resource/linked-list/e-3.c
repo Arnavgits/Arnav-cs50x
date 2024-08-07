@@ -49,9 +49,9 @@ int main(void)
     while (temp != NULL)
     {
         c++;
-        temp = temp -> next;
-        node *e = temp;
+        node *e = temp -> next;
         free(temp);
+        temp = next;
     }
     printf("%i\n", c);
 }
