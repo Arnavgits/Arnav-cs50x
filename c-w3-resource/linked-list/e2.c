@@ -9,8 +9,8 @@ typedef struct nod
 
 int main(void)
 {
-    node *head;
-    node *temp;
+    node *head = NULL;
+    node *temp = NULL;
     int a,b;
 
     printf("Input the number of nodes: ");
