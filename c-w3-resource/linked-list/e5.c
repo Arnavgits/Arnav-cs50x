@@ -47,7 +47,7 @@ int main(void)
     printf("Data entered in the list are: \n");
 
     temp = head;
-    for (int i = 0; i < a; i++)
+    while(temp != NULL)
     {
         printf("Data = %i\n", temp -> number);
         temp = temp -> next;
@@ -66,6 +66,8 @@ int main(void)
     temp -> number = new_data;
     temp -> next = NULL;
 
+    printf("Data, after inserted in the list are: \n");
+
     temp = head;
     while(temp != NULL)
     {
@@ -77,5 +79,7 @@ int main(void)
     while(temp != NULL)
     {
         node *e = temp -> next;
+        free(temp);
+        temp = e;
     }
 }
