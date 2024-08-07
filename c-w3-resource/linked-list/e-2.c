@@ -28,8 +28,8 @@ int main(void)
         {
             temp -> next = NULL;
         }
-        else
-        {
+
+        
         printf("Data = ");
         scanf("%i", &b);
         temp -> number = b;

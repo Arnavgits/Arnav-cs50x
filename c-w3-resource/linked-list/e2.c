@@ -21,7 +21,7 @@ int main(void)
 
     for (int i = 0; i < a; i++)
     {
-        if ( i = a - 1)
+        if ( i == a - 1)
         {
             temp -> next = NULL;
         }
