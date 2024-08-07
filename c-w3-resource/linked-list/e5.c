@@ -53,7 +53,7 @@ int main(void)
         temp = temp -> next;
     }
 
-    printf("Input data to insert at the beginning of the list : ");
+    printf("Input data to insert at the end of the list : ");
     scanf("%i", &new_data);
 
     temp = malloc(sizeof(node));
