@@ -31,7 +31,24 @@ int main(void)
 
         if ( i = a - 1)
         {
-            
+            temp -> next = NULL;
         }
+        else
+        {
+            temp -> next = malloc(sizeof(node));
+            if ( temp -> next = NULL)
+            {
+                printf("memory allocation failed\n");
+                return 1;
+            }
+            temp = temp -> next;
+        }
+    }
+
+    temp = head;
+    while (temp != NULL)
+    {
+        c++;
+        temp = temp -> next;
     }
 }
