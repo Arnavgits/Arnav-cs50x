@@ -12,10 +12,10 @@ int main(void)
     node *temp;
     int a,b;
 
-    printf("Input the number of nodes: ")
+    printf("Input the number of nodes: ");
     scanf("%i", a);
 
-    head = 
+    head = malloc(sizeof(node));
     temp = head;
     for (int i = 0; i < a; i++)
     {
