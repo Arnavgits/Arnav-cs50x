@@ -11,7 +11,7 @@ int main(void)
 {
     node *head, *temp;
     int a,b,new_data;
-    
+
     printf("Input the no of nodes: ");
     scanf("%i", &a);
 
@@ -46,7 +46,7 @@ int main(void)
     }
     printf("Data entered in the list are: \n");
 
-     temp = head;
+    temp = head;
     for (int i = 0; i < a; i++)
     {
         printf("Data = %i\n", temp -> number);
