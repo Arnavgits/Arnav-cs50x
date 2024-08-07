@@ -19,6 +19,7 @@ int main(void)
     head = malloc(sizeof(node));
     temp = head;
 
+    printf("Data entered in the list are :\n")
     for (int i = 0; i < a; i++)
     {
         if ( i = a - 1)
@@ -27,11 +28,18 @@ int main(void)
         }
         else
         {
-        printf("Input data for node %i", i + 1);
+        printf("Data = ");
         scanf("%i", b);
         temp -> number = b;
         temp -> next = malloc(sizeof(node));
         temp = temp -> next;
         }
+    }
+
+    printf("The list in reverse are : ");
+
+    for (int i = 0; i < a; i++)
+    {
+        
     }
 }
