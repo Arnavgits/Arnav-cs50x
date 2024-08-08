@@ -56,7 +56,7 @@ int main(void)
     printf("Input data to insert at the end of the list : ");
     scanf("%i", &new_data);
 
-    temp = malloc(sizeof(node));
+    temp -> next  = malloc(sizeof(node));
     if (temp == NULL)
     {
         printf("memory allocation failed\n");
