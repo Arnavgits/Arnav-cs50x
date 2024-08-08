@@ -57,7 +57,7 @@ int main(void)
     scanf("%i", &new_data);
 
     temp = head;
-    while(temp != NULL)
+    while(temp -> next != NULL)
     {
         temp = temp -> next;
     }
