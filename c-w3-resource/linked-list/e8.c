@@ -9,7 +9,7 @@ typedef struct nod
 
 int main(void)
 {
-    node *head, *temp;
+    node *head, *temp, *f;
     int a,b,position;
 
     printf("Input the no of nodes: ");
@@ -61,6 +61,16 @@ int main(void)
     for (int i = 1; i <= position; i++)
     {
         if (i == position)
+        {
+            break;
+        }
+        temp = temp -> next;
+    }
+
+    f = head;
+    for (int i = 0; i <= position ; i++)
+    {
+        if(i == position)
         {
             
         }
