@@ -79,6 +79,4 @@ int main(void)
 
     printf(" Deletion completed successfully.\n");
     printf(" The new list are  :\n");
-
-
 }
