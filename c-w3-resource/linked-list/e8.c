@@ -58,6 +58,12 @@ int main(void)
 
     temp = head;
 
+    f = head;
+    for (int i = 1; i <= position ; i++)
+    {
+        f = f -> next;
+    }
+
     for (int i = 1; i <= position; i++)
     {
         if (i == position)
@@ -69,11 +75,6 @@ int main(void)
 
     printf("Input the position of node to delete : %i\n\n", temp -> number);
 
-    f = head;
-    for (int i = 1; i <= position ; i++)
-    {
-        f = f -> next;
-    }
 
     free(temp);
 
