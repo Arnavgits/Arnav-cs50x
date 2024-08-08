@@ -74,16 +74,21 @@ int main(void)
     }
 
     g = head;
-    for (int i = 1; i < position; i++)
+    for (int i = 1; i < position - 1; i++)
     {
-        
+
         g = g -> next;
     }
 
-
-
+    g = f;
     free(temp);
 
     printf(" Deletion completed successfully.\n");
     printf(" The new list are  :\n");
+
+    temp = head
+    while(temp != NULL)
+    {
+        printf("%i", )
+    }
 }
