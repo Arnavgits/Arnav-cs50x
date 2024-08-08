@@ -62,7 +62,7 @@ int main(void)
         temp = temp -> next;
     }
 
-    temp = malloc(sizeof(node));
+    temp -> next = malloc(sizeof(node));
     if (temp == NULL)
     {
         printf("memory allocation failed\n");
