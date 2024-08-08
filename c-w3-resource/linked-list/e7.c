@@ -53,18 +53,12 @@ int main(void)
         temp = temp -> next;
     }
 
-    printf("Input data to insert at the middle of the list : ");
-    scanf("%i", &new_data);
-
-    printf("Input position where to insert the new number: ");
-    scanf("%i", &new_position);
-
-
-
     temp = head;
     while(temp != NULL)
     {
         printf("Data = %i\n", temp -> number);
         temp = temp -> next;
     }
+
+    
 }
