@@ -10,7 +10,7 @@ typedef struct nod
 int main(void)
 {
     node *head, *temp;
-    int a;
+    int a,b;
 
     printf("Input the no of nodes: ");
     scanf("%i", &a);
@@ -47,19 +47,18 @@ int main(void)
     printf("Data entered in the list are: \n");
 
     temp = head;
+    printf("Data of node 1 being delete is : %i", temp -> number);
 
     temp = temp -> next;
-
     free(head);
 
     head = temp;
 
-    printf("Data of node 1 being delete is : %i", temp -> number);
     printf("Data after deletion of first node: \n");
 
     while(temp != NULL)
     {
-        printf("Data = %i", temp -> number);
+        printf("Data = %i\n", temp -> number);
         temp = temp -> next;
     }
 
