@@ -64,6 +64,7 @@ int main(void)
     }
 
     temp -> number = new_data;
+    temp = temp -> next;
     temp -> next = NULL;
 
     printf("Data, after inserted in the list are: \n");
