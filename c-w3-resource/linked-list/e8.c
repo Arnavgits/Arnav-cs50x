@@ -70,7 +70,7 @@ int main(void)
     printf("Input the position of node to delete : %i\n\n", temp -> number);
 
     f = head;
-    for (int i = 0; i <= position ; i++)
+    for (int i = 1; i <= position ; i++)
     {
         f = f -> next;
     }
