@@ -76,8 +76,10 @@ int main(void)
     g = head;
     for (int i = 1; i < position; i++)
     {
-        
+        g = g -> next;
     }
+
+    
 
     free(temp);
 
