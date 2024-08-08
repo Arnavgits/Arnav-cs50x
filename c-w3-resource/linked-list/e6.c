@@ -71,4 +71,13 @@ int main(void)
         }
         temp = temp -> next;
     }
+
+    for (int i = 1; i <= new_position; i++)
+    {
+        if (i = new_position - 1)
+        {
+            f -> next = temp -> next;
+        }
+        temp = temp -> next;
+    }
 }
