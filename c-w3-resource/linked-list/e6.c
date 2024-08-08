@@ -67,7 +67,8 @@ int main(void)
     {
         if (i == new_position)
         {
-            f -> next = temp -> next;
+            f -> next = temp;
+            break;
         }
         temp = temp -> next;
     }
@@ -83,7 +84,7 @@ int main(void)
     }
 
     printf("Data after inserting in the middle :\n");
-    
+
     temp = head;
     while(temp != NULL)
     {
