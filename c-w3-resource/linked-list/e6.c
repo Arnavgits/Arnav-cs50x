@@ -78,7 +78,8 @@ int main(void)
     {
         if (i == new_position - 1)
         {
-            temp -> next = f -> next;
+            temp -> next = f;
+            break;
         }
         temp = temp -> next;
     }
