@@ -55,5 +55,14 @@ int main(void)
 
     printf("Input the position of node to delete :");
     scanf("%i", position);
-    
+
+    temp = head;
+
+    for (int i = 1; i <= position; i++)
+    {
+        if (i == position)
+        {
+            
+        }
+    }
 }
