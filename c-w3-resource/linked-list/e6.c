@@ -65,9 +65,9 @@ int main(void)
     temp = head;
     for (int i = 1; i <= new_position; i++)
     {
-        if (i = new_position)
+        if (i = new_position - 1)
         {
-            
+            temp -> next = f -> next;
         }
         temp = temp -> next;
     }
