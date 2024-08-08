@@ -67,6 +67,8 @@ int main(void)
         temp = temp -> next;
     }
 
+    printf("Input the position of node to delete : %i\n\n", temp -> number);
+
     f = head;
     for (int i = 0; i <= position ; i++)
     {
