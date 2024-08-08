@@ -47,10 +47,6 @@ int main(void)
     printf("Data entered in the list are: \n");
 
     temp = head;
-    while(temp != NULL)
-    {
-        printf("Data = %i\n", temp -> number);
-        temp = temp -> next;
-    }
+
     
 }
