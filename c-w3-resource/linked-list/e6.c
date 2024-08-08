@@ -67,7 +67,7 @@ int main(void)
     {
         if (i = new_position - 1)
         {
-            temp -> next = f -> next;
+            f -> next = 
         }
         temp = temp -> next;
     }
