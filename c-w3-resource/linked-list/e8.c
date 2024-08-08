@@ -70,9 +70,6 @@ int main(void)
     f = head;
     for (int i = 0; i <= position ; i++)
     {
-        if(i == position)
-        {
-            
-        }
+        f = f -> next;
     }
 }
