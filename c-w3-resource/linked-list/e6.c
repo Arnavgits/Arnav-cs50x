@@ -65,19 +65,29 @@ int main(void)
     temp = head;
     for (int i = 1; i <= new_position; i++)
     {
-        if (i = new_position)
+        if (i == new_position)
         {
             f -> next = temp -> next;
         }
         temp = temp -> next;
     }
 
+    temp = head;
     for (int i = 1; i <= new_position; i++)
     {
-        if (i = new_position)
+        if (i == new_position - 1)
         {
-
+            temp -> next = f -> next;
         }
+        temp = temp -> next;
+    }
+
+    printf("Data after inserting in the middle :\n");
+    
+    temp = head;
+    while(temp != NULL)
+    {
+        printf("Data = %i\n", temp -> number);
         temp = temp -> next;
     }
 }
