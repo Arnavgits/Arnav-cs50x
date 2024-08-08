@@ -86,9 +86,18 @@ int main(void)
     printf(" Deletion completed successfully.\n");
     printf(" The new list are  :\n");
 
-    temp = head
+    temp = head;
     while(temp != NULL)
     {
-        printf("%i", )
+        printf("Data = %i\n", temp -> number);
+        temp = temp -> next;
+    }
+
+    temp = head;
+    while ( temp != NULL)
+    {
+        node *e = temp -> next;
+        free(temp);
+        temp = e;
     }
 }
