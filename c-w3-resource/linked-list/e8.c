@@ -54,7 +54,7 @@ int main(void)
     }
 
     printf("Input the position of node to delete :");
-    scanf("%i", position);
+    scanf("%i", &position);
 
     temp = head;
 
@@ -80,5 +80,5 @@ int main(void)
     printf(" Deletion completed successfully.\n");
     printf(" The new list are  :\n");
 
-    
+
 }
