@@ -59,7 +59,11 @@ int main(void)
     printf("Input position where to insert the new number: ");
     scanf("%i", &new_position);
 
-    for (int i = 0; i < a; i++)
+    temp = head;
+    for (int i = 1; i < a; i++)
     {
-        if
+        if ( i == new_position)
+        {
+            
+        }
     }
