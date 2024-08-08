@@ -9,7 +9,7 @@ typedef struct nod
 
 int main(void)
 {
-    node *head, *temp, *f;
+    node *head, *temp, *f, *g;
     int a,b,position;
 
     printf("Input the no of nodes: ");
@@ -73,8 +73,11 @@ int main(void)
         temp = temp -> next;
     }
 
-    printf("Input the position of node to delete : %i\n\n", temp -> number);
-
+    g = head;
+    for (int i = 1; i < position; i++)
+    {
+        
+    }
 
     free(temp);
 
