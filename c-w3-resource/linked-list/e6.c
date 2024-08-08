@@ -9,7 +9,7 @@ typedef struct nod
 
 int main(void)
 {
-    node *head, *temp;
+    node *head, *temp, *f;
     int a,b,new_position,new_data;
 
     printf("Input the no of nodes: ");
@@ -59,11 +59,8 @@ int main(void)
     printf("Input position where to insert the new number: ");
     scanf("%i", &new_position);
 
-    temp = head;
-    for (int i = 1; i < a; i++)
-    {
-        if ( i == new_position)
-        {
-            
-        }
-    }
+    f = malloc(sizeof(node));
+    f -> number = new_data;
+
+    
+}
