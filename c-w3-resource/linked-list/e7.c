@@ -48,5 +48,19 @@ int main(void)
 
     temp = head;
 
-    
+    temp = temp -> next;
+
+    free(head);
+
+    head = temp;
+
+    printf("Data of node 1 being delete is : %i", temp -> number);
+    printf("Data after deletion of first node: \n");
+
+    while(temp != NULL)
+    {
+        printf("Data = %i", temp -> number);
+        temp = temp -> next;
+    }
+
 }
