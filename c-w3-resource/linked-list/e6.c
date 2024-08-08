@@ -57,4 +57,9 @@ int main(void)
     scanf("%i", &new_data);
 
     printf("Input position where to insert the new number: ");
-    scanf("%i", new_position);
+    scanf("%i", &new_position);
+
+    for (int i = 0; i < a; i++)
+    {
+        if
+    }
