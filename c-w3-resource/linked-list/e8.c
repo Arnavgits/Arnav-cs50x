@@ -74,4 +74,11 @@ int main(void)
     {
         f = f -> next;
     }
+
+    free(temp);
+
+    printf(" Deletion completed successfully.\n");
+    printf(" The new list are  :\n");
+
+    
 }
