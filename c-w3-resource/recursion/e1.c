@@ -6,11 +6,11 @@ int main(void)
 {
     int n = 1;
     recursive_print(n);
+    printf("The natural numbers are: ");
 }
 
 int recursive_print(int x)
 {
-    printf("The natural numbers are: ");
     if (x <= 50)
     {
         printf(" %i ", x);
