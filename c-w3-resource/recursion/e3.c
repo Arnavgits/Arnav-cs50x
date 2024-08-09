@@ -16,5 +16,7 @@ int main(void)
 void fibon(a)
 {
     int b = 1;
-    printf("")
+    int sum = 0;
+    sum = sum + b;
+    printf(" %i ", sum)
 }
