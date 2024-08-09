@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-Total_sum(int x);
+int Total_sum(int x);
 
 int main(void)
 {
@@ -8,7 +8,8 @@ int main(void)
     printf("Input the last number of the range starting from 1 : ");
     scanf("%i", &a);
 
-    Total_sum(a);
+    int b = Total_sum(a);
+    printf("%i", b);
 }
 
 int Total_sum(int x)
@@ -18,6 +19,7 @@ int Total_sum(int x)
     {
         return 1;
     }
-    
-        Total_sum(x - 1);
+
+        sum = sum + Total_sum(x - 1);
+        return sum;
 }
