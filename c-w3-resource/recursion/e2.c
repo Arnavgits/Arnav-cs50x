@@ -14,12 +14,10 @@ int main(void)
 
 int Total_sum(int x)
 {
-    int sum = 0;
     if (x == 1)
     {
         return 1;
     }
 
-        sum = x + Total_sum(x - 1);
-        return sum;
+    return x + Total_sum(x - 1);
 }
