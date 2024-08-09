@@ -9,8 +9,8 @@ typedef struct nod
 
 int main(void)
 {
-    node *head, *temp, *f, *g;
-    int a,b,position;
+    node *head, *temp, *f;
+    int a,b;
 
     printf("Input the no of nodes: ");
     scanf("%i", &a);
@@ -50,53 +50,40 @@ int main(void)
     while(temp != NULL)
     {
         printf("Data = %i\n", temp -> number);
-        temp = temp -> next;
-    }
-
-    printf("Input the position of node to delete :");
-    scanf("%i", &position);
-
-    f = head;
-    for (int i = 1; i <= position ; i++)
-    {
-        f = f -> next;
-    }
-
-    temp = head;
-    for (int i = 1; i <= position; i++)
-    {
-        if (i == position)
+        if (temp -> next == NULL)
         {
             break;
         }
         temp = temp -> next;
     }
 
-    g = head;
-    for (int i = 1; i < position - 1; i++)
+    f = head;
+    while(f != NULL)
     {
-
-        g = g -> next;
+        if (f -> next -> next == NULL)
+        {
+            f -> next = NULL;
+            break;
+        }
+        f = f -> next;
     }
 
-    g  -> next = f;
     free(temp);
-
-    printf(" Deletion completed successfully.\n");
-    printf(" The new list are  :\n");
-
     temp = head;
+
+    printf("The new list after deletion the last node are  :\n");
+
     while(temp != NULL)
     {
-        printf("Data = %i\n", temp -> number);
+        printf("%i\n", temp -> number);
         temp = temp -> next;
     }
 
     temp = head;
-    while ( temp != NULL)
+    while(temp != NULL)
     {
-        node *e = temp -> next;
+        node *c = temp -> next;
         free(temp);
-        temp = e;
+        temp = c;
     }
 }
