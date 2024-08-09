@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int recursive_print(int x);
+void recursive_print(int x);
 
 int main(void)
 {
     int n = 1;
-    recursive_print(n);
     printf("The natural numbers are: ");
+    recursive_print(n);
 }
 
-int recursive_print(int x)
+void recursive_print(int x)
 {
     if (x <= 50)
     {
