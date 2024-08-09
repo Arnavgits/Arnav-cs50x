@@ -11,7 +11,15 @@ int main(void)
     Total_sum(a);
 }
 
-void Total_sum(int x)
+int Total_sum(int x)
 {
-    
+    int sum = 0;
+    if (x == 1)
+    {
+        return x;
+    }
+    else
+    {
+        Total_sum(x - 1);
+    }
 }
