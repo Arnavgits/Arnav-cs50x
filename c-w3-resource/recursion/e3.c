@@ -9,6 +9,7 @@ int main(void)
     scanf("%i", a);
 
     printf("The series are : \n")
+    printf("1 ");
     fibon(a);
 }
 
