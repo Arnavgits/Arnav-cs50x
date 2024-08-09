@@ -16,10 +16,8 @@ int Total_sum(int x)
     int sum = 0;
     if (x == 1)
     {
-        return x;
+        return 1;
     }
-    else
-    {
+    
         Total_sum(x - 1);
-    }
 }
