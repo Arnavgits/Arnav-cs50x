@@ -9,5 +9,7 @@ int main(void)
 
 int recursive_print(int x)
 {
+    printf("The natural numbers are: ");
+
     
 }
