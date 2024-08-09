@@ -14,5 +14,6 @@ int main(void)
 
 void fibon(a)
 {
+    int b = 1;
     
 }
