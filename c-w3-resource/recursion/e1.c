@@ -4,12 +4,16 @@ int recursive_print(int x);
 
 int main(void)
 {
-    recursive_print(50);
+    int n = 1;
+    recursive_print(&n);
 }
 
-int recursive_print(int x)
+int recursive_print(int *x)
 {
     printf("The natural numbers are: ");
-
-    
+    if (8x <= 50)
+    {
+        printf(" %i ", *x);
+        recursive print(n + 1);
+    }
 }
