@@ -15,5 +15,5 @@ int main(void)
 void fibon(a)
 {
     int b = 1;
-    
+    printf("")
 }
