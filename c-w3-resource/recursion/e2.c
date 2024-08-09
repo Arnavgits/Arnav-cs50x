@@ -20,6 +20,6 @@ int Total_sum(int x)
         return 1;
     }
 
-        sum = sum + Total_sum(x - 1);
+        sum = x + Total_sum(x - 1);
         return sum;
 }
