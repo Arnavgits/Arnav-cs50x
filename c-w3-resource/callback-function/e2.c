@@ -6,7 +6,7 @@ void descend(int brr);
 int main(void)
 {
     int arr[] = {7,2,0,5,8,9};
-    int size = sizeof(arr[]) / sizeof(arr[0]);
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     printf("Original array");
 
