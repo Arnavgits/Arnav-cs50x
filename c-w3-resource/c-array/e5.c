@@ -25,7 +25,10 @@ int main(void)
             if (i != j && arr[i] == arr[j])
             {
                 c++;
+                break;
             }
         }
     }
+
+    printf("Total number of duplicate elements in the array are: %i", c);
 }
