@@ -17,11 +17,15 @@ int main(void)
         scanf("%i", &arr[i]);
     }
 
+    printf("The unique elements found in the array are: ");
     for (int i = 0; i < a; i++)
     {
         for (int j = 0; j < a; j++)
         {
-            
+            if (arr[i] != arr[j])
+            {
+                printf("%i", arr[i]);
+            }
         }
     }
 }
