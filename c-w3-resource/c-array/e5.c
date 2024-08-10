@@ -20,9 +20,9 @@ int main(void)
     int c = 0;
     for (int i = 0; i < a; i++)
     {
-        for (int j = 0; j < a; j++)
+        for (int j = i + 1; j < a; j++)
         {
-            if (i != j && arr[i] == arr[j])
+            if (arr[i] == arr[j])
             {
                 c++;
                 break;
