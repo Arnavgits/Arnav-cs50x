@@ -14,13 +14,15 @@ int main(void)
     {
         printf("%i ", arr[i]);
     }
+    printf("\n");
 
     ascend(arr , size);
 }
 
 void ascend(int brr[], int size)
 {
-    for (int i = 0; i < size - 1; i++);
+    int i;
+    for (i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - i - 1; j++)
         {
@@ -32,7 +34,7 @@ void ascend(int brr[], int size)
             }
         }
     }
-    for (int i = 0; i < 6; i++)
+    for (i = 0; i < size; i++)
     {
       printf("%i ", brr[i]);
     }
