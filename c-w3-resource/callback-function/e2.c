@@ -6,6 +6,7 @@ void descend(int brr);
 int main(void)
 {
     int arr[] = {7,2,0,5,8,9};
+    int size = sizeof(arr[]) / sizeof(arr[0]);
 
     printf("Original array");
 
@@ -14,15 +15,15 @@ int main(void)
         printf("%i ", arr[i]);
     }
 
-    ascend(arr);
-    descend(arr);
+    ascend(arr , size);
+    descend(arr , size);
 }
 
-void ascend(int brr[])
+void ascend(int brr[], int size)
 {
-    for (int i = 0; i < 6; i++);
+    for (int i = 0; i < size - 1; i++);
     {
-        for (int j = 0; j < 6; j++)
+        for (int j = 0; j < size - i - 1; j++)
         {
             if (brr[i] > brr[j])
             {
