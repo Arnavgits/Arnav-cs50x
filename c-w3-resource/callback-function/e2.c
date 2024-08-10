@@ -24,12 +24,15 @@ void ascend(int brr[])
     {
         for (int j = 0; j < 6; j++)
         {
-            if (brr[i] < brr[j])
+            if (brr[i] > brr[j])
             {
-                
+                int temp = brr[i];
+                brr[i] = brr[j];
+                brr[j] = temp;
             }
         }
     }
+    
 }
 
 
