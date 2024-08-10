@@ -19,6 +19,7 @@ int main(void)
 
     printf("The unique elements found in the array are: ");
     int brr[a];
+    
     for (int i = 0; i < a; i++)
     {
         brr[i] = 0;
