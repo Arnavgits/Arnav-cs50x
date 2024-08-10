@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void ascend(arr);
-void descend(arr);
+void ascend(int brr);
+void descend(int brr);
 
-int main(void);
+int main(void)
 {
     int arr[] = {7,2,0,5,8,9};
 
@@ -32,7 +32,10 @@ void ascend(int brr[])
             }
         }
     }
-    
+    for (int i = 0; i < 6; i++)
+    {
+    printf("%i ", brr[i]);
+    }
 }
 
 
