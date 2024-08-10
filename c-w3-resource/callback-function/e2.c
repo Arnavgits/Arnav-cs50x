@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-void ascend(int brr);
-void descend(int brr);
+
+void ascend(int brr[], int size);
 
 int main(void)
 {
@@ -16,7 +16,6 @@ int main(void)
     }
 
     ascend(arr , size);
-    descend(arr , size);
 }
 
 void ascend(int brr[], int size)
