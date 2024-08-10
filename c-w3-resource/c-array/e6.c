@@ -35,7 +35,8 @@ int main(void)
     {
         if (brr[i] == 0)
         {
-            printf("%i ", brr[i]);
+            printf("%i ", arr[i]);
         }
+        printf("\n");
     }
 }
