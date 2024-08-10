@@ -34,7 +34,7 @@ void ascend(int brr[])
     }
     for (int i = 0; i < 6; i++)
     {
-    printf("%i ", brr[i]);
+      printf("%i ", brr[i]);
     }
 }
 
