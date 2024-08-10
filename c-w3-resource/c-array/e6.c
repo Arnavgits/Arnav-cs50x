@@ -30,5 +30,11 @@ int main(void)
         }
     }
 
-
+    for (int i = 0; i < a; i++)
+    {
+        if (brr[i] == 0)
+        {
+            printf("%i", brr[i]);
+        }
+    }
 }
