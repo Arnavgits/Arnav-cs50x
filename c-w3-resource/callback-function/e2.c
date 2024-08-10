@@ -26,7 +26,7 @@ void ascend(int brr[], int size)
     {
         for (int j = 0; j < size - i - 1; j++)
         {
-            if (brr[i] > brr[j])
+            if (brr[j] > brr[j + 1])
             {
                 int temp = brr[i];
                 brr[i] = brr[j];
