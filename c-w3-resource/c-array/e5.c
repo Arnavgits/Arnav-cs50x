@@ -16,5 +16,16 @@ int main(void)
         printf("Element %i : ", i);
         scanf("%i", &arr[i]);
     }
-    
+
+    int c = 0;
+    for (int i = 0; i < a; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+            if (i != j && arr[i] == arr[j])
+            {
+                c++;
+            }
+        }
+    }
 }
