@@ -9,8 +9,12 @@ int main(void)
 
     printf("Input %i elements in the array : ", a);
 
+    int arr[a];
+
     for (int i = 0; i < a; i++)
     {
-        printf("Element %i : ");
+        printf("Element %i : ", i);
+        scanf("%i", &arr[i]);
     }
+    
 }
