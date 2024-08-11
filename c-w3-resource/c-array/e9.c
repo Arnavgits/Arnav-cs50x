@@ -17,14 +17,10 @@ int main(void)
         scanf("%i", &arr1[i]);
     }
 
+    b = arr1[0];
+    c = arr1[0];
     for (int i = 0; i < a; i++)
     {
-        for (int j = 0 ; j < a; j++)
-        {
-            if (arr1[i] >= arr1[j])
-            {
-                b = arr1[i];
-            }
-        }
+        if (arr1[])
     }
 }
