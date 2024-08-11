@@ -13,24 +13,29 @@ int main(void)
 
     int size = strlen(str);
 
-
     palindrome(str, size);
 }
 
 void palindrome(char *str, int size)
 {
+    int ctr = 1;
 
     for (int i = 0; i < size; i++)
     {
         if (str[i] != str[size - i - 1])
         {
-            printf("%s is not a palindrome(case-sensitive)\n", str);
+            ctr = 0;
             break;
         }
-        else
-        {
-            printf("%s is a palindrome(case-sensitive)\n", str);
-        }
+    }
+
+    if (ctr == 0)
+    {
+        printf("%s is not a palindrome(case-sensitive)\n", str);
+    }
+    else
+    {
+        printf("%s is a palindrome(case-sensitive)\n", str);
     }
 
     for (int i = 0; i < size; i++)
@@ -41,13 +46,19 @@ void palindrome(char *str, int size)
 
     for (int i = 0; i < size; i++)
     {
-        if (str[i] != str[size - i - 1])
+         if (str[i] != str[size - i - 1])
         {
-            printf("%s is not a palindrome(case-insensitive)\n", str);
+            ctr = 0;
+            break;
         }
-        else
-        {
-            printf("%s is a palindrome(case-insensitive)\n", str);
-        }
+    }
+
+    if (ctr == 0)
+    {
+        printf("%s is not a palindrome(case-insensitive)\n", str);
+    }
+    else
+    {
+        printf("%s is a palindrome(case-sensitive)\n", str);
     }
 }
