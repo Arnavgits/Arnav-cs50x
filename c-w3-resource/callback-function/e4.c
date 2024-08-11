@@ -28,7 +28,7 @@ void palindrome(char *str, int size)
         }
         else
         {
-            printf("%s is a palindrome(case-insensitive)", str);
+            printf("%s is a palindrome(case-sensitive)", str);
         }
     }
 
