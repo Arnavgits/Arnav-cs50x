@@ -18,7 +18,7 @@ int main(void)
         str[i] = tolower(str[i]);
     }
 
-    palindrome(&str, size);
+    palindrome(str, size);
 }
 
 void palindrome(char *str, int size);
