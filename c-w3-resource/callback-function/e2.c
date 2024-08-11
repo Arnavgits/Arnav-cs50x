@@ -33,7 +33,9 @@ void ascend(int brr[], int size)
             }
         }
     }
-    for (i = 0; i < size; i++)
+
+    printf("Ascending order : ");
+    for (int i = 0; i < size; i++)
     {
       printf("%i ", brr[i]);
     }
