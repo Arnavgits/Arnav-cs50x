@@ -30,6 +30,9 @@ int main(void)
 
     int c = a + b;
     int arr3[c];
+    // merge the arrays
+
+    
 
     for (int i = 0;i < a; i++)
     {
