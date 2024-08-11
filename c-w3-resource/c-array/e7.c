@@ -37,9 +37,9 @@ int main(void)
         arr3[i] = arr1[i];
     }
 
-    for (int i = a; i < c; i++)
+    for (int i = 0; i < b; i++)
     {
-        arr3[i] = arr2[i];
+        arr3[a + i] = arr2[i];
     }
 
     for (int i = 0;i < a; i++)
