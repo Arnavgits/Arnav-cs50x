@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <ctype.h>
 
+void palindrome(char *str, int size);
+
 int main(void)
 {
     char * str[100];
@@ -8,12 +10,10 @@ int main(void)
     scanf("%s", &str);
 
     int size = strlen(str);
+    palindrome(&str, size);
+}
 
-    for (int i = 0; i < size; i++)
-    {
-        if (str(i) == str(size - i - 1))
-        {
-            
-        }
-    }
+void palindrome(char *str, int size);
+{
+    
 }
