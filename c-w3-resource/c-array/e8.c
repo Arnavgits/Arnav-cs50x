@@ -24,5 +24,8 @@ int main(void)
         arr2[i] = 0;
     }
 
-    
+    for (int i = 0 ; i < a; i++)
+    {
+        if ()
+    }
 }
