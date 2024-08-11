@@ -9,12 +9,19 @@ int main(void)
 
     printf("Input %i elements in the array : ", a);
 
-    int arr[a];
+    int arr1[a];
 
     for (int i = 0; i < a; i++)
     {
         printf("Element %i : ", i);
         scanf("%i", &arr[i]);
+    }
+
+    int arr2[a];
+
+    for (int i = 0; i < a; i++)
+    {
+        arr2[i] = 0;
     }
 
     
