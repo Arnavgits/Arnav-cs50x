@@ -45,10 +45,16 @@ int main(void)
     //sort the array
 
 
-    for (int i = 0;i < c; i++)
+    for (int i = 0;i < c - 1; i++)
     {
-        for (int j = 0; j < b; j++)
+        for (int j = 0; j < c - i - 1; j++)
         {
+            if (arr3[j] < arr3[j + 1])
+            {
+                int temp = arr3[j];
+                arr3[j] = arr3[j + 1];
+                arr3[j + 1] = temp;
+            }
         }
     }
 
