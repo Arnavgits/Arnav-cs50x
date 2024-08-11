@@ -19,10 +19,14 @@ int main(void)
 
     printf("The unique elements found in the array are: ");
     int brr[a];
-    
-    for (int i = 0; i < a; i++)
+
+    for ( int i = 0; i < a; i++)
     {
         brr[i] = 0;
+    }
+
+    for (int i = 0; i < a; i++)
+    {
         for (int j = 0; j < a; j++)
         {
             if (arr[i] == arr[j])
