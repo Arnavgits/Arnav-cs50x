@@ -26,6 +26,12 @@ int main(void)
 
     for (int i = 0 ; i < a; i++)
     {
-        if ()
+        for (int j = 0; j < a; j++)
+        {
+            if (arr1[i] == arr1[j])
+            {
+                arr2[i]++;
+            }
+        }
     }
 }
