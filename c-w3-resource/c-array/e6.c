@@ -29,7 +29,7 @@ int main(void)
     {
         for (int j = 0; j < a; j++)
         {
-            if (arr[i] == arr[j])
+            if (i != j && arr[i] == arr[j])
             {
                 brr[i]++;
             }
@@ -42,6 +42,6 @@ int main(void)
         {
             printf("%i ", arr[i]);
         }
-        printf("\n");
     }
+    printf("\n");
 }
