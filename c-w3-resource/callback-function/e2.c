@@ -8,7 +8,7 @@ int main(void)
     int arr[] = {7,2,0,5,8,9};
     int size = sizeof(arr) / sizeof(arr[0]);
 
-    printf("Original array");
+    printf("Original array: ");
 
     for (int i = 0;i < 6; i++)
     {
@@ -21,8 +21,7 @@ int main(void)
 
 void ascend(int brr[], int size)
 {
-    int i;
-    for (i = 0; i < size - 1; i++)
+    for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - i - 1; j++)
         {
