@@ -45,7 +45,7 @@ int main(void)
     //sort the array
 
 
-    for (int i = 0;i < a; i++)
+    for (int i = 0;i < c; i++)
     {
         for (int j = 0; j < b; j++)
         {
