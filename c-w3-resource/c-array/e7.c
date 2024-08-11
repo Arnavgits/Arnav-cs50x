@@ -32,7 +32,10 @@ int main(void)
     int arr3[c];
     // merge the arrays
 
-    
+    for (int i = 0; i < a; i++)
+    {
+        arr3[i] = 
+    }
 
     for (int i = 0;i < a; i++)
     {
