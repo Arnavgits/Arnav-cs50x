@@ -10,7 +10,7 @@ int main(void)
 
     do
     {
-        printf("Select an option :");
+        printf("Select an option :\n1. convert to uppercase\n2. convert to lowercase\n");
         scanf("%i", &a);
     }
     while(a != 1 && a != 2 );
@@ -23,4 +23,9 @@ int main(void)
     {
         lowercase(str1);
     }
+}
+
+void uppercase(char *str)
+{
+    
 }
