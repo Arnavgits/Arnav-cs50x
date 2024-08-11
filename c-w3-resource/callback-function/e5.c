@@ -31,6 +31,9 @@ void uppercase(char *str, int size)
 {
     for (int i = 0; i < size; i++)
     {
-        
+        if (str[i] >= 97 && str[i] <= 122)
+        {
+            str[i] = str[i] - 'a' + 'A';
+        }
     }
 }
