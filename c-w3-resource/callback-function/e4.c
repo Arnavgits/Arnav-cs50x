@@ -1,15 +1,23 @@
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
+#include <string.h>
+
 
 void palindrome(char *str, int size);
 
 int main(void)
 {
-    char * str[100];
+    char str[100];
     printf("String: ");
     scanf("%s", str);
 
     int size = strlen(str);
+
+    for (int i = 0; i < size; i++)
+    {
+        str[i] = tolower(str[i]);
+    }
+    
     palindrome(&str, size);
 }
 
