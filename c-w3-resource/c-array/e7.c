@@ -42,21 +42,9 @@ int main(void)
         arr3[a + i] = arr2[i];
     }
 
-    for (int i = 0;i < a; i++)
-    {
-        for (int j = 0; j < b; j++)
-        {
-            if (arr1[i] > arr2[j])
-            {
-                arr3[i] = arr1[i];
-            }
-            else if (arr1[i] < arr2[j])
-            {
-                arr3[i] = arr2[j];
-            }
-        }
-    }
+    //sort the array
 
+    
     printf("Merged array: \n");
 
     for (int i = 0; i < c; i++)
