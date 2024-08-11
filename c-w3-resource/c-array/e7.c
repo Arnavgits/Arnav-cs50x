@@ -52,4 +52,5 @@ int main(void)
     {
         printf("%i ", arr3[i]);
     }
+    printf("\n");
 }
