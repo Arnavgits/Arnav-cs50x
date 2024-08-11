@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+void descend(int arr[],int size);
 
 void ascend(int brr[], int size);
 
@@ -17,6 +18,7 @@ int main(void)
     printf("\n");
 
     ascend(arr , size);
+    descend(arr, size);
 }
 
 void ascend(int brr[], int size)
@@ -27,8 +29,8 @@ void ascend(int brr[], int size)
         {
             if (brr[j] > brr[j + 1])
             {
-                int temp = brr[i];
-                brr[i] = brr[j];
+                int temp = brr[j + 1];
+                brr[j + 1] = brr[j];
                 brr[j] = temp;
             }
         }
@@ -39,6 +41,12 @@ void ascend(int brr[], int size)
     {
       printf("%i ", brr[i]);
     }
+    printf("\n");
+}
+
+void descend(int arr[],int size)
+{
+
 }
 
 
