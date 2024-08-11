@@ -10,8 +10,17 @@ int main(void)
 
     do
     {
-        printf("Select an option :\n");
+        printf("Select an option :");
         scanf("%i", &a);
     }
-    while(a == 1 || a == 2 );
+    while(a != 1 && a != 2 );
+
+    if (a == 1)
+    {
+        uppercase(str1);
+    }
+    else
+    {
+        lowercase(str1);
+    }
 }
