@@ -7,7 +7,7 @@ int main(void)
 {
     char * str[100];
     printf("String: ");
-    scanf("%s", &str);
+    scanf("%s", str);
 
     int size = strlen(str);
     palindrome(&str, size);
@@ -15,5 +15,16 @@ int main(void)
 
 void palindrome(char *str, int size);
 {
-    
+
+    for (int i = 0; i < size; i++)
+    {
+        if (str(i) != str(size - i - 1))
+        {
+            printf("%s is not a palindrome", str)
+        }
+        else
+        {
+            printf("%s is a palindrome", str);
+        }
+    }
 }
