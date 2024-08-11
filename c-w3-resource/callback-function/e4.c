@@ -24,11 +24,11 @@ void palindrome(char *str, int size)
     {
         if (str[i] != str[size - i - 1])
         {
-            printf("%s is not a palindrome(case-sensitive)", str)
+            printf("%s is not a palindrome(case-sensitive)\n", str);
         }
         else
         {
-            printf("%s is a palindrome(case-sensitive)", str);
+            printf("%s is a palindrome(case-sensitive)\n", str);
         }
     }
 
@@ -42,11 +42,11 @@ void palindrome(char *str, int size)
     {
         if (str[i] != str[size - i - 1])
         {
-            printf("%s is not a palindrome", str)
+            printf("%s is not a palindrome(case-insensitive)\n", str);
         }
         else
         {
-            printf("%s is a palindrome", str);
+            printf("%s is a palindrome(case-insensitive)\n", str);
         }
     }
 }
