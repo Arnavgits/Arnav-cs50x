@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int a,b,c;
+    int a,max,min;
 
     printf("Input the number of elements to be stored in the array : ");
     scanf("%i", &a);
@@ -17,10 +17,13 @@ int main(void)
         scanf("%i", &arr1[i]);
     }
 
-    b = arr1[0];
-    c = arr1[0];
+    max = arr1[0];
+    min = arr1[0];
     for (int i = 0; i < a; i++)
     {
-        if (arr1[])
+        if (arr1[i] >= max)
+        {
+            
+        }
     }
 }
