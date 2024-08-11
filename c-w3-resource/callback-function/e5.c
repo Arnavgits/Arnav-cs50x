@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <string.h>
+
+void uppercase(char *str, int size);
+void lowercase(char *str, int size);
 
 int main(void)
 {
@@ -20,10 +24,12 @@ int main(void)
     if (a == 1)
     {
         uppercase(str1, size);
+        printf("Upeercase: %s\n", str1);
     }
     else
     {
         lowercase(str1, size);
+        printf("Lowercase : %s\n", str1);
     }
 }
 
@@ -34,6 +40,17 @@ void uppercase(char *str, int size)
         if (str[i] >= 97 && str[i] <= 122)
         {
             str[i] = str[i] - 'a' + 'A';
+        }
+    }
+}
+
+void lowercase(char *str, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        if (str[i] >= 65 && str[i] <= 90)
+        {
+            str[i] = str[i] - 'A' + 'a';
         }
     }
 }
