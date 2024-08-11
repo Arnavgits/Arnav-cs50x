@@ -25,6 +25,7 @@ void palindrome(char *str, int size)
         if (str[i] != str[size - i - 1])
         {
             printf("%s is not a palindrome(case-sensitive)\n", str);
+            break;
         }
         else
         {
