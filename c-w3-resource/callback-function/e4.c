@@ -17,7 +17,7 @@ int main(void)
     palindrome(str, size);
 }
 
-void palindrome(char *str, int size);
+void palindrome(char *str, int size)
 {
     for (int i = 0; i < size; i++)
     {
