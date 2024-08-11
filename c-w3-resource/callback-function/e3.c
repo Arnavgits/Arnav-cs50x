@@ -4,7 +4,7 @@ int main(void)
 {
     int a = 0;
     int arr1[] = {10 ,20, 30, 40, 50, 60};
-    int size = sizeof(arr1) / sizeof(arr[0]);
+    int size = sizeof(arr1) / sizeof(arr1[0]);
 
     for (int i = 0; i < size - 1; i++)
     {
