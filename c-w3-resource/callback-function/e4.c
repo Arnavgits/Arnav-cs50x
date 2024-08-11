@@ -17,7 +17,7 @@ int main(void)
     {
         str[i] = tolower(str[i]);
     }
-    
+
     palindrome(&str, size);
 }
 
@@ -26,7 +26,7 @@ void palindrome(char *str, int size);
 
     for (int i = 0; i < size; i++)
     {
-        if (str(i) != str(size - i - 1))
+        if (str[i] != str[size - i - 1])
         {
             printf("%s is not a palindrome", str)
         }
