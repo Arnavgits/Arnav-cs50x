@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void descend(int arr[],int size);
+void descend(int brr[],int size);
 
 void ascend(int brr[], int size);
 
@@ -44,9 +44,27 @@ void ascend(int brr[], int size)
     printf("\n");
 }
 
-void descend(int arr[],int size)
+void descend(int brr[],int size)
 {
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = 0; j < size - i - 1; j++)
+        {
+            if (brr[j] < brr[j + 1])
+            {
+                int temp = brr[j + 1];
+                brr[j + 1] = brr[j];
+                brr[j] = temp;
+            }
+        }
+    }
 
+    printf("Descending order : ");
+    for (int i = 0; i < size; i++)
+    {
+      printf("%i ", brr[i]);
+    }
+    printf("\n");
 }
 
 
