@@ -34,4 +34,9 @@ int main(void)
             }
         }
     }
+
+    for (int i = 0; i < a; i++)
+    {
+        printf("%i occurs %i times\n", arr1[i], arr2[i]);
+    }
 }
