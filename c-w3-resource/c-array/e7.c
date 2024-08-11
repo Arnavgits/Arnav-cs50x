@@ -31,9 +31,9 @@ int main(void)
     int c = a + b;
     int arr3[c];
 
-    for (int i = 0;i < c; i++)
+    for (int i = 0;i < a; i++)
     {
-        for (int j = 0; j < c; j++)
+        for (int j = 0; j < b; j++)
         {
             if (arr1[i] > arr2[j])
             {
