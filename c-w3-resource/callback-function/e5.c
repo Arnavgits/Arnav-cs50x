@@ -15,17 +15,22 @@ int main(void)
     }
     while(a != 1 && a != 2 );
 
+    int size = strlen(str1);
+
     if (a == 1)
     {
-        uppercase(str1);
+        uppercase(str1, size);
     }
     else
     {
-        lowercase(str1);
+        lowercase(str1, size);
     }
 }
 
-void uppercase(char *str)
+void uppercase(char *str, int size)
 {
-    
+    for (int i = 0; i < size; i++)
+    {
+        
+    }
 }
