@@ -17,5 +17,23 @@ int main(void)
         scanf("%i", &arr1[i]);
     }
 
-    
+    printf("Even elemetd are: ");
+    for (int i = 0; i < a; i++)
+    {
+        if (arr1[i] % 2 == 0)
+        {
+            printf("%i ", arr1[i]);
+        }
+    }
+    printf("\n");
+
+    printf("Odd elements are: ");
+    for (int i = 0; i < a; i++)
+    {
+        if (arr1[i] % 2 != 0)
+        {
+            printf("%i ", arr1[i]);
+        }
+    }
+    printf("\n");
 }
