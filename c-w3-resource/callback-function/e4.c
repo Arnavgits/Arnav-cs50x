@@ -19,6 +19,19 @@ int main(void)
 
 void palindrome(char *str, int size)
 {
+
+    for (int i = 0; i < size; i++)
+    {
+        if (str[i] != str[size - i - 1])
+        {
+            printf("%s is not a palindrome(case-sensitive)", str)
+        }
+        else
+        {
+            printf("%s is a palindrome(case-insensitive)", str);
+        }
+    }
+
     for (int i = 0; i < size; i++)
     {
         str[i] = tolower(str[i]);
