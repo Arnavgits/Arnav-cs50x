@@ -35,7 +35,14 @@ int main(void)
     {
         for (int j = 0; j < c; j++)
         {
-            if (arr1[])
+            if (arr1[i] > arr2[j])
+            {
+                arr3[i] = arr1[i];
+            }
+            else if (arr1[i] < arr2[j])
+            {
+                arr3[i] = arr2[j];
+            }
         }
     }
 }
