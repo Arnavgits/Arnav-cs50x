@@ -44,16 +44,17 @@ void palindrome(char *str, int size)
     }
 
 
+    int ctr1 = 1;
     for (int i = 0; i < size; i++)
     {
          if (str[i] != str[size - i - 1])
         {
-            ctr = 0;
+            ctr1 = 0;
             break;
         }
     }
 
-    if (ctr == 0)
+    if (ctr1 == 0)
     {
         printf("%s is not a palindrome(case-insensitive)\n", str);
     }
