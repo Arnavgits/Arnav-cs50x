@@ -14,7 +14,7 @@ int main(void)
     for (int i = 0; i < a; i++)
     {
         printf("Element %i : ", i);
-        scanf("%i", &arr[i]);
+        scanf("%i", &arr1[i]);
     }
 
     int arr2[a];
