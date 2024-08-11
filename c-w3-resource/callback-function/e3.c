@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int sum(int arr[], int size);
-int product(int arr[], int size);
+int multiply(int arr[], int size);
 
 int main(void)
 {
@@ -16,10 +16,10 @@ int main(void)
     }
     printf("\n");
 
-    int sum = sum(arr, size);
+    int add = sum(arr, size);
     int product = multiply(arr, size);
 
-    printf("Sum: %i\n", sum);
+    printf("Sum: %i\n", add);
     printf("Product: %i\n", product);
 }
 
@@ -34,9 +34,9 @@ int sum(int arr[], int size)
     return ctr;
 }
 
-int product(int arr[], int size)
+int multiply(int arr[], int size)
 {
-    int ctr = 0;
+    int ctr = 1;
 
         for (int i = 0; i < size; i++)
     {
