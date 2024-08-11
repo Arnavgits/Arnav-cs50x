@@ -20,7 +20,7 @@ int main(void)
     printf("Input the number of elements to be stored in the array : ");
     scanf("%i", &b);
 
-    inr arr2[b];
+    int arr2[b];
 
     for (int i = 0; i < b; i++)
     {
@@ -28,5 +28,14 @@ int main(void)
         scanf("%i", &arr2[i]);
     }
 
-    
+    int c = a + b;
+    int arr3[c];
+
+    for (int i = 0;i < c; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            if (arr1[])
+        }
+    }
 }
