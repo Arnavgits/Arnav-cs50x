@@ -44,7 +44,14 @@ int main(void)
 
     //sort the array
 
-    
+
+    for (int i = 0;i < a; i++)
+    {
+        for (int j = 0; j < b; j++)
+        {
+        }
+    }
+
     printf("Merged array: \n");
 
     for (int i = 0; i < c; i++)
