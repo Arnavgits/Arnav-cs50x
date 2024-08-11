@@ -23,7 +23,14 @@ int main(void)
     {
         if (arr1[i] >= max)
         {
-            
+            max = arr1[i];
+        }
+
+        if (arr1[i] <= min)
+        {
+            min = arr1[i];
         }
     }
+    printf("Max : %i\n", max);
+    printf("Min : %i\n", min);
 }
