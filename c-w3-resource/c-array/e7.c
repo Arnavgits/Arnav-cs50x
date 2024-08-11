@@ -45,4 +45,11 @@ int main(void)
             }
         }
     }
+
+    printf("Merged array: \n");
+
+    for (int i = 0; i < c; i++)
+    {
+        printf("%i ", arr3[i]);
+    }
 }
