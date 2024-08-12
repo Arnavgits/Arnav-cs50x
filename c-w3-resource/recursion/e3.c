@@ -18,12 +18,8 @@ void fibon(int a)
     printf("The series are: \n");
     printf("%i ", c);
 
-    for (int i = 0; i < a - 1; i++)
-    {
         int sum = b + c;
         printf("%i ", sum);
         b = c;
         c = sum;
-    }
-    printf("\n");
 }
