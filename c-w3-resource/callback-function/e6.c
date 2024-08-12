@@ -8,5 +8,8 @@ int main(void)
 
     printf("Select an option:\n
 1. Calculate average of the said array elements:\n
-2. Calculate median of the said array elements:")
+2. Calculate median of the said array elements:\n");
+
+
+
 }
