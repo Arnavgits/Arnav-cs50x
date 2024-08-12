@@ -3,19 +3,25 @@
 
 int main(void)
 {
-    char str[100];
+    char str1[100];
+    char str2[100];
 
     printf("Enter a string: ");
-    scanf("%s", str);
-    int size = strlen(str);
+    scanf("%s", str1);
+    int size1 = strlen(str1);
 
-    printf("Original string: %s\n", str);
+    printf("Original string: %s\n", str1);
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size1; i++)
     {
-        if (str[i] == ' ')
+        if (str1[i] == ' ')
         {
-            
+            str2[i] = str1[i];
         }
+    }
+
+    for (int i = 0; i < size1; i++)
+    {
+        printf("New string: %s", str2);
     }
 }
