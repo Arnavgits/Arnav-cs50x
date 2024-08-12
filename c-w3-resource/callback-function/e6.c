@@ -19,15 +19,15 @@ int main(void)
 
     if(select == 1)
     {
-         avg = average(arr1, size);
+         float avg = average(arr1, size);
     }
     else
     int med = median(arr1, size);
 }
 
-int average(int *point, int length)
+int average(float *point, float length)
 {
-    int ctr = 0;
+    float ctr = 0;
     for (int i = 0; i < length; i++)
     {
         ctr += point[i];
