@@ -12,8 +12,9 @@ int main(void)
 
 void fibon(int a)
 {
+    int b = 1;
     for (int i = 1; i <= a; i++)
     {
-        int sum = 1 
+        int sum = 
     }
 }
