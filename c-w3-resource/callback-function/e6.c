@@ -1,9 +1,12 @@
 #include <stdio.h>
 
+int average(float *point1, float length);
+int median(float *point2, float length);
+
 int main(void)
 {
     int arr1[] = {2 ,5 ,4 ,7 ,1 ,8 ,4 ,6 ,5 ,9 ,10 };
-    int size = arr1[]/arr[0];
+    int size = arr1/arr1[0];
     int select;
 
     printf("Select an option:\n
