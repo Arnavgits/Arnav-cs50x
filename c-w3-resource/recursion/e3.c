@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int fibon(int a);
+void fibon(int a);
 
 int main(void)
 {
@@ -11,18 +11,12 @@ int main(void)
     fibon(a);
 }
 
-int fibon(int a)
+void fibon(int a)
 {
-    if(a == 1)
+    if (a == 1)
     {
-        return 1;
+
     }
-    else if(a < 1)
-    {
-        return 0;
-    }
-    else
-    {
     int b = 0;
     int c = 1;
     int sum;
