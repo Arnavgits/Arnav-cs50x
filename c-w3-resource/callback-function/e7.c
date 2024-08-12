@@ -5,6 +5,7 @@ int main(void)
 {
     char str1[100];
     char str2[100];
+    int j = 0;
 
     printf("Enter a string: ");
     fgets(str1, sizeof(str1), stdin);
@@ -16,7 +17,7 @@ int main(void)
     {
         if (str1[i] != ' ')
         {
-            str2[i] = str1[i];
+            str2[j++] = str1[i];
         }
     }
 
