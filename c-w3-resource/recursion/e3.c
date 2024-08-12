@@ -5,12 +5,12 @@ void fibon(int a);
 int main(void)
 {
     int a;
+    int series[100];
+
     printf("Input number of terms for the series :");
     scanf("%i", &a);
 
-    printf("The series are : \n");
-    printf("1 ");
-    fibon(a);
+    
 }
 
 void fibon(int a)
