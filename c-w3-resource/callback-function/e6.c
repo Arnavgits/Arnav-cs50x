@@ -41,6 +41,6 @@ int median(arr1, size)
 {
     if (size % 2 != 0)
     {
-        
+        int value = 
     }
 }
