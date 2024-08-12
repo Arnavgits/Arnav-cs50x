@@ -17,10 +17,8 @@ int main(void)
 
 void print_recursion(char *arr2, int size)
 {
-    if (size == 0)
+    if (size >= 0)
     {
-        return;
+        
     }
-
-    printf("%i ", arr2[])
 }
