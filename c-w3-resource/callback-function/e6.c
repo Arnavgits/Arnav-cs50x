@@ -46,19 +46,29 @@ void bubblesort(float *point3, float length)
     {
         for (int j = 0; j < length - i - 1; j++)
         {
-            if (point3[j] )
+            if (point3[j] > point3[j + 1])
+            {
+                float temp = point3[j];
+                point3[j] = point3[j + 1];
+                point3[j + 1] = point3[j];
+            }
         }
+    }
+    printf("Sorted : ");
+    for (int i = 0; i < length; i++)
+    {
+        printf("%f ", point3[i]);
     }
 }
 
 float median(float *point2, float length)
 {
-    if (size % 2 != 0)
+    if (length % 2 != 0)
     {
         float value = point2[(length + 1) / 2];
         return value;
     }
-    else if(size % 2 == 0)
+    else if(length % 2 == 0)
     {
         float value = (point2[length / 2] + point2[length / 2 + 1]) / 2;
         return value;
