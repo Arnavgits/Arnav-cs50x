@@ -12,6 +12,8 @@ int main(void)
 
     printf("Original string: %s\n", str1);
 
+    while(str1[j] == 0 )
+    {
     for (int i = 0; i < size1; i++)
     {
         if (str1[i] == ' ')
@@ -22,6 +24,7 @@ int main(void)
         {
             str2[i] = str1[i];
         }
+    }
     }
 
     printf("Updated string: %s\n", str2);
