@@ -20,9 +20,11 @@ int main(void)
     if(select == 1)
     {
          float avg = average(arr1, size);
+         printf(Average: %i, avg);
     }
     else
     int med = median(arr1, size);
+    printf("%i", med);
 }
 
 int average(float *point, float length)
