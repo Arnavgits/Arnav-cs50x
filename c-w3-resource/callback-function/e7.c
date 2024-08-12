@@ -18,5 +18,8 @@ int main(void)
         {
             str2[i] = str1[i];
         }
+    }
 
+    printf("Updated string: %s\n", str2);
 }
+
