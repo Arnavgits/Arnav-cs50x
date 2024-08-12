@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-void fibon(a);
+void fibon(int a);
 
 int main(void)
 {
     int a;
     printf("Input number of terms for the series :");
-    scanf("%i", a);
+    scanf("%i", &a);
 
-    printf("The series are : \n")
+    printf("The series are : \n");
     printf("1 ");
     fibon(a);
 }
 
-void fibon(a)
+void fibon(int a)
 {
     int b = 1;
     int sum = 0;
     sum = sum + b;
-    printf(" %i ", sum)
+    printf(" %i ", sum);
 }
