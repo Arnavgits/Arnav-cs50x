@@ -26,9 +26,11 @@ int main(void)
 
 void print_recursion(int *arr2,int start , int size)
 {
-    if (start < size)
+       if (start >= size)
     {
-        printf("%i ", arr2[start]);
+        return; // Base case: No more elements to print
     }
+
+        printf("%i ", arr2[start]);
     print_recursion(arr2, start + 1, size);
 }
