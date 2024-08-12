@@ -71,12 +71,12 @@ float median(float *point2, int length)
         printf("Invalid array length.\n");
         return 0.0; // Return an error indicator for invalid lengths
     }
-    
+
     if (length % 2 != 0)
     {
         return point2[length / 2];
     }
-    else if(length % 2 == 0)
+    else
     {
         return (point2[(length / 2) - 1] + point2[length / 2 ]) / 2.0;
     }
