@@ -33,7 +33,7 @@ float average(float *point1, float length)
     float ctr = 0;
     for (int i = 0; i < length; i++)
     {
-        ctr += point[i];
+        ctr += point1[i];
     }
     return ctr / length;
 }
