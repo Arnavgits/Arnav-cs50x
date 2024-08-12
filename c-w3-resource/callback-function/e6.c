@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 float average(float *point1, float length);
-float median(float *point2, float length);
+float median(float *point2, int length);
 void bubblesort(float *point3, float length);
 
 int main(void)
@@ -25,8 +25,8 @@ int main(void)
          printf("Average: %f\n", avg);
     }
     else
-    float med = median(arr1, size);
     bubblesort(arr1, size);
+    float med = median(arr1, size);
     printf("Median :%f\n", med);
 }
 
@@ -61,7 +61,7 @@ void bubblesort(float *point3, float length)
     }
 }
 
-float median(float *point2, float length)
+float median(float *point2, int length)
 {
     if (length % 2 != 0)
     {
