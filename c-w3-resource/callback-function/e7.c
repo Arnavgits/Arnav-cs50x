@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -6,6 +7,9 @@ int main(void)
 
     printf("Enter a string: ");
     scanf("%s", str);
+    int size = strlen(str);
 
-    printf("Original string: %s", str);
+    printf("Original string: %s\n", str);
+
+    
 }
