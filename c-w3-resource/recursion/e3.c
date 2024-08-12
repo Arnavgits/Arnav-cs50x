@@ -13,6 +13,10 @@ int main(void)
 
 void fibon(int a)
 {
+    if (a == 0)
+    {
+        return 1;
+    }
     int b = 0;
     int c = 1;
     printf("The series are: \n");
@@ -22,4 +26,5 @@ void fibon(int a)
         printf("%i ", sum);
         b = c;
         c = sum;
+        fibon(a - 1);
 }
