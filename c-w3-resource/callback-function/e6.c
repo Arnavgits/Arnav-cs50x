@@ -39,5 +39,8 @@ int average(float *point, float length)
 
 int median(arr1, size)
 {
-    int ctr = 0;
+    if (size % 2 != 0)
+    {
+        
+    }
 }
