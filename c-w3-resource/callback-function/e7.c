@@ -13,7 +13,7 @@ int main(void)
 
     printf("Original string: %s\n", str1);
 
-    while(str1[j] == 0 )
+    while(str1[j] != ' ' )
     {
     for (int i = 0; i < size1; i++)
     {
