@@ -22,12 +22,9 @@ int fibon(int a)
     int sum;
     printf("%i ", c);
 
-    if (a >= 0)
-    {
         sum = b + c;
         printf("%i ", sum);
         b = c;
         c = sum;
         fibon(a - 1);
-        }
 }
