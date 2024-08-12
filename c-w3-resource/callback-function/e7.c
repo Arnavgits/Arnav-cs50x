@@ -11,5 +11,8 @@ int main(void)
 
     printf("Original string: %s\n", str);
 
-    
+    for (int i = 0; i < size; i++)
+    {
+        
+    }
 }
