@@ -7,7 +7,7 @@ int main(void)
     char str2[100];
 
     printf("Enter a string: ");
-    scanf("%s", str1);
+    fgets(str1, sizeof(str1), str);
     int size1 = strlen(str1);
 
     printf("Original string: %s\n", str1);
@@ -18,7 +18,8 @@ int main(void)
         {
             str2[i] = str1[i];
         }
-    }
+
+
 
     for (int i = 0; i < size1; i++)
     {
