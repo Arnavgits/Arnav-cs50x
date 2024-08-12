@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    int j = 0;
     char str1[100];
     char str2[100];
 
@@ -25,6 +26,7 @@ int main(void)
             str2[i] = str1[i];
         }
     }
+    j++;
     }
 
     printf("Updated string: %s\n", str2);
