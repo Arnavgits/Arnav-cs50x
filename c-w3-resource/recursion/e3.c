@@ -13,12 +13,12 @@ int main(void)
 
 void fibon(int a)
 {
-    if (a >= 0)
-    {
     int b = 0;
     int c = 1;
     printf("%i ", c);
 
+    if (a >= 0)
+    {
         int sum = b + c;
         printf("%i ", sum);
         b = c;
