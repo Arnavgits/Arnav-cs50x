@@ -16,6 +16,10 @@ int main(void)
     {
         if (str1[i] == ' ')
         {
+            str2[i] = str1[i + 1];
+        }
+        else
+        {
             str2[i] = str1[i];
         }
     }
