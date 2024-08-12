@@ -66,6 +66,12 @@ void bubblesort(float *point3, int length)
 
 float median(float *point2, int length)
 {
+     if (length <= 0)
+    {
+        printf("Invalid array length.\n");
+        return 0.0; // Return an error indicator for invalid lengths
+    }
+    
     if (length % 2 != 0)
     {
         return point2[length / 2];
