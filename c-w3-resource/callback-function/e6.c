@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int average(float *point1, float length);
-int median(float *point2, float length);
+float average(float *point1, float length);
+float median(float *point2, float length);
+void bubblesort(float *point3, float length);
 
 int main(void)
 {
@@ -25,6 +26,7 @@ int main(void)
     }
     else
     float med = median(arr1, size);
+    bubblesort(arr1, size);
     printf("Median :%f\n", med);
 }
 
@@ -38,16 +40,27 @@ float average(float *point1, float length)
     return ctr / length;
 }
 
+void bubblesort(float *point3, float length)
+{
+    for (int i = 0; i < length - 1; i++)
+    {
+        for (int j = 0; j < length - i - 1; j++)
+        {
+            if (point3[j] )
+        }
+    }
+}
+
 float median(float *point2, float length)
 {
     if (size % 2 != 0)
     {
-        float value = point2[(size + 1) / 2];
+        float value = point2[(length + 1) / 2];
         return value;
     }
     else if(size % 2 == 0)
     {
-        float value = (point2[size / 2] + size / 2 + 1) / 2;
+        float value = (point2[length / 2] + point2[length / 2 + 1]) / 2;
         return value;
     }
 }
