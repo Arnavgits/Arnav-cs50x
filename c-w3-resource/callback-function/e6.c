@@ -28,7 +28,7 @@ int main(void)
     printf("Median :%f\n", med);
 }
 
-int average(float *point1, float length)
+float average(float *point1, float length)
 {
     float ctr = 0;
     for (int i = 0; i < length; i++)
@@ -38,14 +38,16 @@ int average(float *point1, float length)
     return ctr / length;
 }
 
-int median(float *point2, float length)
+float median(float *point2, float length)
 {
     if (size % 2 != 0)
     {
-        int value = point2[(size + 1) / 2];
+        float value = point2[(size + 1) / 2];
+        return value;
     }
     else if(size % 2 == 0)
     {
-        int value = (point2[size / 2] + size / 2 + 1) / 2;
+        float value = (point2[size / 2] + size / 2 + 1) / 2;
+        return value;
     }
 }
