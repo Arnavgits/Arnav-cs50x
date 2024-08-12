@@ -12,10 +12,15 @@ int main(void)
         arr1[i] = get_int("element %i: ", i);
     }
     printf("The elements in the array are: ");
-    print_recursion(arr1);
+    print_recursion(arr1, a);
 }
 
-void print_recursion(char *arr2)
+void print_recursion(char *arr2, int size)
 {
-    
+    if (size == 0)
+    {
+        return;
+    }
+
+    printf("%i ", arr2[])
 }
