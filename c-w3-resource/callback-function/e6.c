@@ -68,12 +68,10 @@ float median(float *point2, int length)
 {
     if (length % 2 != 0)
     {
-        float value = point2[(length + 1) / 2];
-        return value;
+        return point2[(length + 1) / 2];
     }
     else if(length % 2 == 0)
     {
-        float value = (point2[length / 2] + point2[length / 2 + 1]) / 2;
-        return value;
+        return (point2[length / 2] + point2[length / 2 + 1]) / 2;
     }
 }

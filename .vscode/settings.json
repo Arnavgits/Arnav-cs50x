@@ -2,6 +2,8 @@
     "gitdoc.enabled": true,
     "files.associations": {
         "typeinfo": "c",
-        "initializer_list": "c"
+        "initializer_list": "c",
+        "type_traits": "c",
+        "utility": "c"
     }
 }
