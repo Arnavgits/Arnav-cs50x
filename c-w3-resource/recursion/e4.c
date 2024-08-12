@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_recursion(char *arr2);
+void print_recursion(int *arr2);
 
 int main(void)
 {
@@ -11,14 +11,17 @@ int main(void)
     {
         arr1[i] = get_int("element %i: ", i);
     }
+    int b = 0;
     printf("The elements in the array are: ");
-    print_recursion(arr1, a);
+    print_recursion(arr1, b, a);
 }
 
-void print_recursion(char *arr2, int size)
+void print_recursion(int *arr2, start , int size)
 {
-    if (size >= 0)
+    if (start < size)
     {
-        printf("%i ", arr2[size])
+        printf("%i ", arr2[start]);
     }
+    print_recursion(arr2, start + 1, size);
+
 }
