@@ -5,7 +5,7 @@ int median(float *point2, float length);
 
 int main(void)
 {
-    int arr1[] = {2 ,5 ,4 ,7 ,1 ,8 ,4 ,6 ,5 ,9 ,10 };
+    float arr1[] = {2 ,5 ,4 ,7 ,1 ,8 ,4 ,6 ,5 ,9 ,10 };
     int size = sizeof(arr1)/sizeof(arr1[0]);
     int select;
 
@@ -21,11 +21,11 @@ int main(void)
     if(select == 1)
     {
          float avg = average(arr1, size);
-         printf(Average: %i, avg);
+         printf("Average: %f\n", avg);
     }
     else
-    int med = median(arr1, size);
-    printf("%i", med);
+    float med = median(arr1, size);
+    printf("Median :%f\n", med);
 }
 
 int average(float *point1, float length)
