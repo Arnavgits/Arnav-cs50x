@@ -7,6 +7,7 @@ int main(void)
     int a;
     printf("Input number of terms for the series :");
     scanf("%i", &a);
+    fibon(a);
 
 }
 
@@ -15,12 +16,14 @@ void fibon(int a)
     int b = 0;
     int c = 1;
     printf("The series are: \n");
+    printf("%i ", c);
 
-    for (int i = 1; i <= a; i++)
+    for (int i = 0; i < a - 1; i++)
     {
         int sum = b + c;
         printf("%i ", sum);
         b = c;
         c = sum;
     }
+    printf("\n");
 }
