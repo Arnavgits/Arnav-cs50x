@@ -12,8 +12,8 @@ int main(void)
     printf("Input number of terms for the series :");
     scanf("%i", &a);
      printf("The series are: \n");
+     printf("%i ", c);
     fibon(a);
-    printf("%i ", c);
 }
 
 void fibon(int a)
