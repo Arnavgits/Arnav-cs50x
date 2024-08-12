@@ -13,7 +13,7 @@ int main(void)
     scanf("%i", &a);
      printf("The series are: \n");
      printf("%i ", c);
-    fibon(a);
+    fibon(a - 1);
 }
 
 void fibon(int a)
