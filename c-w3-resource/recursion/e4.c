@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_recursion(int *arr2);
+void print_recursion(int *arr2,int start , int size);
 
 int main(void)
 {
@@ -24,12 +24,11 @@ int main(void)
     print_recursion(arr1, b, a);
 }
 
-void print_recursion(int *arr2, start , int size)
+void print_recursion(int *arr2,int start , int size)
 {
     if (start < size)
     {
         printf("%i ", arr2[start]);
     }
     print_recursion(arr2, start + 1, size);
-
 }
