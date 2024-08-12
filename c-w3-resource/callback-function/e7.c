@@ -3,7 +3,6 @@
 
 int main(void)
 {
-    int j = 0;
     char str1[100];
     char str2[100];
 
@@ -13,20 +12,12 @@ int main(void)
 
     printf("Original string: %s\n", str1);
 
-    while(str1[j] != ' ' )
-    {
     for (int i = 0; i < size1; i++)
     {
-        if (str1[i] == ' ')
-        {
-            str2[i] = str1[i + 1];
-        }
-        else
+        if (str1[i] != ' ')
         {
             str2[i] = str1[i];
         }
-    }
-    j++;
     }
 
     printf("Updated string: %s\n", str2);
