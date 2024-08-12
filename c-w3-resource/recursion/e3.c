@@ -13,14 +13,13 @@ int main(void)
     scanf("%i", &a);
      printf("The series are: \n");
     fibon(a);
+    printf("%i ", c);
 }
 
 void fibon(int a)
 {
     if (a >= 1)
     {
-    printf("%i ", c);
-
         sum = b + c;
         printf("%i ", sum);
         b = c;
