@@ -19,6 +19,6 @@ void print_recursion(char *arr2, int size)
 {
     if (size >= 0)
     {
-        
+        printf("%i ", arr2[size])
     }
 }
