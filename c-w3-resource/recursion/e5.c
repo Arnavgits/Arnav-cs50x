@@ -6,5 +6,5 @@ int main(void)
 
     for (int i = 0 ; i < )
     printf("Number: ");
-    scanf("%")
+    scanf("%")  
 }
