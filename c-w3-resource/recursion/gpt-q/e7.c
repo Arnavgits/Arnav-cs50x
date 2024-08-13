@@ -9,6 +9,7 @@ int main(void)
     scanf("%i", &number);
     int ctr = 0;
     int digit = count(number, ctr);
+    printf("Total digits: %i", digit);
 }
 
 int count(int x, int y)
