@@ -11,7 +11,7 @@ int main(void)
     scanf("%i", &b);
 
     int result = gcd(a, b);
-    printf("GCD: %i", result);
+    printf("GCD: %i\n", result);
 }
 
 int gcd(int x, int y)
@@ -19,5 +19,6 @@ int gcd(int x, int y)
     if (y == 0)
     return 1;
 
-    return gcd(y, x % y);
+    gcd(y, x % y);
+    return y;
 }
