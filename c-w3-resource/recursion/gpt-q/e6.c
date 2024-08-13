@@ -15,5 +15,5 @@ int main(void)
 
 int gcd(int x, int y)
 {
-    x / y
+    return gcd(y, x % y);
 }
