@@ -33,4 +33,5 @@ void print_recursion(int *arr2,int start , int size)
 
         printf("%i ", arr2[start]);
     print_recursion(arr2, start + 1, size);
+    printf("\n");
 }
