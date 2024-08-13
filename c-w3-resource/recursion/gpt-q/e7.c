@@ -13,10 +13,11 @@ int main(void)
 
 int count(int x, int y)
 {
-    x = x / 10;
-    y++;
     if (x / 10 == 0)
     return y;
+    
+    x = x / 10;
+    y++;
 
-    count(x / 10, y);
+    count(x, y);
 }
