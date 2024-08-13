@@ -11,14 +11,13 @@ int main(void)
     scanf("%i", &power);
 
     int result = times(number, power);
-    printf("Power: %i", result);
+    printf("result: %i\n", result);
 }
 
 int times(int x, int y)
 {
-    if (y == 1)
+    if (y == 0)
     return 1;
 
-    y--;
-    return x * times(x - 1,);
+    return x * times(x , y - 1);
 }
