@@ -16,9 +16,9 @@ int main(void)
 
 int gcd(int x, int y)
 {
-    if (y == 0)
+    if (x % y == 0)
     return 1;
 
     gcd(y, x % y);
-    return x % y;
+    return y;
 }
