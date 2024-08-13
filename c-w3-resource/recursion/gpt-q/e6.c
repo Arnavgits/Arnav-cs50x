@@ -18,8 +18,6 @@ int gcd(int x, int y)
 {
     if (y == 0)
     return x;
-
-    y = x % y;
-    x = y;
-    return gcd(x, y);
+    
+    return gcd(y, x % y);
 }
