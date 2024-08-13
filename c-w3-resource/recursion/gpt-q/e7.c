@@ -13,8 +13,7 @@ int main(void)
 
 int count(int x, int y)
 {
-    x % 10;
-    x / 10;
+    x = x / 10;
     y++;
     if (x / 10 == 0)
     return y;
