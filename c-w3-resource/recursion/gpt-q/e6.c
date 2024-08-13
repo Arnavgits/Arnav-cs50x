@@ -16,10 +16,9 @@ int main(void)
 
 int gcd(int x, int y)
 {
-    gcd(y, x % y);
-    
     if (y == 0)
     return 1;
 
+    gcd(y, x % y);
     return y;
 }
