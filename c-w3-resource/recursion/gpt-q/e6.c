@@ -16,11 +16,10 @@ int main(void)
 
 int gcd(int x, int y)
 {
-    if (x % y == 0)
-    return 1;
+    if (y == 0)
+    return x;
 
     y = x % y;
     x = y;
     gcd(x, y);
-    return y;
 }
