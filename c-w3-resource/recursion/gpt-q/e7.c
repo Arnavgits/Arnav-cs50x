@@ -15,9 +15,9 @@ int count(int x, int y)
 {
     if (x / 10 == 0)
     return y;
-    
+
     x = x / 10;
     y++;
 
-    count(x, y);
+    return count(x, y);
 }
