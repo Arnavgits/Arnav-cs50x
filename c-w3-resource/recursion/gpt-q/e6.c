@@ -20,5 +20,5 @@ int gcd(int x, int y)
     return 1;
 
     gcd(y, x % y);
-    return y;
+    return x % y;
 }
