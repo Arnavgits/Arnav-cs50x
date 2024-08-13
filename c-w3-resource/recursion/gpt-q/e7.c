@@ -9,12 +9,12 @@ int main(void)
     scanf("%i", &number);
     int ctr = 0;
     int digit = count(number, ctr);
-    printf("Total digits: %i", digit);
+    printf("Total digits: %i\n", digit);
 }
 
 int count(int x, int y)
 {
-    if (x / 10 == 0)
+    if (x == 0)
     return y;
 
     x = x / 10;
