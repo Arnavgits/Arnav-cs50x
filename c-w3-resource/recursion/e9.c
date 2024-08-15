@@ -13,7 +13,7 @@ int main(void)
 
     int size = strlen(str1);
 
-    reverse_string(str1, size - 1, 0);
+    reverse_string(str1, 0, size - 1);
     printf("%s\n", str1);
 }
 
