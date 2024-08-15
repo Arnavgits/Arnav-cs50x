@@ -3,15 +3,15 @@
 int main(void)
 {
     FILE *ptr1 = fopen("test1.txt", "w");
-    int str[100],lines;
+    int str1[100],lines;
 
     printf("Input the number of lines to be written:");
-    scanf("%i", lines);
+    scanf("%i", &lines);
 
     for (int i = 0; i < lines; i++)
     {
-        gfets(ptr1, sizeof(str), stdin);
-        fprintf()
+        fgets(ptr1, sizeof(str1), stdin);
+        fprintf(ptr1, "%s", str1);
     }
 
     printf("The lines are: \n");
