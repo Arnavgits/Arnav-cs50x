@@ -30,7 +30,7 @@ void reverse_string(char *str3, int length,int ctr)
 
 void swap(char *x, char *y)
 {
-    char *temp = x;
-    x = y;
-    y = temp;
+    char temp = *x;
+    *x = *y;
+    *y = temp;
 }
