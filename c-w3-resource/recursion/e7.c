@@ -12,7 +12,7 @@ int main(void)
     scanf("%i", &num2);
 
     int result;
-    
+
     if (num1 >= num2)
     result = gcd(num1 , num2);
     else
@@ -23,8 +23,8 @@ int main(void)
 
 int gcd(int x , int y)
 {
-    if (x == 0)
-    return y;
+    if (y == 0)
+    return x;
 
     x = y;
     y = x % y;
