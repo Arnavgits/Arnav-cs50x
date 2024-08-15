@@ -11,6 +11,7 @@ int main(void)
 
     int ctr = 0;
     int result = count(number, ctr);
+    printf("No of digits: %i", result);
 }
 
 int count(int x, int y)
