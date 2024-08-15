@@ -11,11 +11,13 @@ int main(void)
     printf("Input 2nd number: ");
     scanf("%i", &num2);
 
+    int result;
+    
     if (num1 >= num2)
-    int result = gcd(num1 , num2);
-    printf("GCD of %i and %i: %i", num1, num2, result);
+    result = gcd(num1 , num2);
     else
-    int result = gcd(num2 , num1);
+    result = gcd(num2 , num1);
+
     printf("GCD of %i and %i: %i", num1, num2, result);
 }
 
