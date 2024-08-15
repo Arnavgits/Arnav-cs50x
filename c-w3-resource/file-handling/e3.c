@@ -9,12 +9,13 @@ int main(void)
     printf("Input the number of lines to be written:");
     scanf("%i", &lines);
 
-    for (int i = 0; i < lines; i++)
+    for (int i = 0; i < lines + 1; i++)
     {
         fgets(str1, sizeof(str1), stdin);
         fprintf(ptr1, "%s", str1);
     }
 
-    printf("The lines are: \n");
+    printf("The contents of the file  are: \n");
+
 
 }
