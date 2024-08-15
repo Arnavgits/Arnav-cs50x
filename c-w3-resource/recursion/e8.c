@@ -17,11 +17,11 @@ int main(void)
     scanf("%i", arr1[i]);
    }
 
-   int result = largest(arr1, size);
+   int result = largest(arr1, arr1[0]);
    printf("Largest element: %i", result);
 }
 
-int largest(int *arr2, int length)
+int largest(int *arr2, int ctr)
 {
-
+    
 }
