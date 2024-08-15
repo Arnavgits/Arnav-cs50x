@@ -17,6 +17,11 @@ int main(void)
 
     printf("The contents of the file are: \n");
 
-    int ch;
-    while((ch = ))
+    char ch;
+    while((ch = fgetc(ptr1)) != EOF)
+    {
+        printf("%c", ch);
+    }
+
+    fclose(ptr1);
 }
