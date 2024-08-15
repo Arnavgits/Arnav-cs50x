@@ -14,6 +14,9 @@ int main(void)
         fgets(str1, sizeof(str1), stdin);
         fprintf(ptr1, "%s", str1);
     }
+    fclose(ptr1);
+
+    ptr1 = fopen("test1.txt", "r");
 
     printf("The contents of the file are: \n");
 
