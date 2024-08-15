@@ -16,6 +16,7 @@ int main(void)
     printf("element - %i:\n", i);
     scanf("%i", arr1[i]);
    }
+   int ctr = 0;
 
    int result = largest(arr1, size, arr1[0], ctr);
    printf("Largest element: %i", result);
@@ -23,5 +24,8 @@ int main(void)
 
 int largest(int *arr2, int length, int ctr1, int ctr2)
 {
-    
+    if (arr2[i + 1] > arr2[i])
+    {
+        
+    }
 }
