@@ -8,7 +8,7 @@ int main(void)
     FILE *ptr1 = fopen(str, "r");
 
     printf("The content of the %s file is: ", str);
-    
+    fgetc()
 
 
 }
