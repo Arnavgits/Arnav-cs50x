@@ -29,8 +29,7 @@ int largest(int *arr2, int length, int ctr1, int element)
     if (arr2[element] > ctr1)
     {
         ctr1 = arr2[element];
-        element++;
     }
 
-    return largest(arr2,  length, ctr1, element);
+    return largest(arr2,  length, ctr1, element + 1);
 }
