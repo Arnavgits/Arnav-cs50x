@@ -18,5 +18,5 @@ int main(void)
 
 char *reverse_string(char *str3, length, ctr)
 {
-    if (str3[ctr] )
+    swap(str3[ctr], str3[length]);
 }
