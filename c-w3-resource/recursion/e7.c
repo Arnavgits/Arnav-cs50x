@@ -9,7 +9,7 @@ int main(void)
     printf("Input 1st number: ");
     scanf("%i", &num1);
     printf("Input 2nd number: ");
-    scanf("%i", num2);
+    scanf("%i", &num2);
 
     if (num1 >= num2)
     int result = gcd(num1 , num2);
