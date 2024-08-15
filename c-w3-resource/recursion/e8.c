@@ -18,9 +18,10 @@ int main(void)
    }
 
    int result = largest(arr1, size);
+   printf("Largest element: %i", result);
 }
 
-int largest(int arr2, int length)
+int largest(int *arr2, int length)
 {
-    
+
 }
