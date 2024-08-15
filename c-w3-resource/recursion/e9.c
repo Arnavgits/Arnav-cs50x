@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-char *reverse_string(char *str3);
+void swap(char *x, char *y);
+char *reverse_string(char *str3, length, ctr);
 
 int main(void)
 {
@@ -32,5 +33,4 @@ void swap(char *x, char *y)
     char temp = x;
     x = y;
     y = temp;
-
 }
