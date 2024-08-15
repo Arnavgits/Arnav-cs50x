@@ -13,9 +13,9 @@ int main(void)
 
     if (num1 >= num2)
     int result = gcd(num1 , num2);
+    printf("GCD of %i and %i: %i", num1, num2, result);
     else
     int result = gcd(num2 , num1);
-
     printf("GCD of %i and %i: %i", num1, num2, result);
 }
 
