@@ -18,5 +18,16 @@ int main(void)
 
 char *reverse_string(char *str3, length, ctr)
 {
+    if (ctr == length)
+    {
+        return str3;
+    }
     swap(str3[ctr], str3[length]);
+
+    return(str3, length - 1, ctr + 1);
+}
+
+void swap(char *x, char *y)
+{
+    
 }
