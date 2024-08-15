@@ -26,9 +26,9 @@ int largest(int *arr2, int length, int ctr1, int element)
     if (element == length)
     return ctr1;
 
-    if (arr2[element + 1] > arr2[element])
+    if (arr2[element] > ctr1)
     {
-        ctr1 = arr2[element + 1];
+        ctr1 = arr2[element];
         element++;
     }
 
