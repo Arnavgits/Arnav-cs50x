@@ -9,7 +9,7 @@ int main(void)
 
     printf("The content of the %s file is: ", str);
 
-    while((temp == fgetc(ptr1)) != EOF)
+    while((temp = fgetc(ptr1)) != EOF)
     printf("%c", temp);
 
     fclose(ptr1);
