@@ -21,7 +21,11 @@ int main(void)
 
 int gcd(int x , int y)
 {
+    if (x == 0)
+    return y;
+
     x = y;
     y = x % y;
+    return gcd(x, y);
 
 }
