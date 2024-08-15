@@ -15,5 +15,8 @@ int main(void)
 
 int add(int x, int y)
 {
-    
+    y += x % 10;
+    x = x / 10;
+
+    return add(x , y);
 }
