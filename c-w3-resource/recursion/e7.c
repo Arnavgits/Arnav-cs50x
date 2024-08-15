@@ -26,8 +26,8 @@ int gcd(int x , int y)
     if (y == 0)
     return x;
 
-    x = y;
-    y = x % y;
+    int temp = x % y;
+    
     return gcd(x, y);
 
 }
