@@ -15,7 +15,8 @@ int main(void)
         fprintf(ptr1, "%s", str1);
     }
 
-    printf("The contents of the file  are: \n");
+    printf("The contents of the file are: \n");
 
-
+    int ch;
+    while((ch = ))
 }
