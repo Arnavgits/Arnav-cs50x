@@ -18,7 +18,7 @@ int main(void)
     else
     result = gcd(num2 , num1);
 
-    printf("GCD of %i and %i: %i", num1, num2, result);
+    printf("GCD of %i and %i: %i\n", num1, num2, result);
 }
 
 int gcd(int x , int y)
@@ -27,7 +27,8 @@ int gcd(int x , int y)
     return x;
 
     int temp = x % y;
-    
+    x = y;
+    y = temp;
     return gcd(x, y);
 
 }
