@@ -7,7 +7,7 @@ int main(void)
     int number;
 
     printf("Input a no: ");
-    scanf("%i", number);
+    scanf("%i", &number);
 
     int ctr = 0;
     int result = count(number, ctr);
@@ -19,6 +19,6 @@ int count(int x, int y)
     return y;
 
     x = x / 10;
-    y++
+    y++;
     count(x, y);
 }
