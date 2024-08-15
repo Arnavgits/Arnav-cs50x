@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int largest(int arr2, int length);
+int largest(int *arr2, int length, int ctr1, int element);
 
 int main(void)
 {
@@ -16,16 +16,16 @@ int main(void)
     printf("element - %i:\n", i);
     scanf("%i", arr1[i]);
    }
-   int ctr = 0;
 
-   int result = largest(arr1, size, arr1[0], ctr);
+   int result = largest(arr1, size, arr1[0], 0);
    printf("Largest element: %i", result);
 }
 
-int largest(int *arr2, int length, int ctr1, int ctr2)
+int largest(int *arr2, int length, int ctr1, int element)
 {
-    if (arr2[i + 1] > arr2[i])
+    if (arr2[element + 1] > arr2[element])
     {
-        
+        ctr1 = arr2[ctr2 + 1];
+        ctr2++
     }
 }
