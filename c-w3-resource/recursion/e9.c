@@ -29,5 +29,8 @@ char *reverse_string(char *str3, length, ctr)
 
 void swap(char *x, char *y)
 {
-    
+    char temp = x;
+    x = y;
+    y = temp;
+
 }
