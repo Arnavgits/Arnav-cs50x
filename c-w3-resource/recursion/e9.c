@@ -2,7 +2,7 @@
 #include <string.h>
 
 void swap(char *x, char *y);
-void reverse_string(char *str3, int length,int ctr);
+void reverse_string(char *str3, int start,int end);
 
 int main(void)
 {
@@ -14,18 +14,18 @@ int main(void)
     int size = strlen(str1);
 
     reverse_string(str1, size - 1, 0);
-    printf("%s", str1);
+    printf("%s\n", str1);
 }
 
-void reverse_string(char *str3, int length,int ctr)
+void reverse_string(char *str3, int start,int end)
 {
-    if (ctr == length)
+    if (start >= end)
     {
         return;
     }
-    swap(&str3[ctr], &str3[length]);
+    swap(&str3[start], &str3[end]);
 
-    reverse_string(str3, length - 1, ctr + 1);
+    reverse_string(str3,start + 1, end - 1);
 }
 
 void swap(char *x, char *y)
