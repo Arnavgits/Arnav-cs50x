@@ -4,7 +4,7 @@ int main(void)
 {
     printf("Write a program in C to create and store information in a text file.");
     FILE *ptr1 = fopen("test.txt", "r" );
-    fputc('T', ptr1);
+    
 
     fclose(ptr1);
 }
