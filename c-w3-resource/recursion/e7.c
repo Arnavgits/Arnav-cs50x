@@ -17,5 +17,5 @@ int main(void)
 
 int gcd(int x , int y)
 {
-    
+    x %
 }
