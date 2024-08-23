@@ -2,7 +2,8 @@
 
 int main(void)
 {
-    char str1[100];
+    char str1[100],str2[100],str3[100];
+
     printf("Input file name to be opened: ");
     scanf("%s", &str1);
 
