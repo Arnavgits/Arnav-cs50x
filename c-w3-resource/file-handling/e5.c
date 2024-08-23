@@ -17,6 +17,6 @@ int main(void)
             ctr++;
         }
     }
-    printf("The lines in the file %s: %i", name ,ctr);
+    printf("The lines in the file %s: %i\n", name ,ctr);
 }
 
