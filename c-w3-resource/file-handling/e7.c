@@ -19,16 +19,10 @@ int main(void)
         {
             characters++;
         }
+
+        if(isspace)
     }
 
-    char ch2;
-    while((ch2 = fgetc(ptr1)) != EOF)
-    {
-        if(isspace(ptr1))
-        {
-            words++;
-        }
-    }
     printf("The no of characters in the file %s are : %i\n", name, characters);
     printf("The no of words are: %i\n", words);
     fclose(ptr1);
