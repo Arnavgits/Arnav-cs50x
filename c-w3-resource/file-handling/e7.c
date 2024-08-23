@@ -20,5 +20,5 @@ int main(void)
             characters++;
         }
     }
-    printf("The no of words in the file %s are : %i", name, ctr);
+    printf("The no of characters in the file %s are : %i", name, characters);
 }
