@@ -10,6 +10,13 @@ int main(void)
     FILE * ptr1 = fopen(name , "r");
 
     char ch;
-    while((ch = ptr1) != )
+    while((ch = fgetc(ptr1)) != EOF)
+    {
+        if(ch == '\n')
+        {
+            ctr++;
+        }
+    }
+    printf("The lines in the file %s: %i", name ,ctr);
 }
 
