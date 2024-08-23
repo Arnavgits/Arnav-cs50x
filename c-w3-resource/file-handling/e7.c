@@ -14,7 +14,7 @@ int main(void)
     while((ch = fgetc(ptr1)) != EOF)
     {
         printf("%c", ch);
-        ctr++;
+        if()
     }
     printf("The no of words in the file %s are : %i", name, ctr);
 }
