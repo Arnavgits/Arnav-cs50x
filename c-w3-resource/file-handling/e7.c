@@ -29,5 +29,7 @@ int main(void)
             words++;
         }
     }
-    printf("The no of characters in the file %s are : %i", name, characters);
+    printf("The no of characters in the file %s are : %i\n", name, characters);
+    printf("The no of words are: %i\n", words);
+    fclose(ptr1);
 }
