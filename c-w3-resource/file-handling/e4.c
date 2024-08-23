@@ -15,11 +15,12 @@ int main(void)
     char ch;
     while((ch = fgetc(ptr1)) != EOF)
     {
-        while(ch != '\n')
+        while(ch != '\n' && ch != EOF)
         {
             line[i] = ch;
+            i++;
         }
-        i++;
+
     }
     fclose(ptr1);
 }
