@@ -15,7 +15,7 @@ int main(void)
     char ch;
     while((ch = fgetc(ptr1)) != EOF)
     {
-        while(ch = fgetc(ptr1) != \n)
+        while(ch != '\n')
         {
             line[i] = ch;
         }
