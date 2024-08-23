@@ -24,7 +24,7 @@ int main(void)
     char ch2;
     while((ch2 = fgetc(ptr1)) != EOF)
     {
-        if(ch2 == '\n' && ch2 == ' ')
+        if(isspace(ptr1))
         {
             words++;
         }
