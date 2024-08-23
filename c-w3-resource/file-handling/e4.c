@@ -2,12 +2,12 @@
 
 int main(void)
 {
-    char str1[100],str2[100],str3[100];
+    char str1[100];
     int i = 0;
     char line[100];
 
     printf("Input file name to be opened: ");
-    scanf("%s", &str1);
+    scanf("%s", str1);
 
     printf("The content of the file %s: \n", str1);
 
@@ -20,7 +20,8 @@ int main(void)
             line[i] = ch;
             i++;
         }
-
+        line[i] = '\0';
+        printf("%s\n", line);
     }
     fclose(ptr1);
 }
