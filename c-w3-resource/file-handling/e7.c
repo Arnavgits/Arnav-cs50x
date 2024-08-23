@@ -15,12 +15,15 @@ int main(void)
     while((ch1 = fgetc(ptr1)) != EOF)
     {
         printf("%c", ch1);
-        if(isalpha(ch1))
+        if(isalnum(ch1))
         {
             characters++;
         }
 
-        if(isspace)
+        if(isspace(ch1))
+        {
+            words++;
+        }
     }
 
     printf("The no of characters in the file %s are : %i\n", name, characters);
