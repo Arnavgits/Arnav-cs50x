@@ -2,5 +2,19 @@
 
 int main(void)
 {
-    
+    int words = 0;
+    int characters = 0;
+    char name[100];
+    printf("Input the file name to be entered: ");
+    scanf("%s", name);
+
+    FILE * ptr1 = fopen(name, "r");
+
+    char ch;
+    while((ch = fgetc(ptr1)) != EOF)
+    {
+        printf("%c", ch);
+        ctr++;
+    }
+    printf("The no of words in the file %s are : %i", name, ctr);
 }
