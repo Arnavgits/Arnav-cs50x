@@ -3,7 +3,7 @@
 int main(void)
 {
     char str1[100];
-    int i = 0;
+    int i;
     char line[100];
 
     printf("Input file name to be opened: ");
@@ -15,6 +15,7 @@ int main(void)
     char ch;
     while((ch = fgetc(ptr1)) != EOF)
     {
+        i = 0;
         while(ch != '\n' && ch != EOF)
         {
             line[i] = ch;
