@@ -20,6 +20,7 @@ int main(void)
         {
             line[i] = ch;
             i++;
+            ch = fgetc(ptr1);
         }
         line[i] = '\0';
         printf("%s\n", line);
