@@ -11,13 +11,22 @@ int main(void)
 
     FILE * ptr1 = fopen(name, "r");
 
-    char ch;
-    while((ch = fgetc(ptr1)) != EOF)
+    char ch1;
+    while((ch1 = fgetc(ptr1)) != EOF)
     {
-        printf("%c", ch);
-        if(isalpha(ch))
+        printf("%c", ch1);
+        if(isalpha(ch1))
         {
             characters++;
+        }
+    }
+
+    char ch2;
+    while((ch2 = fgetc(ptr1)) != EOF)
+    {
+        if(ch2 == '\n' && ch2 == ' ')
+        {
+            
         }
     }
     printf("The no of characters in the file %s are : %i", name, characters);
