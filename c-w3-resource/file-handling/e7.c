@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main(void)
 {
@@ -14,7 +15,10 @@ int main(void)
     while((ch = fgetc(ptr1)) != EOF)
     {
         printf("%c", ch);
-        if()
+        if(isalpha(ch))
+        {
+            characters++;
+        }
     }
     printf("The no of words in the file %s are : %i", name, ctr);
 }
