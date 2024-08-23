@@ -4,7 +4,7 @@ int main(void)
 {
     char name[20];
     int line;
-    int i = 0;
+    int i = 1;
     printf("Input the file name to be opened: ");
     scanf("%s", name);
 
@@ -16,6 +16,9 @@ int main(void)
     char ch;
     while((ch = fgetc(ptr1)) != EOF)
     {
-        
+        if(ch == '\n')
+        {
+            i++;
+        }
     }
 }
