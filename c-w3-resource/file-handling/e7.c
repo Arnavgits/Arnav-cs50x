@@ -26,7 +26,7 @@ int main(void)
     {
         if(ch2 == '\n' && ch2 == ' ')
         {
-            
+            words++;
         }
     }
     printf("The no of characters in the file %s are : %i", name, characters);
