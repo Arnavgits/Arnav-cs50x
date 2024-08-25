@@ -45,6 +45,7 @@ bool load(const char *dictionary)
         int hash_value = toupper(ch) - 'A' + 1;
         table1->word[hash_value] = ch;
     }
+    fclose(ptr1);
     return false;
 }
 
