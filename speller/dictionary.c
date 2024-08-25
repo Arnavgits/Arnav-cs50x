@@ -40,7 +40,8 @@ bool load(const char *dictionary)
     strcpy(n->word, "Hello");
     n->next = NULL;
     FILE *n = fopen( dictionary, "r");
-    
+
+    while()
 
     return false;
 }
