@@ -36,11 +36,11 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    FILE *ptr1 = fopen( dictionary, "r");
-
     node *n = malloc(sizeof(node));
     strcpy(n->word, "Hello");
     n->next = NULL;
+    FILE *n = fopen( dictionary, "r");
+    
 
     return false;
 }
