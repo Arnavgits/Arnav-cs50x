@@ -36,12 +36,12 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    FILE *ptr1 = fopen("dictionary.h", "r");
+    FILE *ptr1 = fopen( dictionary, "r");
 
     char ch;
     while((ch = fgetc(ptr1)) != EOF)
     {
-        
+
     }
     return false;
 }
