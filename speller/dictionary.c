@@ -41,7 +41,9 @@ bool load(const char *dictionary)
     char ch;
     while((ch = fgetc(ptr1)) != EOF)
     {
-
+        node * table1 = malloc(sizeof(node));
+        table1->word = ch;
+        
     }
     return false;
 }
