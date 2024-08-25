@@ -42,8 +42,7 @@ bool load(const char *dictionary)
     while((ch = fgetc(ptr1)) != EOF)
     {
         node * table1 = malloc(sizeof(node));
-        table1->word = ch;
-        
+        int hash_value = toupper(ch  )
     }
     return false;
 }
