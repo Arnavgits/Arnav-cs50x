@@ -42,9 +42,10 @@ bool load(const char *dictionary)
     while((fscanf(n, "%s", buffer)) != EOF)
     {
         int place = hash(buffer);
+        node * new_node = malloc(sizeof(node));
         strcpy(table[place] -> word, buffer);
 
-        
+
     }
 
 
