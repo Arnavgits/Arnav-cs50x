@@ -37,7 +37,12 @@ bool load(const char *dictionary)
 {
     // TODO
     FILE *n = fopen( dictionary, "r");
-    
+    char buffer[LENGTH + 1];
+
+    while((fscanf(n, "%s", buffer)) != EOF)
+    {
+        
+    }
 
 
     return false;
