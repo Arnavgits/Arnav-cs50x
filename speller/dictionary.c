@@ -44,7 +44,11 @@ bool load(const char *dictionary)
     char ch;
     while((ch = fgetc(n)) != EOF)
     {
-        char buffer[sizeof(node)];
+        while(ch != '\0');
+        {
+            char buffer[sizeof(node)];
+        }
+
         fgets(buffer, sizeof(buffer), n);
     }
 
