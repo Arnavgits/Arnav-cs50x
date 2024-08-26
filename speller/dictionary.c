@@ -46,6 +46,7 @@ bool load(const char *dictionary)
     {
         char buffer[sizeof(node)];
         fgets(buffer, sizeof(buffer), n);
+        table[hash(buffer)] = buffer;
     }
 
     return false;
