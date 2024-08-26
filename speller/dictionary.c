@@ -41,8 +41,11 @@ bool load(const char *dictionary)
     n->next = NULL;
     FILE *n = fopen( dictionary, "r");
 
-    
-    while()
+    char ch;
+    while((ch = fgetc(n)) != EOF)
+    {
+        
+    }
 
     return false;
 }
