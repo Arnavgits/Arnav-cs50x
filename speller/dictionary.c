@@ -36,17 +36,9 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    strcpy(n->word, "Hello");
-    n->next = NULL;
     FILE *n = fopen( dictionary, "r");
+    
 
-    char ch;
-    while((ch = fgetc(n)) != EOF)
-    {
-        char buffer[LENGTH + 1];
-        fgets(buffer, sizeof(buffer), n);
-        table[hash(buffer)] = buffer;
-    }
 
     return false;
 }
