@@ -28,8 +28,7 @@ bool check(const char *word)
     // use a loop
     int ctr = hash(word);
 
-    node * traverse;
-    traverse -> next = table[ctr];
+    node * traverse = table[ctr];
 
     while(traverse != NULL)
     {
