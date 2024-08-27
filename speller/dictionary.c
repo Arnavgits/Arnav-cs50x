@@ -44,7 +44,7 @@ bool load(const char *dictionary)
         int place = hash(buffer);
         node * new_node = malloc(sizeof(node));
         strcpy(table[place] -> word, buffer);
-
+        table[place] -> next = new_node;
 
     }
 
