@@ -96,10 +96,12 @@ bool unload(void)
 
         while(ctr1 != NULL)
         {
-            
+            node * temp = ctr;
+            ctr1 = ctr1 -> next;
+            free(ctr);
         }
     }
 
 
-    return false;
+    return true;
 }
