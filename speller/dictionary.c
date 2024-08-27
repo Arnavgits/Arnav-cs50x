@@ -26,9 +26,13 @@ bool check(const char *word)
 {
     // TODO
     // use a loop
-    int ctr = hash(*word);
+    int ctr = hash(word);
 
-    while()
+    while(table[ctr] != NULL)
+    {
+        strcasecmp(word, table[ctr]);
+        
+    }
 }
 
 // Hashes word to a number
