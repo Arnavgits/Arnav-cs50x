@@ -51,7 +51,7 @@ bool load(const char *dictionary)
     while((fscanf(n, "%s", buffer)) != EOF)
     {
         int place = hash(buffer);
-        
+        int ctr_size = size();
         node * new_node = malloc(sizeof(node));
         strcpy(new_node -> word, buffer);
         new_node -> next = NULL;
@@ -67,8 +67,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-
-
+    total_words++;
     return 0;
 }
 
