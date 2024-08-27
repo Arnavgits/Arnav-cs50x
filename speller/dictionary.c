@@ -37,10 +37,10 @@ bool check(const char *word)
         {
             return true;
         }
-        
         traverse = traverse -> next;
 
     }
+    return false;
 }
 
 // Hashes word to a number
