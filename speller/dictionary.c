@@ -96,7 +96,7 @@ bool unload(void)
 
         while(ctr1 != NULL)
         {
-            node * temp = ctr;
+            node * temp = ctr1;
             ctr1 = ctr1 -> next;
             free(ctr);
         }
