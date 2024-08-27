@@ -60,6 +60,11 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+      for (unsigned int i = 0; i < N; i++)
+    {
+        table[i] = NULL;
+    }
+    
     FILE *n = fopen( dictionary, "r");
     char buffer[LENGTH + 1];
 
