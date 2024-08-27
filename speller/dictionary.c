@@ -68,7 +68,7 @@ unsigned int size(void)
 {
     // TODO
     total_words++;
-    return 0;
+    return total_words;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
