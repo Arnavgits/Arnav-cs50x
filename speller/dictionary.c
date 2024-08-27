@@ -52,7 +52,7 @@ unsigned int hash(const char *word)
     unsigned int ctr = 5381;
     int c;
 
-    while(c == *word++)
+    while((c = *word++))
     {
         ctr = ((ctr << 5) + ctr) + tolower(c);
     }
