@@ -72,7 +72,7 @@ bool load(const char *dictionary)
         new_node -> next = table[place];
         table[place] -> next = new_node;
         total_words++;
-        unload(new);
+        unload();
     }
     fclose(n);
 
@@ -90,6 +90,16 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+    for(int i = 0; i < N; i++)
+    {
+        node * ctr1 = table[i];
+
+        while(ctr1 != NULL)
+        {
+            
+        }
+    }
+
 
     return false;
 }
