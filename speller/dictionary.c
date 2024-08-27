@@ -32,6 +32,7 @@ bool check(const char *word)
     while(traverse != NULL)
     {
         strcasecmp(word, traverse);
+        traverse = 
 
     }
 }
