@@ -30,11 +30,15 @@ bool check(const char *word)
 
     node * traverse;
     traverse -> next = table[ctr];
-    
+
     while(traverse != NULL)
     {
-        strcasecmp(word, traverse);
-        traverse =
+        if(strcasecmp(word, traverse -> word) == 0)
+        {
+            return true;
+        }
+        
+        traverse = traverse -> next;
 
     }
 }
