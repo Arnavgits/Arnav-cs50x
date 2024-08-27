@@ -28,11 +28,13 @@ bool check(const char *word)
     // use a loop
     int ctr = hash(word);
 
-    node * traverse = table[ctr];
+    node * traverse;
+    traverse -> next = table[ctr];
+    
     while(traverse != NULL)
     {
         strcasecmp(word, traverse);
-        traverse = 
+        traverse =
 
     }
 }
