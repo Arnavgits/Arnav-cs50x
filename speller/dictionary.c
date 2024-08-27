@@ -58,6 +58,7 @@ bool load(const char *dictionary)
         table[place] -> next = new_node;
         total_words++;
     }
+    free(new_node);
     fclose(n);
 
     return true;
