@@ -26,7 +26,12 @@ bool check(const char *word)
 {
     // TODO
     // use a loop
-    
+    int i = 0;
+    while(word[i] != '\0')
+    {
+        word[i] = tolower(word[i]);
+        i++;
+    }
 
     return false;
 }
