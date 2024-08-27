@@ -30,13 +30,13 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     unsigned int ctr = 5381;
-    char c;
+    int c;
 
     while(c == *word++)
     {
         ctr = ((ctr << 5) + ctr) + tolower(c);
     }
-    return toupper(word[0]) - 'A';
+    return hash % N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
