@@ -54,7 +54,7 @@ unsigned int hash(const char *word)
     {
         ctr = ((ctr << 5) + ctr) + tolower(c);
     }
-    return hash % N;
+    return ctr % N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
