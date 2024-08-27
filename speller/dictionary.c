@@ -98,10 +98,8 @@ bool unload(void)
         {
             node * temp = ctr1;
             ctr1 = ctr1 -> next;
-            free(ctr);
+            free(temp);
         }
     }
-
-
     return true;
 }
