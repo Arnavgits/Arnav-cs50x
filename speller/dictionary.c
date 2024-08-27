@@ -45,13 +45,12 @@ bool load(const char *dictionary)
         node * new_node = malloc(sizeof(node));
         strcpy(new_node -> word, buffer);
         new_node -> next = NULL;
-        
+        new_node -> next = table[place];
         table[place] -> next = new_node;
-
     }
+    fclose(n);
 
-
-    return false;
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
