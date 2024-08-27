@@ -28,14 +28,7 @@ bool check(const char *word)
     // use a loop
     int ctr = hash(*word);
 
-    if(*word == tolower(table[ctr]))
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    while()
 }
 
 // Hashes word to a number
