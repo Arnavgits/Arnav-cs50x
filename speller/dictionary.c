@@ -2,6 +2,7 @@
 
 #include <ctype.h>
 #include <stdbool.h>
+#include <string.h>
 
 #include "dictionary.h"
 
@@ -26,6 +27,7 @@ bool check(const char *word)
     // TODO
     // use a loop
     
+
     return false;
 }
 
