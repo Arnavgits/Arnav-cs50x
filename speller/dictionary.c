@@ -2,7 +2,10 @@
 
 #include <ctype.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include <strings.h>
 
 #include "dictionary.h"
 
@@ -83,7 +86,6 @@ bool load(const char *dictionary)
         new_node -> next = table[place];
         table[place] = new_node;
         total_words++;
-        unlo
     }
     fclose(n);
 
