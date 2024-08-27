@@ -29,7 +29,13 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    
+    unsigned int ctr = 5381;
+    char c;
+
+    while(c == *word++)
+    {
+        ctr = ((ctr << 5) + ctr) + tolower(c);
+    }
     return toupper(word[0]) - 'A';
 }
 
