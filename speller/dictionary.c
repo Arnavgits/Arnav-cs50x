@@ -32,8 +32,16 @@ bool check(const char *word)
         word[i] = tolower(word[i]);
         i++;
     }
+    int ctr = hash(*word);
 
-    return false;
+    if(*word == tolower(table[ctr]))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 // Hashes word to a number
