@@ -3,4 +3,4 @@ no2 = int(input("y: "))
 
 sum = no1 + no2
 
-print("The result is {sum}")
+print(f"The result is {sum}")
