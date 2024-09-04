@@ -12,3 +12,6 @@ for book in books:
 
 for book in books:
     print(book.keys())
+
+for book in books:
+    print(book.values())
