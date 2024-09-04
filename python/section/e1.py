@@ -9,3 +9,6 @@ for i in range(3):
 
 for book in books:
     print(book)
+
+for book in books:
+    print(book.keys())
