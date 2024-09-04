@@ -7,6 +7,6 @@ for i in range(3):
     books.append(book)
 
 
-for i in range(3):
+for book in books:
     print(book["title"])
     print(book["author"])
