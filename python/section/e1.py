@@ -1,6 +1,6 @@
 books = []
 
-for i i n range(3):
+for i in range(3):
     book = dict()
     book["author"] = input("author: ")
     book["title"] = input("title: ")
