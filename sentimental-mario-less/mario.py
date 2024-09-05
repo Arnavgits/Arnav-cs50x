@@ -1,4 +1,4 @@
-
+hashes = 0
 while hashes > 0 and hashes < 9:
     hashes = int(input("Enter no of hashes: "))
 
