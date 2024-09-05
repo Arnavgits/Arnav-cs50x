@@ -30,4 +30,5 @@ while amount >= 0.01:
 Total_coins = quarter + dime + nickel + penny
 
 print(Total_coins)
+print({quarter} {dime} {nickel} {penny})
 
