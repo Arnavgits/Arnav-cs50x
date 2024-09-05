@@ -9,4 +9,5 @@ nickel = 0
 penny = 0
 
 while True:
-    
+    if amount % 25 == 0:
+        quarter += 1
