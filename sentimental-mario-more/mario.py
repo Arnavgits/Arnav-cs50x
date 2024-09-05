@@ -14,4 +14,6 @@ for i in range(height):
     for k in range(i + 1):
         print("#", end = "")
 
-    
+    print("  ")
+
+    for j in range()
