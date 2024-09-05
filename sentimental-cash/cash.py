@@ -2,7 +2,7 @@ from cs50 import get_float
 
  # coins of 25 - quarter ,10 - dime ,5 - nickel ,1 - penny units
 while True:
-    amount = input("Amount: ")
+    amount = int(input("Amount: "))
     if amount >= 0:
         break
 
