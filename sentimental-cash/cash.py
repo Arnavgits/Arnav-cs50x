@@ -3,6 +3,8 @@ from cs50 import get_float
  # coins of 25 - quarter ,10 - dime ,5 - nickel ,1 - penny units
  while True:
     amount = get_float("Amount: ")
+    if amount >= 0:
+        break
 
 quarter = 0
 dime = 0
