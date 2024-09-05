@@ -12,26 +12,26 @@ while True:
     if amount % 25 >= 1:
         quarter += 1
         amount - 25
-    elif:
+    else:
         break
 
 while True:
     if amount % 10 >= 1:
         quarter += 1
         amount - 10
-    elif:
+    else:
         break
 
     while True:
     if amount % 5 >= 1:
         quarter += 1
         amount - 5
-    elif:
+    else:
         break
 
     while True:
     if amount % 1 >= 1:
         quarter += 1
         amount - 1
-    elif:
+    else:
         break
