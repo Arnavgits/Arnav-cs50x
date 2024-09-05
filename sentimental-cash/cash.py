@@ -8,30 +8,4 @@ dime = 0
 nickel = 0
 penny = 0
 
-while True:
-    if amount % 25 >= 1:
-        quarter += 1
-        amount - 25
-    else:
-        break
-
-while True:
-    if amount % 10 >= 1:
-        quarter += 1
-        amount - 10
-    else:
-        break
-
-    while True:
-    if amount % 5 >= 1:
-        quarter += 1
-        amount - 5
-    else:
-        break
-
-    while True:
-    if amount % 1 >= 1:
-        quarter += 1
-        amount - 1
-    else:
-        break
+while amount >=
