@@ -8,4 +8,23 @@ dime = 0
 nickel = 0
 penny = 0
 
-while amount >=
+while amount >= 0.25:
+    quarter += 1
+    amount -= 0.25
+
+while amount >= 0.10:
+    dime += 1
+    amount -= 0.10
+
+while amount >= 0.05:
+    nickel += 1
+    amount -= 0.05
+
+while amount >= 0.01:
+    penny += 1
+    amount -= 0.01
+
+Total_coins = quarter + dime + nickel + penny
+
+print(Total_coins)
+
