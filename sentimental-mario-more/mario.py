@@ -6,3 +6,7 @@ while True:
     except:
         print("" , end= "")
 
+for i in range(height):
+
+    for j in range(height - j - 1):
+        
