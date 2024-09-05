@@ -5,4 +5,3 @@ for i in range(hashes - 1):
 
 for i in range(hashes):
     print("#", end = '')
-
