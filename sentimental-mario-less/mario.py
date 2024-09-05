@@ -6,4 +6,4 @@ for i in range(hashes):
         ctr = 0
         ctr += 1
         for i in range(ctr):
-            print("#")
+            print("#", end ='')
