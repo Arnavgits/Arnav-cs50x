@@ -15,3 +15,23 @@ while True:
     elif:
         break
 
+while True:
+    if amount % 10 >= 1:
+        quarter += 1
+        amount - 10
+    elif:
+        break
+
+    while True:
+    if amount % 5 >= 1:
+        quarter += 1
+        amount - 5
+    elif:
+        break
+
+    while True:
+    if amount % 1 >= 1:
+        quarter += 1
+        amount - 1
+    elif:
+        break
