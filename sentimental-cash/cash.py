@@ -1,7 +1,7 @@
 from cs50 import get_float
 
  # coins of 25 - quarter ,10 - dime ,5 - nickel ,1 - penny units
- while True:
+while True:
     amount = get_float("Amount: ")
     if amount >= 0:
         break
@@ -30,5 +30,5 @@ while amount >= 0.01:
 Total_coins = quarter + dime + nickel + penny
 
 print(Total_coins)
-print({quarter} {dime} {nickel} {penny})
+print(f"{quarter} {dime} {nickel} {penny}")
 
