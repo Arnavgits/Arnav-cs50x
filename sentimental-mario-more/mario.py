@@ -14,10 +14,12 @@ for i in range(height):
     for k in range(i + 1):
         print("#", end = "")
 
-    print("  ")
+    print("  ", end ="")
 
     for j in range(i + 1):
         print("#", end = "")
 
     for k in range(height - i - 1):
         print(" ", end = "")
+
+    print()
