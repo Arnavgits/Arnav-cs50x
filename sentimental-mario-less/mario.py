@@ -1,6 +1,4 @@
-hashes = 1
-while hashes > 0 and hashes < 9:
-    hashes = int(input("Enter no of hashes: "))
+while i in
 
 ctr = 0
 ctr2 = hashes
