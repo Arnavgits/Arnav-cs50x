@@ -1,7 +1,7 @@
 while True:
     try:
         hashes = int(input("Height of pyramid: "))
-        if hashes >= 0 and hashes <= 8:
+        if hashes >= 1 and hashes <= 8:
          break
     except:
         print("", end = "")
