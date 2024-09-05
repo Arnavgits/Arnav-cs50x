@@ -13,6 +13,3 @@ for i in range(height):
 
     for k in range(k + 1):
         print("#", end = "")
-
-    
-
