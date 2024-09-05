@@ -1,3 +1,5 @@
+
+while hashes > 0 and hashes < 9:
 hashes = int(input("Enter no of hashes: "))
 
 ctr = 0
