@@ -5,6 +5,9 @@ while True:
     remainder = number % 100
     left = 2 * remainder / 10
     if left > 10:
+        ctr = left/10 + left % 10
+    else:
+        ctr = ctr + left
 
     ctr = ctr + 2 * (remainder/10)
     number = number / 100
