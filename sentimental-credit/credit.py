@@ -9,7 +9,6 @@ while True:
     else:
         ctr = ctr + left
 
-    ctr = ctr + 2 * (remainder/10)
     number = number / 100
     if number < 100:
         ctr = ctr + 2 * (number/10)
