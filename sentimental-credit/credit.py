@@ -5,4 +5,5 @@ while True:
 
 # american express, master card, visa
 
-
+if number[1] == 34 and number[2] ==:
+    print("")
