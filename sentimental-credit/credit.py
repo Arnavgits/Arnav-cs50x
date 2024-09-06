@@ -15,7 +15,7 @@ while True:
             ctr = number/10 + number % 10
          else:
             ctr = ctr + number
-        break
+    break
 
 print(ctr)
 
