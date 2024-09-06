@@ -11,10 +11,10 @@ while True:
 
     number = number / 100
     if number < 100:
-         if left > 10:
-        ctr = left/10 + left % 10
+         if number > 10:
+        ctr = number/10 + number % 10
     else:
-        ctr = ctr + left
+        ctr = ctr + number
         break
 
 print(ctr)
