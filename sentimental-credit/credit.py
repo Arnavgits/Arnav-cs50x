@@ -1,6 +1,8 @@
+from cs50 import get_int
+
 ctr = 0
 while True:
-    number = int(input("Credit card number: "))
+    number = get_int("Credit card number: ")
 
     remainder = number % 100
     left = 2 * remainder / 10
