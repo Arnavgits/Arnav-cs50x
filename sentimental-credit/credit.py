@@ -3,8 +3,9 @@ while True:
     number = int(input("Credit card number: "))
 
     remainder = number % 100
-    if 2 * remainder / 10 > 10:
-        
+    left = 2 * remainder / 10
+    if left > 10:
+
     ctr = ctr + 2 * (remainder/10)
     number = number / 100
     if number < 100:
