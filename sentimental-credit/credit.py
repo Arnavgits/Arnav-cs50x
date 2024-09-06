@@ -12,7 +12,7 @@ while True:
     number = number / 100
     if number < 100:
          if number > 9:
-            ctr = ctr + number % 10
+            ctr = ctr + number / 10
          else:
             ctr = ctr + number
         break
