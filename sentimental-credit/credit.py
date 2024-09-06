@@ -5,7 +5,10 @@ while True:
     ctr = ctr + (remainder/10)
     number = number / 100
     if number < 100:
-        ctr = ctr + 
+        ctr = ctr + (number/10)
+        break
+
+print(ctr)
 
 
 # american express , master card, visa
