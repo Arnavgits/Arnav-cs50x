@@ -12,9 +12,9 @@ while True:
     number = number / 100
     if number < 100:
          if number > 10:
-        ctr = number/10 + number % 10
-    else:
-        ctr = ctr + number
+            ctr = number/10 + number % 10
+         else:
+            ctr = ctr + number
         break
 
 print(ctr)
