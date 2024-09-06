@@ -1,6 +1,6 @@
 while True:
     number = int(input("Credit card number: "))
-    
+    =
 
 # american express , master card, visa
 
