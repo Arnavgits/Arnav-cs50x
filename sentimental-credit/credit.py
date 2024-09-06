@@ -2,10 +2,10 @@ ctr = 0
 while True:
     number = int(input("Credit card number: "))
     remainder = number % 100
-    ctr = ctr + (remainder/10)
+    ctr = ctr + 2 * (remainder/10)
     number = number / 100
     if number < 100:
-        ctr = ctr + (number/10)
+        ctr = ctr + 2 * (number/10)
         break
 
 print(ctr)
