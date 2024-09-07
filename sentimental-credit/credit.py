@@ -1,5 +1,7 @@
 from cs50 import get_int
 
+
+
 ctr = 0
 while True:
     number = get_int("Credit card number: ")
