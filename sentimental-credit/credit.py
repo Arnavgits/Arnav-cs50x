@@ -6,13 +6,13 @@ while True:
 
     while number > 0:
         remainder = number % 100
-        left = 2 * (remainder / 10)
+        left = 2 * int(remainder / 10)
         if left > 9:
             ctr = int(left/10) + left % 10
         else:
             ctr = ctr + left
 
-        number = number / 100
+        number = int(number / 100)
     break
 
 
