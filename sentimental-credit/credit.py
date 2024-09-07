@@ -12,25 +12,27 @@ def main():
 
 def valid_card(number):
 
-sum = 0
-ctr = 0
+    sum = 0
+    ctr = 0
 
-while number > 0:
+    while number > 0:
 
-    last_digit = int(number/10)
+        last_digit = int(number/10)
 
-    if ctr % 2 == 0:
-        sum += last_digit
-    else:
-        doubled = 2 * last_digit
-        if doubled > 9:
-            sum += int(doubled/10) + doubled % 10
+        if ctr % 2 == 0:
+            sum += last_digit
         else:
-            sum += doubled
+            doubled = 2 * last_digit
+            if doubled > 9:
+                sum += int(doubled/10) + doubled % 10
+            else:
+                sum += doubled
 
-    ctr += 1
+        ctr += 1
 
-    if number == 0:
-    return sum
+        if number == 0:
+            print(sum)
+            return sum
 
-print(sum)
+
+
