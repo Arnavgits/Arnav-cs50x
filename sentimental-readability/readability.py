@@ -1,4 +1,7 @@
 from cs50 import get_string
 
-Total_letters = 
+str = get_string("Text: ")
+
+Total_letters = 0
+
 
