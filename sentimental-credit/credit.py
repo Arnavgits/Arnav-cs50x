@@ -36,12 +36,14 @@ def valid_card(number):
     return sum % 10 == 0
 
 def get_type(number):
-length = str
-    if length ==str(number)[0:2] == 34 or 37:
-        print("American Express")
-    elif str(number)[0:2] == [51,52,53,54,55]:
-        print("MasterCard")
-    else:
+length = len(str(number))
+star = str(number)[:2]
+
+    if length == 15 and (start == 34 or start == 37):
+        return "AMERICAN EXPRESS"
+    elif length == 16 and 51 <= start <= 55 :
+        return "MASTERCARD"
+    elif length ==
         print("Visa")
 
 if __name__ == "__main__":
