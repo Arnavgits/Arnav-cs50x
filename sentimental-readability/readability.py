@@ -3,18 +3,18 @@ from cs50 import get_string
 str = get_string("Text:")
 
 letters = 0
-Total_words = 1
-Total_sentences = 0
+words = 1
+sentences = 0
 
 for char in str:
     if char == " ":
-        Total_words += 1
+        words += 1
 
     if char == "." or char == "!" or char == "?":
-        Total_sentences += 1
+        sentences += 1
 
-L = (Total_letters/words) * 100
-S = (Total_sentences/words) * 100
+L = (letters/words) * 100
+S = (sentences/words) * 100
 
 Index_number = 0.0588 * L - 0.296 * S - 15.8
 
