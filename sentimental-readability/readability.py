@@ -1,6 +1,6 @@
 from cs50 import get_string
 
-str = get_string("Text: ")
+str = get_string("Text:")
 
 Total_letters = 0
 Total_sentences = 0
