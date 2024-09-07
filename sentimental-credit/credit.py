@@ -8,7 +8,7 @@ while True:
         remainder = number % 100
         left = 2 * int(remainder / 10)
         if left > 9:
-            ctr = int(left/10) + left % 10
+            ctr = ctr + int(left/10) + left % 10
         else:
             ctr = ctr + left
 
