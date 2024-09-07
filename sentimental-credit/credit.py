@@ -4,7 +4,7 @@ ctr = 0
 while True:
     number = get_int("Credit card number: ")
 
-    while True:
+    while number > 0:
         remainder = number % 100
         left = 2 * (remainder / 10)
         if left > 9:
@@ -13,8 +13,6 @@ while True:
             ctr = ctr + left
 
         number = number / 100
-        if number < 100:
-            2 * (number / 10)
             break
     break
 
