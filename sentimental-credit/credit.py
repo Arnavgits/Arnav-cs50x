@@ -37,13 +37,13 @@ def valid_card(number):
 def get_type(number):
 
     length = len(str(number))
-    start = str(number)[:2]
+    start = int(str(number)[:2])
 
     if length == 15 and (start == 34 or start == 37):
         return "AMERICAN EXPRESS"
     elif length == 16 and 51 <= start <= 55:
         return "MASTERCARD"
-    elif (length == 13 or length == 16) and str(number[0]) == "4":
+    elif (length == 13 or length == 16) and str(number)[0] == "4":
         return "VISA"
     else:
         return "INVALID"
