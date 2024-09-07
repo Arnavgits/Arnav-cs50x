@@ -11,3 +11,6 @@ for char in str:
 
     if char == "." or char == "!" or char == "?":
         Total_sentences += 1
+
+print(Total_letters)
+print(Total_sentences)
