@@ -13,7 +13,7 @@ while True:
             ctr = ctr + left
 
         number = number / 100
-            break
+        break
     break
 
 
