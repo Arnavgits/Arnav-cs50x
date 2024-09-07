@@ -15,8 +15,6 @@ while True:
         number = int(number / 100)
     break
 
-a = 43 % 100
-print(a)
 print(ctr)
 
 
