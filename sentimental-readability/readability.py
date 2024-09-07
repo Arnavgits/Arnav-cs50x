@@ -5,3 +5,5 @@ str = get_string("Text: ")
 Total_letters = 0
 
 
+
+
