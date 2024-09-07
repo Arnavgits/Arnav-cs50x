@@ -10,10 +10,10 @@ for char in str:
     if char == " ":
         words += 1
 
-    if char == "." or char == "!" or char == "?":
+    if char in ".!?":
         sentences += 1
 
-        elif char.isalpha():
+    if char.isalpha():
             letters += 1
 
 L = (letters/words) * 100
