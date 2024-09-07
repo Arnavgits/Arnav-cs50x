@@ -33,7 +33,7 @@ def valid_card(number):
 
 
     print(sum)
-    return sum
+    return sum % 10 == 0
 
 
 
