@@ -13,7 +13,7 @@ for char in str:
     if char == "." or char == "!" or char == "?":
         sentences += 1
 
-    if char != " " and char != "?" and char != "!":
+    if char != " " and char != "?" and char != "!" and char != ".":
         letters += 1
 
 L = (letters/words) * 100
