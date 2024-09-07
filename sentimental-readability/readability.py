@@ -13,8 +13,8 @@ for char in str:
     if char == "." or char == "!" or char == "?":
         sentences += 1
 
-    if char != " " and char != "?" and char != "!" and char != ".":
-        letters += 1
+        elif char.isalpha():
+            letters += 1
 
 L = (letters/words) * 100
 S = (sentences/words) * 100
