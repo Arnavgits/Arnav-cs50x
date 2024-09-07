@@ -19,6 +19,7 @@ while True:
             break
     break
 
+
 print(ctr)
 
 
