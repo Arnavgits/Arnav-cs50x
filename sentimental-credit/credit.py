@@ -37,3 +37,6 @@ def valid_card(number):
 
 
 
+if __name__ == "__main__":
+    main()
+
