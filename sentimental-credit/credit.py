@@ -40,7 +40,7 @@ def get_type(number):
     start = int(str(number)[:2])
 
     if length == 15 and (start == 34 or start == 37):
-        return "AMERICAN EXPRESS"
+        return "AMEX"
     elif length == 16 and 51 <= start <= 55:
         return "MASTERCARD"
     elif (length == 13 or length == 16) and str(number)[0] == "4":
