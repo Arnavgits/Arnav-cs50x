@@ -2,6 +2,7 @@ from cs50 import get_string
 
 str = get_string("Text:")
 
+words = 0
 Total_letters = 1
 Total_sentences = 0
 
@@ -12,8 +13,8 @@ for char in str:
     if char == "." or char == "!" or char == "?":
         Total_sentences += 1
 
-L = Total_letters/100
-S = Total_sentences/100
+L = (Total_letters/words) * 100
+S = (Total_sentences/words) * 100
 
 Index_number = 0.0588 * L - 0.296 * S - 15.8
 
