@@ -6,6 +6,7 @@ def main():
 
     if valid_card(number):
         card_type = get_type(number)
+        print(card_type)
     else:
         print("INVALID")
 
@@ -36,7 +37,7 @@ def valid_card(number):
     return sum % 10 == 0
 
 def get_type(number):
-    
+
     length = len(str(number))
     star = str(number)[:2]
 
