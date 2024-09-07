@@ -27,7 +27,11 @@ while number > 0:
             sum += int(doubled/10) + doubled % 10
         else:
             sum += doubled
-            
+
+    ctr += 1
+
+    if number == 0:
+    return sum
 
 
 
