@@ -33,20 +33,4 @@ while number > 0:
     if number == 0:
     return sum
 
-
-
-    while number > 0:
-        remainder = number % 100
-        left = 2 * int(remainder / 10)
-        if left > 9:
-            ctr = ctr + int(left/10) + left % 10
-        else:
-            ctr = ctr + left
-
-        number = int(number / 100)
-    break
-
-print(ctr)
-
-
-# american express , master card, visa
+print(sum)
