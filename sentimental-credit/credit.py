@@ -6,7 +6,7 @@ while True:
 
     while True:
         remainder = number % 100
-        left = 2 * remainder / 10
+        left = 2 * (remainder / 10)
         if left > 9:
             ctr = left/10 + left % 10
         else:
@@ -14,7 +14,7 @@ while True:
 
         number = number / 100
         if number < 100:
-            
+            2 * (number / 10)
             break
     break
 
