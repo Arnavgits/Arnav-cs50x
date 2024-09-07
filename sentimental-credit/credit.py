@@ -17,7 +17,7 @@ def valid_card(number):
 
     while number > 0:
 
-        last_digit = int(number/10)
+        last_digit = number % 10
 
         if ctr % 2 == 0:
             sum += last_digit
@@ -29,6 +29,7 @@ def valid_card(number):
                 sum += doubled
 
         ctr += 1
+        number = int(number / 10)
 
         if number == 0:
             print(sum)
