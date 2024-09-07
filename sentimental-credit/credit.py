@@ -35,7 +35,8 @@ def valid_card(number):
     print(sum)
     return sum % 10 == 0
 
-
+def get_type(number):
+    
 
 if __name__ == "__main__":
     main()
