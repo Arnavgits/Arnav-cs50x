@@ -19,7 +19,7 @@ for char in str:
 L = (letters/words) * 100
 S = (sentences/words) * 100
 
-Index_number = 0.0588 * L - 0.296 * S - 15.8
+Index_number = round(0.0588 * L - 0.296 * S - 15.8)
 
 if Index_number >= 16:
     print("Grade 16+")
