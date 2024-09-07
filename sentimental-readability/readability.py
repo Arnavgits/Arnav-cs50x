@@ -2,13 +2,13 @@ from cs50 import get_string
 
 str = get_string("Text:")
 
-words = 0
-Total_letters = 1
+letters = 0
+Total_words = 1
 Total_sentences = 0
 
 for char in str:
     if char == " ":
-        Total_letters += 1
+        Total_words += 1
 
     if char == "." or char == "!" or char == "?":
         Total_sentences += 1
