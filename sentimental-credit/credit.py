@@ -31,9 +31,9 @@ def valid_card(number):
         ctr += 1
         number = int(number / 10)
 
-        if number == 0:
-            print(sum)
-            return sum
+
+    print(sum)
+    return sum
 
 
 
