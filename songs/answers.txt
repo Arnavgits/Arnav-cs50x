@@ -1,3 +1,3 @@
 First I'll create a column of different types of moods.
 Then ILL create an algorithm that calculates average of energy, valence, and danceability.
-
+I think taht's a great way to check for audio aura.
