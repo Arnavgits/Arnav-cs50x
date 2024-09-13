@@ -3,6 +3,6 @@ Your query should output a table with a single column for the title of each movi
 You may assume that there is only one person in the database with the name Chadwick Boseman.
 SELECT title FROM movies JOIN stars ON movies.id = stars.movie_id
  JOIN people ON stars.person_id = people.id
-   ...> WHERE people.name = 'Chadwick Boseman'
-   ...> JOIN ratings ON ratings.movie_id = movies.id
-   ...> ORDER BY rating LIMIT 5;
+ WHERE people.name = 'Chadwick Boseman'
+ JOIN ratings ON ratings.movie_id = movies.id
+ ORDER BY rating LIMIT 5;
