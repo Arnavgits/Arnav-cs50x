@@ -17,5 +17,8 @@ SELECT * FROM atm_transactions WHERE month = 7 AND day = 28 AND atm_location = '
 --8; account_number and amount--
 
 SELECT * FROM phone_calls WHERE month = 7 AND day = 28 AND duration < 60;
+--9; caller number and reciever number;
+
+
 
 
