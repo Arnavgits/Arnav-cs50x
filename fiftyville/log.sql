@@ -16,5 +16,6 @@ SELECT * FROM bakery_security_logs WHERE day = 28 AND hour = 10 AND activity = '
 SELECT * FROM atm_transactions WHERE month = 7 AND day = 28 AND atm_location = 'Leggett Street' AND transaction_type = 'withdraw';
 --8; account_number and amount--
 
+SELECT * FROM phone_calls WHERE month = 7 AND day = 28 AND duration < 60;
 
 
