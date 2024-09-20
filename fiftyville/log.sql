@@ -19,6 +19,9 @@ SELECT * FROM atm_transactions WHERE month = 7 AND day = 28 AND atm_location = '
 SELECT * FROM phone_calls WHERE month = 7 AND day = 28 AND duration < 60;
 --9 rows; caller number and reciever number;
 
-
-
-
+SELECT * FROM people JOIN bakery_security_logs ON bakery_security_logs.license_plate = people.license_plate WHERE bakery_security_logs.license_plate = (
+SELECT license_plate FROM bakery_security_logs WHERE day = 28 AND hour = 10 AND activity = "exit")
+AND activity ="exit";
+--After joining people and bakery_security-logs I get--
+--name - Vanessa , phone_number - (725) 555-4692, passsport_number - 2963008352--
+--
