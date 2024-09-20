@@ -24,10 +24,4 @@ SELECT license_plate FROM bakery_security_logs WHERE day = 28 AND hour = 10 AND 
 AND activity ="exit";
 --After joining people and bakery_security-logs I get--
 --name - Vanessa , phone_number - (725) 555-4692, passsport_number - 2963008352--
---
-SELECT *
-FROM phone_calls
-JOIN people
-   ON people.name = phone_calls.caller
-JOIN bakery_security_logs
-   ON bakery_security_logs.license_plate = people.license_plate;
+
