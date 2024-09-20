@@ -11,13 +11,13 @@ SELECT * FROM interviews WHERE month = 7 AND day = 28 AND transcript LIKE '%thie
 --| 163 | Raymond | 2023 | 7     | 28  | As the thief was leaving the bakery, they called someone who talked to them for less than a minute. In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow. The thief then asked the person on the other end of the phone to purchase the flight ticket.--
 
 SELECT * FROM bakery_security_logs WHERE day = 28 AND hour = 10 AND activity = 'exit';
---9; license_plate--
+--9 rows; license_plate--
 
 SELECT * FROM atm_transactions WHERE month = 7 AND day = 28 AND atm_location = 'Leggett Street' AND transaction_type = 'withdraw';
---8; account_number and amount--
+--8 rows; account_number and amount--
 
 SELECT * FROM phone_calls WHERE month = 7 AND day = 28 AND duration < 60;
---9; caller number and reciever number;
+--9 rows; caller number and reciever number;
 
 
 
