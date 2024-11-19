@@ -24,7 +24,17 @@
                 }
             })
 
-            if
+
+            let ctr3 = document.getElementById('answer1').innerText;
+                let ctr4 = document.getElementById('submitted');
+
+                ctr4.addEventListener('click', () =>{
+                    if (ctr3 == 'Average') {
+                        ctr3.style.backgroundColor = 'Green';
+                    } else {
+                        ctr3.style.backgroundColor = 'Red';
+                    }
+                    })
         </script>
     </head>
     <body>
