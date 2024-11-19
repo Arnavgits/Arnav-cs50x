@@ -27,7 +27,7 @@
 
                 ctr4.addEventListener('click', () =>{
                 let ctr3 = document.getElementById('answer1').value;
-                if (ctr3 == 'Average') {
+                if (ctr3.toLoweCase() == 'Average') {
                     document.getElementById('answer1').style.backgroundColor = 'Green';
                     document.getElementById('response1').innerHTML = 'Correct!';
                 } else {
