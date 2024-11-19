@@ -7,12 +7,16 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', () => {
+                let ctr = document.querySelectorAll('.cg1');
 
-            let ctr = document.querySelectorAll('.cg1');
+                for (let element of ctr){
+                    element.addEventListener('click', () =>{
+                        element.style.backgroundColor = 'Red';
+                    });
 
-            for (let element of ctr){
-                element.style.backgroundColor = 'Red';
-            }
+                }
+            })
         </script>
     </head>
     <body>
