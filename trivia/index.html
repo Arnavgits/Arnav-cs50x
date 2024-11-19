@@ -14,12 +14,14 @@
                 ctr2.addEventListener('click', () =>{
                     ctr2.style.backgroundColor = 'Green';
                     document.getElementById('ca1').innerHTML = 'Correct';
+                    ctr2.disabled;
                 })
 
                 for (let element of ctr){
                     element.addEventListener('click', () =>{
                         element.style.backgroundColor = 'Red';
                         document.getElementById('ca1').innerHTML = 'Incorrect';
+                        ctr.disabled;
                     });
                 }
 
