@@ -29,8 +29,10 @@
                 let ctr3 = document.getElementById('answer1').value;
                 if (ctr3 == 'Average') {
                     document.getElementById('answer1').style.backgroundColor = 'Green';
+                    document.getElementById('response1').innerHTML = 'Correct!';
                 } else {
                     document.getElementById('answer1').style.backgroundColor = 'Red';
+                    document.getElementById('response1').innerHTML = 'Inorrect';
                 }
                 });
             })
