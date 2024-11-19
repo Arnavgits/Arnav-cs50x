@@ -15,6 +15,10 @@
                     ctr2.style.backgroundColor = 'Green';
                     document.getElementById('ca1').innerHTML = 'Correct';
                     ctr2.disabled = true;
+
+                    for(let btn of ctr){
+                        btn.disabled = true;
+                    }
                 })
 
                 for (let element of ctr){
@@ -22,6 +26,7 @@
                         element.style.backgroundColor = 'Red';
                         document.getElementById('ca1').innerHTML = 'Incorrect';
                         element.disabled = true;
+                        c
                     });
                 }
 
