@@ -10,6 +10,8 @@
             document.addEventListener('DOMContentLoaded', () => {
                 let ctr = document.querySelectorAll('.cg1');
 
+                document.getElementById('cg2')
+
                 for (let element of ctr){
                     element.addEventListener('click', () =>{
                         element.style.backgroundColor = 'Red';
@@ -35,7 +37,7 @@
 
                  <button onclick class = "cg1"  >Yale</button>
                  <button class = "cg1" >Cambridge</button>
-                 <button class = "cg2" >Harvard</button>
+                 <button id = "cg2" >Harvard</button>
                  <button class = "cg1" >MIT</button>
             </div>
 
