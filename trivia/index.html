@@ -10,7 +10,11 @@
             document.addEventListener('DOMContentLoaded', () => {
                 let ctr = document.querySelectorAll('.cg1');
 
-                let ctr2  = document.getElementById()
+                let ctr2  = document.getElementById('cg2');
+                ctr2.addEventListener('click', () =>{
+                    ctr2.style.backgroundColor = 'Green';
+                    document.getElementById('ca1').innerHTML = 'Correct';
+                })
 
                 for (let element of ctr){
                     element.addEventListener('click', () =>{
@@ -35,7 +39,7 @@
 
                  <p id = "ca1"></p>
 
-                 <button onclick class = "cg1"  >Yale</button>
+                 <button class = "cg1"  >Yale</button>
                  <button class = "cg1" >Cambridge</button>
                  <button id = "cg2" >Harvard</button>
                  <button class = "cg1" >MIT</button>
