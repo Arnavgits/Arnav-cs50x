@@ -26,6 +26,9 @@
                         element.style.backgroundColor = 'Red';
                         document.getElementById('ca1').innerHTML = 'Incorrect';
                         element.disabled = true;
+                        for(let btn of ctr){
+                        btn.disabled = true;
+                    }
                         ctr2.disabled = true;
                     });
                 }
