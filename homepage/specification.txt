@@ -1,2 +1,2 @@
 Tags used:
-div, table, hr, tr, td, 
+div, table, hr, tr, td, p, 
