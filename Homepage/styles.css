@@ -1,0 +1,25 @@
+body
+{
+    background-color: rgb(75, 150, 170);
+}
+
+table
+{
+    border: solid black;
+}
+
+tr
+{
+    border: solid black;
+}
+
+td
+{
+    border: solid black;
+}
+
+hr{
+    border-width: 2px;
+    border-color: blue;
+}
+

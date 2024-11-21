@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="src.js"></script>
+    <title>Form for membership</title>
+</head>
+
+<body class="container">
+    <div>You can fill out this form to become a member of our organisation</div>
+    <hr>
+    <form id = "form">
+        <ol><li>Are you 18+?</li>
+        <input type="checkbox" id="18plus">Yes<br>
+        <input type="checkbox" id="18plusnot">No
+        <li>Do you also want to work with us></li>
+        <input type="checkbox" id="work">Yes<br>
+        <input type="checkbox" id="workno">No
+        <li>Why do you wish to join our organisation?</li>
+        <input type="text" >
+        <input type ="submit" id="submitted">
+    </ol>
+    </form>
+    <p id = "qualified"></p>
+</body>
+</html>
