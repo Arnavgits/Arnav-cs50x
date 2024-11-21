@@ -1,2 +1,3 @@
-Tags used:
-div, table, hr, tr, td, p, 
+Tags used for index.html:
+div, table, hr, tr, td, p, nav, ul, li, button,
+a, span, h4, table.
