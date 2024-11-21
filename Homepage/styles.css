@@ -1,11 +1,16 @@
 body
 {
     background-color: rgb(75, 150, 170);
+    font-size: 20px;
+    font-family: arabic;
 }
 
 table
 {
     border: solid black;
+    margin: 15px;
+    font-size: 20px;
+    font-family: arial;
 }
 
 tr
@@ -22,4 +27,14 @@ hr{
     border-width: 2px;
     border-color: blue;
 }
+
+#form{
+    color: yellow;
+    background-color: rgb(150,00,180);
+    border-color: red;
+}
+
+
+
+
 
