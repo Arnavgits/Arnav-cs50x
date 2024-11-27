@@ -39,7 +39,8 @@
                         <tr>
                             <td></td>
                             <td>/</td>
-                        </tr>{% for dct in data %}
+                        </tr>
+                        {% for dct in data %}
                         <tr>
                             <td> {{ dct["name"] }} </td>
                             <td> {{ dct.month }}/{{ dct.day }} </td>
