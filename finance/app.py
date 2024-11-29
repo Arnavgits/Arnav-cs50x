@@ -114,8 +114,9 @@ def register():
     """Register user"""
     password = request.form.get("password")
     confirmation = request.form.get("confirmation")
-    if password != confirmation
-    return apology("TODO")
+    if password != confirmation:
+        return apology("TODO")
+
 
 
 @app.route("/sell", methods=["GET", "POST"])
