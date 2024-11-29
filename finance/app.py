@@ -116,7 +116,8 @@ def register():
     confirmation = request.form.get("confirmation")
     if password != confirmation:
         return apology("both password different")
-        
+    elif password == "" or confirmation == "":
+        return apology("fields cannot be empty")
 
 
 
