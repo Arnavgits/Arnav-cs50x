@@ -112,12 +112,14 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    password = request.form.get("password")
-    confirmation = request.form.get("confirmation")
-    if password != confirmation:
-        return apology("both password different")
-    elif password == "" or confirmation == "":
-        return apology("fields cannot be empty")
+    if request.method == "POST":
+
+        password = request.form.get("password")
+        confirmation = request.form.get("confirmation")
+        if password != confirmation:
+            return apology("both password different")
+        elif password == "" or confirmation == "":
+            return apology("fields cannot be empty")
 
 
 
