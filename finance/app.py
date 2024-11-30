@@ -121,15 +121,15 @@ def register():
             return apology("both password different")
         elif not username or not password or not confirmation:
             return apology("fields cannot be empty")
-        else:
-            hashed_password = generate_password_hash(password)
+        
+        hashed_password = generate_password_hash(password)
 
-            try:
-                db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, hashed_password)
-            except ValueError:
-                return apology("Username already exists")
-            return redirect("/login")
-    # GET request: Render the registration page
+        try:
+            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, hashed_password)
+        except ValueError:
+            return apology("Username already exists")
+        return redirect("/login")
+# GET request: Render the registration page
     return render_template("register.html")
 
 @app.route("/sell", methods=["GET", "POST"])
