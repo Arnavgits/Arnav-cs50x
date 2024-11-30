@@ -106,6 +106,8 @@ def logout():
 @login_required
 def quote():
     """Get stock quote."""
+    if request.method == "GET":
+        
     return apology("TODO")
 
 
@@ -129,7 +131,7 @@ def register():
             db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
         except ValueError:
             return apology("Username already exists")
-        
+
         return redirect("/login")
 # GET request: Render the registration page
     return render_template("register.html")
