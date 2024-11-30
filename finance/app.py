@@ -124,7 +124,9 @@ def register():
         elif username == db.execute(f"SELECT username FROM users WHERE username = {username}"):
             return apology("Username already exists")
         else:
-            db.execute("INSERT INTO users (hash) VALUES(?)", password)
+            generate_password_hash(password)
+            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, password)
+
         return redirect("/")
 
 @app.route("/sell", methods=["GET", "POST"])
