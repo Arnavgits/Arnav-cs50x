@@ -121,11 +121,13 @@ def register():
             return apology("both password different")
         elif password == "" or confirmation == "":
             return apology("fields cannot be empty")
-        elif username == db.execute(f"SELECT username FROM users WHERE username = {username}"):
-            return apology("Username already exists")
         else:
             hashed_password = generate_password_hash(password)
-            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, hashed_password)
+
+            try:
+                db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, hashed_password)
+            except ValueError:
+                return apology("Username already exists")
             return redirect("/login")
     # GET request: Render the registration page
     return render_template("register.html")
