@@ -115,7 +115,7 @@ def quote():
 
         if not look_for:
             apology("no such symbol found")
-        
+
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -138,6 +138,9 @@ def register():
             db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
         except ValueError:
             return apology("Username already exists")
+        
+        session["user_id"] = rows[0]["id"]
+
 
         return redirect("/login")
 # GET request: Render the registration page
