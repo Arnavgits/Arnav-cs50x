@@ -125,6 +125,7 @@ def register():
             return apology("Username already exists")
         else:
             db.execute("INSERT INTO users (hash) VALUES(?)", password)
+        return redirect("/")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
