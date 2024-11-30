@@ -117,7 +117,6 @@ def quote():
             apology("no such symbol found")
 
 
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
@@ -138,7 +137,7 @@ def register():
             db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
         except ValueError:
             return apology("Username already exists")
-        
+
         session["user_id"] = rows[0]["id"]
 
 
