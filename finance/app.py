@@ -124,8 +124,8 @@ def register():
         elif username == db.execute(f"SELECT username FROM users WHERE username = {username}"):
             return apology("Username already exists")
         else:
-            generate_password_hash(password)
-            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, password)
+            hashed_password = generate_password_hash(password)
+            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, hashed_password)
             return redirect("/register")
     # GET request: Render the registration page
     return render_template("register.html")
