@@ -126,7 +126,7 @@ def register():
         else:
             hashed_password = generate_password_hash(password)
             db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, hashed_password)
-            return redirect("/register")
+            return redirect("/login")
     # GET request: Render the registration page
     return render_template("register.html")
 
