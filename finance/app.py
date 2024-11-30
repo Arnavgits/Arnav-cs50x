@@ -119,7 +119,7 @@ def register():
         confirmation = request.form.get("confirmation")
         if password != confirmation:
             return apology("both password different")
-        elif password == "" or confirmation == "":
+        elif not username or not password or not confirmation:
             return apology("fields cannot be empty")
         else:
             hashed_password = generate_password_hash(password)
