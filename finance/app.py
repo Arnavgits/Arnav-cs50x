@@ -117,7 +117,7 @@ def register():
         username = request.form.get("username")
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
-        
+
         if password != confirmation:
             return apology("both password different")
         elif not username or not password or not confirmation:
@@ -126,9 +126,10 @@ def register():
         hashed_password = generate_password_hash(password)
 
         try:
-            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, hashed_password)
+            db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
         except ValueError:
             return apology("Username already exists")
+        
         return redirect("/login")
 # GET request: Render the registration page
     return render_template("register.html")
