@@ -114,12 +114,14 @@ def register():
     """Register user"""
     if request.method == "POST":
 
+        username = request.form.get("username")
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
         if password != confirmation:
             return apology("both password different")
         elif password == "" or confirmation == "":
             return apology("fields cannot be empty")
+        db.execute("INSERT INTO users (password) VALUES(?)", password)
 
 
 
