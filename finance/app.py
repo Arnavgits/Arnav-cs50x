@@ -42,7 +42,7 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
-    
+
     return apology("TODO")
 
 
@@ -109,7 +109,9 @@ def quote():
     """Get stock quote."""
     if request.method == "GET":
         return render_template("quote.html")
-    return apology("TODO")
+
+    if request.method == "POST":
+        lookup("quoted.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
