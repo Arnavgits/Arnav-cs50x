@@ -123,7 +123,8 @@ def register():
             return apology("fields cannot be empty")
         elif username == db.execute(f"SELECT username FROM users WHERE username = {username}"):
             return apology("Username already exists")
-        db.execute("INSERT INTO users (password) VALUES(?)", password)
+        else:
+            db.execute("INSERT INTO users (hash) VALUES(?)", password)
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
