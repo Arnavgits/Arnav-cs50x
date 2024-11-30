@@ -111,7 +111,11 @@ def quote():
         return render_template("quote.html")
 
     if request.method == "POST":
-        lookup("quoted.html")
+        look_for = lookup(request.form.get("symbol"))
+
+        if not look_for:
+            apology("no such symbol found")
+        
 
 
 @app.route("/register", methods=["GET", "POST"])
