@@ -121,7 +121,8 @@ def register():
             return apology("both password different")
         elif password == "" or confirmation == "":
             return apology("fields cannot be empty")
-        elif username == db.execute(f"SELECT username FROM users WHERE username = {username}")
+        elif username == db.execute(f"SELECT username FROM users WHERE username = {username}"):
+            return apology("Username already exists")
         db.execute("INSERT INTO users (password) VALUES(?)", password)
 
 @app.route("/sell", methods=["GET", "POST"])
