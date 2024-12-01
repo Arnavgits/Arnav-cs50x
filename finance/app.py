@@ -114,7 +114,9 @@ def quote():
         stock = lookup(request.form.get("symbol"))
 
         if not stock:
-            apology("no such symbol found")
+            return apology("no such symbol found")
+
+        return render_template("quoted.html", stock=stock)
 
 
 @app.route("/register", methods=["GET", "POST"])
