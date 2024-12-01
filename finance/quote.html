@@ -5,7 +5,11 @@
 {% endblock %}
 
 {% block main %}
+        <div class="mb-3"><h1>Choose stock details are:</h1></div>
+        <div class="mb-3">{{stock["symbol"]}}</div>
         <div class="mb-3">{{stock["name"]}}</div>
         <div class="mb-3">{{stock["price"]}}</div>
-        <div class="mb-3">{{stock["symbol"]}}</div>
+
+        <h1 class="mb-3"><a href = "/quoted.html">Search again</a></h1>
+
 {% endblock %}
