@@ -1,15 +1,14 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Stock quote details
+    Stock Quote form
 {% endblock %}
 
 {% block main %}
-        <div class="mb-3"><h1>Choose stock details are:</h1></div>
-        <div class="mb-3">{{stock["symbol"]}}</div>
-        <div class="mb-3">{{stock["name"]}}</div>
-        <div class="mb-3">{{stock["price"]}}</div>
-
-        <h1 class="mb-3"><a href = "/quoted.html">Search again</a></h1>
-
+    <form action="/quote.html" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="enter symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
 {% endblock %}
