@@ -46,6 +46,13 @@ def buy():
     if not request.form.get("symbol") or not symbol:
         return apology("symbol does not exist or enter valid symbol")
 
+    shares = request.form.get("shares")
+    if shares < 0:
+        return apology("no of shares should be positive")
+
+    if request.method == "POST":
+        
+
 
 @app.route("/history")
 @login_required
