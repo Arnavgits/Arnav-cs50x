@@ -43,8 +43,8 @@ def index():
 def buy():
     """Buy shares of stock"""
     symbol = lookup(request.form.get("symbol"))
-    if not symbol:
-        return apology("No such symbol found")
+    if not request.form.get("symbol") or not symbol:
+        return apology("symbol does not exist or enter valid symbol")
 
 
 @app.route("/history")
