@@ -42,16 +42,17 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
-    symbol = lookup(request.form.get("symbol"))
-    if not request.form.get("symbol") or not symbol:
-        return apology("symbol does not exist or enter valid symbol")
-
-    shares = request.form.get("shares")
-    if shares < 0:
-        return apology("no of shares should be positive")
-
     if request.method == "POST":
-        
+        symbol = lookup(request.form.get("symbol"))
+        if not request.form.get("symbol") or not symbol:
+            return apology("symbol does not exist or enter valid symbol")
+
+        shares = request.form.get("shares")
+        if shares < 0:
+            return apology("no of shares should be positive")
+
+
+
 
 
 @app.route("/history")
