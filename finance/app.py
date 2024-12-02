@@ -45,11 +45,16 @@ def buy():
     if request.method == "POST":
 
         symbol = request.form.get("symbol")
+        if not symbol:
+            return apology("Enter a symbol")
         stock = lookup(symbol)
-        if not request.form.get("symbol") or not stock:
+        if not stock:
             return apology("symbol does not exist or enter a symbol")
+        try:
+            shares = int(request.form.get("shares"))
+        except ValueError:
+            return apology("Invalid number of shares")
 
-        shares = int(request.form.get("shares"))
         if shares <= 0:
             return apology("no of shares should be positive")
 
