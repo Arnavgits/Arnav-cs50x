@@ -7,14 +7,16 @@
 {% block main %}
     <table>
         <tr>
-            <td>{{user_id}}</td>
+            <td>user_id</td>
             <td>stock_name</td>
             <td>stock_price</td>
-            <td>{{}}</td>
+            <td>no of shares</td>
         </tr>
         <tr>
+            <td>{{user_id}}</td>
             <td>{{stock["name"]}}</td>
             <td>{{stock["price"]}}</td>
+            <td>{{shares}}</td>
             <td>{{total_cost}}</td>
 
 
