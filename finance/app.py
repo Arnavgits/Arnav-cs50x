@@ -61,7 +61,7 @@ def buy():
 
         db.execute("UPDATE users SET cash = cash - ? WHERE id = ?", total_cost, user_id)
 
-        db.execute("INSERT INTO buy_transactions (user_id, stock_name, )")
+        db.execute("INSERT INTO buy_transactions (user_id, stock_name, shares, price) VALUES (?, ?, ?, ?)", user_id, stock_name, shares, price)
 
         return redirect("/")
 
