@@ -52,11 +52,11 @@ def buy():
             return apology("no of shares should be positive")
         return redirect("/")
 
-    session["user_id"] = rows[0]["id"]
+        session["user_id"] = rows[0]["id"]
 
-    db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
+        db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
 
-    current_cash = db.execute("SELECT cash FROM users WHERE ")
+        current_cash = db.execute("SELECT cash FROM users WHERE ")
 
 
 
