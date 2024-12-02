@@ -51,9 +51,14 @@ def buy():
         if shares < 0:
             return apology("no of shares should be positive")
 
-        current_cash = db.execute("SELECT cash FROM users WHERE user_id = rows[0]["id"]")
+        current_cash = db.execute("SELECT cash FROM users WHERE id = session["user_id"]")
+        total_cost = stock["price"] * shares
 
-        p&l = current_cash - stock[price]*shares
+        if total_cost > current_cash:
+            return apology("not enough cash")
+
+        
+
         return redirect("/")
 
 
