@@ -7,6 +7,7 @@
 {% block main %}
     <table>
         <tr>
+            <td>{{user_id}}</td>
             <td>stock_name</td>
             <td>stock_price</td>
             <td>{{}}</td>
@@ -14,7 +15,9 @@
         <tr>
             <td>{{stock["name"]}}</td>
             <td>{{stock["price"]}}</td>
-            <td>{{}}</td>
+            <td>{{total_cost}}</td>
+
+
         </tr>
     </table>
 {% endblock %}
