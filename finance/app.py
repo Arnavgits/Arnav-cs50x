@@ -38,7 +38,8 @@ def index():
     if request.method == "POST":
 
         user_id = session["user_id"]
-        
+        symbol = request.form.get("symbol")
+        stock = lookup(symbol)
         current_cash = rows[0]["cash"]
         total_cost = stock["price"] * shares
 
