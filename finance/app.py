@@ -50,12 +50,11 @@ def buy():
         shares = request.form.get("shares")
         if shares < 0:
             return apology("no of shares should be positive")
+
+        current_cash = db.execute("SELECT cash FROM users WHERE user_id = rows[0]["id"]")
+
+        p&l = current_cash - stock[price]*shares
         return redirect("/")
-
-        session["user_id"] = rows[0]["id"]
-
-        db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
-
 
 
 @app.route("/history")
