@@ -53,12 +53,7 @@ def buy():
         return redirect("/")
 
     session["user_id"] = rows[0]["id"]
-To insert a new column into an existing SQL table, you use the `ALTER TABLE` statement with the `ADD COLUMN` clause. Here's how you can do it:
 
-### General Syntax
-```sql
-ALTER TABLE table_name
-ADD COLUMN column_name data_type [constraints]
     db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
 
 
