@@ -47,7 +47,7 @@ def buy():
         if not request.form.get("symbol") or not stock:
             return apology("symbol does not exist or enter a symbol")
 
-        shares = request.form.get("shares")
+        shares = int(request.form.get("shares"))
         if shares < 0:
             return apology("no of shares should be positive")
 
