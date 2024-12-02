@@ -38,7 +38,7 @@ def index():
     if request.method == "POST":
 
         user_id = session["user_id"]
-        symbol = request.form.get("symbol")
+        symbol = db.execute("SELECT ")
         stock = lookup(symbol)
         shares = db.execute("SELECT price FROM ")
 
