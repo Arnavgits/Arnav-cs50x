@@ -45,7 +45,7 @@ def buy():
     if request.method == "POST":
         symbol = lookup(request.form.get("symbol"))
         if not request.form.get("symbol") or not symbol:
-            return apology("symbol does not exist or enter valid symbol")
+            return apology("symbol does not exist or enter a symbol")
 
         shares = request.form.get("shares")
         if shares < 0:
