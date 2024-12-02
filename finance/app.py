@@ -51,6 +51,7 @@ def buy():
         if shares < 0:
             return apology("no of shares should be positive")
 
+        stock_name = stock["name"]
         user_id = session["user_id"]
         current_cash = db.execute("SELECT cash FROM users WHERE id = session["user_id"]")
         total_cost = stock["price"] * shares
@@ -60,7 +61,7 @@ def buy():
 
         db.execute("UPDATE users SET cash = cash - ? WHERE id = ?", total_cost, user_id)
 
-        db.execute("INSERT INTO buy_transactions (user_id, shares)")
+        db.execute("INSERT INTO buy_transactions (user_id, stock_name, )")
 
         return redirect("/")
 
