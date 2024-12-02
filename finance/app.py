@@ -40,7 +40,7 @@ def index():
         user_id = session["user_id"]
         symbol = request.form.get("symbol")
         stock = lookup(symbol)
-        shares = db.execute("SELECT ")
+        shares = db.execute("SELECT price FROM ")
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
