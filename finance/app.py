@@ -36,8 +36,9 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     if request.method == "POST":
-        
+
         user_id = session["user_id"]
+        
         current_cash = rows[0]["cash"]
         total_cost = stock["price"] * shares
 
