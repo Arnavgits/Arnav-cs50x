@@ -53,7 +53,8 @@ def buy():
 
         stock_name = stock["name"]
         user_id = session["user_id"]
-        current_cash = db.execute("SELECT cash FROM users WHERE id = session["user_id"]")
+        rows = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        current_cash = rows[0]["cash"]
         total_cost = stock["price"] * shares
 
         if total_cost > current_cash:
