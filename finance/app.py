@@ -56,10 +56,6 @@ def buy():
 
         db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hashed_password)
 
-        current_cash = db.execute("SELECT cash FROM users WHERE ")
-
-
-
 
 
 @app.route("/history")
