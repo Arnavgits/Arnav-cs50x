@@ -52,6 +52,11 @@ def buy():
             return apology("no of shares should be positive")
     return redirect("/")
 
+    
+
+
+    session["user_id"] = rows[0]["id"]
+
 
 
 
