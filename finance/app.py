@@ -50,6 +50,7 @@ def buy():
         shares = request.form.get("shares")
         if shares < 0:
             return apology("no of shares should be positive")
+    return 
 
 
 
