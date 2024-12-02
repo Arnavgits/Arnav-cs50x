@@ -35,8 +35,11 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    
+    user_id = session["user_id"]
+
     return apology("TODO")
+    current_cash = rows[0]["cash"]
+    total_cost = stock["price"] * shares
 
 
 @app.route("/buy", methods=["GET", "POST"])
