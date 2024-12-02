@@ -40,9 +40,7 @@ def index():
         user_id = session["user_id"]
         symbol = request.form.get("symbol")
         stock = lookup(symbol)
-        current_cash = rows[0]["cash"]
-        total_cost = stock["price"] * shares
-
+        
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
