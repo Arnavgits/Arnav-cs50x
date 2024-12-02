@@ -51,6 +51,7 @@ def buy():
         if shares < 0:
             return apology("no of shares should be positive")
 
+        user_id = session["user_id"]
         current_cash = db.execute("SELECT cash FROM users WHERE id = session["user_id"]")
         total_cost = stock["price"] * shares
 
