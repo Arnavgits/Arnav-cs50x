@@ -45,6 +45,8 @@ def index():
         total_cost = shares * stock_price
         current_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
 
+        rows = db.execute("SELECT stock_symbol, stock_name, shares, price, shares * price AS total_cost FROM transactions WHERE user_id = ?", user_id)
+
         return redirect("/")
 
     return render_template("index.html")
