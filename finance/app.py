@@ -35,7 +35,7 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    if request.method == "POST":
+    if request.method == "GET":
 
         user_id = session["user_id"]
         symbol = db.execute("SELECT stock_symbol FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
@@ -43,11 +43,11 @@ def index():
         shares = db.execute("SELECT shares FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
         stock_price = db.execute("SELECT price FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
         total_cost = shares * stock_price
-        current_cash = stock_name = db.execute("SELECT cash FROM users WHERE user_id = ?", user_id)
+        current_cash = stock_name = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
 
         return redirect("/")
 
-    return render_template("buy.html")
+    return render_template("index.html")
 
 
 @app.route("/buy", methods=["GET", "POST"])
