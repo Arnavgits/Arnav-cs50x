@@ -35,14 +35,11 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    if request.method == "GET":
-
+        user_id = session["user_id"]
         rows = db.execute("SELECT stock_symbol, stock_name, shares, price, shares * price AS total_cost FROM transactions WHERE user_id = ?", user_id)
         current_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
-        return redirect("/")
-
-    return render_template("index.html")
+    return render_template("index.html", rows=rows, )
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
