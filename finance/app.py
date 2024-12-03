@@ -45,6 +45,10 @@ def index():
         total_cost = shares * stock_price
         current_cash = stock_name = db.execute("SELECT cash FROM users WHERE user_id = ?", user_id)
 
+        return redirect("/")
+
+    return render_template("buy.html")
+
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
