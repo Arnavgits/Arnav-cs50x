@@ -43,7 +43,7 @@ def index():
         shares = db.execute("SELECT shares FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
         stock_price = db.execute("SELECT price FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
         total_cost = shares * stock_price
-        current_cash = stock_name = db.execute("SELECT stock_name FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
+        current_cash = stock_name = db.execute("SELECT cash FROM users WHERE user_id = ?", user_id)
 
 
 @app.route("/buy", methods=["GET", "POST"])
