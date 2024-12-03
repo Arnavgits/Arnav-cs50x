@@ -35,9 +35,9 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-        user_id = session["user_id"]
-        rows = db.execute("SELECT stock_symbol, stock_name, shares, price, shares * price AS total_cost FROM transactions WHERE user_id = ?", user_id)
-        current_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
+    user_id = session["user_id"]
+    rows = db.execute("SELECT stock_symbol, stock_name, shares, price, shares * price AS total_cost FROM transactions WHERE user_id = ?", user_id)
+    current_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
     return render_template("index.html", rows=rows, current_cash-current_cash)
 
