@@ -21,10 +21,16 @@ nav .navbar-brand .green
 {
     color: #2e944b;
 }
-body
+table
 {
-    color:pink;
+    border: solid black;
 }
+tr
 {
-    
+    border: solid black;
+}
+
+td
+{
+    border: solid black;
 }
