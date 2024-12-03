@@ -40,11 +40,9 @@ def index():
         rows = db.execute("SELECT stock_symbol, stock_name, shares, price, shares * price AS total_cost FROM transactions WHERE user_id = ?", user_id)
         current_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
-
         return redirect("/")
 
     return render_template("index.html")
-
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
