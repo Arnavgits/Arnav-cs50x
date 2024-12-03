@@ -37,14 +37,6 @@ def index():
     """Show portfolio of stocks"""
     if request.method == "GET":
 
-        user_id = session["user_id"]
-        symbol = db.execute("SELECT stock_symbol FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
-        stock_name = db.execute("SELECT stock_name FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
-        shares = db.execute("SELECT shares FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
-        stock_price = db.execute("SELECT price FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
-        total_cost = shares * stock_price
-
-
         rows = db.execute("SELECT stock_symbol, stock_name, shares, price, shares * price AS total_cost FROM transactions WHERE user_id = ?", user_id)
         current_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
