@@ -39,7 +39,7 @@ def index():
 
         user_id = session["user_id"]
         symbol = db.execute("SELECT stock_symbol FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
-        shares = db.execute("SELECT stock_symbol FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
+        stock_name = db.execute("SELECT stock_symbol FROM transactions JOIN users ON transactions.user_id = users.id WHERE transactions.user_id = ?", user_id)
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
