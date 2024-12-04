@@ -215,10 +215,10 @@ def sell():
 
 
         # render apology if the no of shares entered by user is not positive or user does not own that many stocks
-        if owned_shares[0]["total_shares"] < shares:
+        if owned_shares[0]["total_shares"] < shares_to_sell:
             return apology("You don't own enough shares")
 
-        total_gain = shares * stock["price"]
+        total_gain = shares_to_sell * stock["price"]
 
         db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", total_gain, user_id)
 
