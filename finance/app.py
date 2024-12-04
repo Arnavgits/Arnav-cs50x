@@ -215,7 +215,7 @@ def sell():
 
 
         # render apology if the no of shares entered by user is not positive or user does not own that many stocks
-        if owned_shares[0]["shares"] < shares:
+        if owned_shares[0]["total_shares"] < shares:
             return apology("You don't own enough shares")
 
         total_gain = shares * stock["price"]
