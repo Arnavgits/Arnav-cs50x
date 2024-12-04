@@ -81,10 +81,10 @@ def buy():
 @login_required
 def history():
     """Show history of transactions"""
+    user_id = session["user_id"]
     if request.method == "POST":
         # RETRIEVE stock_symbol, price, no. of shares, date and time
-        row = db.execute("SELECT stock_symbol, price, shares, time ")
-    return apology("TODO")
+        row = db.execute("SELECT stock_symbol, price, shares, time WHERE user_id = ?", user_id)
 
 
 @app.route("/login", methods=["GET", "POST"])
