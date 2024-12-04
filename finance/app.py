@@ -182,8 +182,9 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
+    user_id = session["user_id"]
     if request.method == "POST":
-        user_id = session["user_id"]
+
         # get the symbol that user entered
         symbol = request.form.get("symbol")
         if not symbol:
