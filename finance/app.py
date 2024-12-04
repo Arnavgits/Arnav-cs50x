@@ -83,7 +83,7 @@ def history():
     """Show history of transactions"""
     if request.method == "POST":
         # RETRIEVE stock_symbol, price, no. of shares, date and time
-        row = db.execute("SELECT stock-symbol,price, ")
+        row = db.execute("SELECT transactions.stock-symbol, transactions.price JOIN users ON users.")
     return apology("TODO")
 
 
