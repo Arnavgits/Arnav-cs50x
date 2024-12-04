@@ -182,4 +182,50 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
-    return apology("TODO")
+    if request.method == "POST":
+        user_id = session["user_id"]
+        # get the symbol that user entered
+        symbol = request.form.get("symbol")
+        if not symbol:
+                return apology("Enter a symbol")
+
+        stock = lookup(symbol)
+
+        if not stock:
+            return apology("symbol does not exist or enter a symbol")
+
+        try:
+            shares = int(request.form.get("shares"))
+        except ValueError:
+            return apology("Invalid number of shares")
+
+        if shares <= 0:
+            return apology("no of shares should be positive")
+        # render apology if user failsto select stock or does not own the entered the stock
+        rows = db.execute("SELECT stock_name FROM transactions WHERE user_id = ?", user_id)
+
+        owned_shares = db.execute(
+                "SELECT shares FROM transactions WHERE user_id = ? AND symbol = ?",
+                user_id,
+                symbol,
+            )
+
+            # Check if user owns shares of the stock
+            if not owned_shares:
+                return apology(f"You don't own any shares of {symbol}!")
+
+
+        # render apology if the no of shares entered by user is not positive or user does not own that many stocks
+        if owned_shares[0]["shares"] < shares:
+            return apology("You don't own enough shares")
+
+        total_gain = shares * stock["price"]
+
+        db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", total_gain, user_id)
+
+        db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock["name"], shares, stock["price"])
+        # redirect to homepage
+        return redirect("/")
+
+    return render_template("buy.html")
+
