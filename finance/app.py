@@ -204,7 +204,7 @@ def sell():
         # render apology if user failsto select stock or does not own the entered the stock
 
         owned_shares = db.execute(
-                "SELECT shares FROM transactions WHERE user_id = ? AND symbol = ?",
+                "SELECT SUM(shares) AS total_shares FROM transactions WHERE user_id = ? AND symbol = ?",
                 user_id,
                 symbol,
             )
