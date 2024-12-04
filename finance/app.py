@@ -84,12 +84,11 @@ def history():
     user_id = session["user_id"]
     if request.method == "POST":
         # RETRIEVE stock_symbol, price, no. of shares, date and time
-        row = db.execute("SELECT stock_symbol, price, shares, time, status WHERE user_id = ?", user_id)
+        rows = db.execute("SELECT stock_symbol, price, shares, time, status WHERE user_id = ?", user_id)
 
-        db.execute("UPDATE transactions SET status = CASE WHEN ? > 0 THEN 'Bought' WHEN ? < 0 THEN 'Sold' ELSE 'invalid'", row["shares"], row["shares"])
+        db.execute("UPDATE transactions SET status = CASE WHEN ? > 0 THEN 'Bought' WHEN ? < 0 THEN 'Sold' ELSE 'invalid'", rows["shares"], rows["shares"])
 
-
-
+        return render_template("history.html", rows=rows)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
