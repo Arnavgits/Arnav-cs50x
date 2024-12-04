@@ -202,7 +202,7 @@ def sell():
 
         if shares_to_sell <= 0:
             return apology("no of shares should be positive")
-        # render apology if user failsto select stock or does not own the entered the stock
+        # render apology if user failsto select stock or does nfot own the entered the stock
 
         owned_shares = db.execute(
             "SELECT SUM(shares) AS total_shares FROM transactions WHERE user_id = ? AND stock_symbol = ?",
