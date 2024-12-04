@@ -199,7 +199,7 @@ def sell():
         except ValueError:
             return apology("Invalid number of shares")
 
-        if shares <= 0:
+        if shares_to_sell <= 0:
             return apology("no of shares should be positive")
         # render apology if user failsto select stock or does not own the entered the stock
 
