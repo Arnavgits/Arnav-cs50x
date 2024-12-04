@@ -224,13 +224,13 @@ def sell():
         db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", total_gain, user_id)
 
         db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock["name"], -shares_to_sell, stock["price"])
-        # redirect to homepage
-        return redirect("/")
 
-    stocks_in_sell_pg = db.execute("SELECT stock-symbol AS symbol, SUM(shares) AS total_shares"
+        stocks = db.execute("SELECT stock-symbol AS symbol, SUM(shares) AS total_shares"
                                    "FROM transactions WHERE user_id = ?, GROUP BY stock_symbol HAVING total_shares > 0",
         user_id,
     )
+        # redirect to homepage
+        return redirect("/")
 
     return render_template("sell.html", stocks=stocks)
 
