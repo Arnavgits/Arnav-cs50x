@@ -86,6 +86,8 @@ def history():
         # RETRIEVE stock_symbol, price, no. of shares, date and time
         row = db.execute("SELECT stock_symbol, price, shares, time, status WHERE user_id = ?", user_id)
 
+        db.execute("UPDATE transactions SET ")
+
 
 
 
