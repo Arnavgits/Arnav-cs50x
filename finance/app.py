@@ -210,8 +210,9 @@ def sell():
             )
 
             # Check if user owns shares of the stock
-        if not owned_shares:
-            return apology(f"You don't own any shares of {symbol}!")
+        if not owned_shares or owned_shares[0]["total_shares"] is None or owned_shares[0]["total_shares"] <= 0:
+            return apology(f"You don't own any shares of {symbol}")
+
 
 
         # render apology if the no of shares entered by user is not positive or user does not own that many stocks
