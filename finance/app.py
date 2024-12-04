@@ -227,5 +227,5 @@ def sell():
         # redirect to homepage
         return redirect("/")
 
-    return render_template("buy.html")
+    return render_template("sell.html")
 
