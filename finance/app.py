@@ -83,6 +83,7 @@ def history():
     """Show history of transactions"""
     if request.method == "POST":
         # RETRIEVE stock_symbol, price, no. of shares, date and time
+        
     return apology("TODO")
 
 
