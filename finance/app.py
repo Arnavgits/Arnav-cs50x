@@ -81,7 +81,8 @@ def buy():
 @login_required
 def history():
     """Show history of transactions"""
-    
+    if request.method == "POST":
+        
     return apology("TODO")
 
 
