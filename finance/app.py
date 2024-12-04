@@ -195,7 +195,7 @@ def sell():
             return apology("symbol does not exist or enter a symbol")
 
         try:
-            shares = int(request.form.get("shares"))
+            shares_to_sell = int(request.form.get("shares"))
         except ValueError:
             return apology("Invalid number of shares")
 
@@ -222,10 +222,10 @@ def sell():
 
         db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", total_gain, user_id)
 
-        if owned_shares[0]["shares"] == shares:
+        if owned_shares[0]["shares"] == shares_to_sell:
             db.execute("DELETE FROM users WHERE user_id = ? AND symbol = ?", user_id, symbol)
         else:
-            db.execute("UPDATE FROM users SET shares = shares - ? WHERE user_id = ? AND symbol = ?", shares, user_id, symbol)
+            db.execute("UPDATE FROM users SET shares = shares - ? WHERE user_id = ? AND symbol = ?", shares_to_sell, user_id, symbol)
 
         db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock["name"], -shares, stock["price"])
         # redirect to homepage
