@@ -84,7 +84,9 @@ def history():
     user_id = session["user_id"]
     if request.method == "POST":
         # RETRIEVE stock_symbol, price, no. of shares, date and time
-        row = db.execute("SELECT stock_symbol, price, shares, time WHERE user_id = ?", user_id)
+        row = db.execute("SELECT stock_symbol, price, shares, time, status WHERE user_id = ?", user_id)
+
+
 
 
 @app.route("/login", methods=["GET", "POST"])
