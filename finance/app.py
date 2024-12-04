@@ -228,9 +228,11 @@ def sell():
         # redirect to homepage
         return redirect("/")
 
-    stocks = db.execute("SELECT stock_symbol AS symbol, SUM(shares) AS total_shares"
-                                "FROM transactions WHERE user_id = ?, GROUP BY stock_symbol HAVING total_shares > 0",
-    user_id,)
+    stocks = db.execute(
+        "SELECT stock_symbol AS symbol, SUM(shares) AS total_shares "
+        "FROM transactions WHERE user_id = ? GROUP BY stock_symbol HAVING total_shares > 0",
+        user_id,
+    )
 
     return render_template("sell.html", stocks=stocks)
 
