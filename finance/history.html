@@ -5,14 +5,13 @@
 {% endblock %}
 
 {% block main %}
-    <table>
+    <table>stock_symbol, price, shares, time, status
         <tr>
-            {{for row in rows}}
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>{{rows["stock_symbol"]}}</td>
+            <td>{{rows["price"]}}</td>
+            <td>{{rows["shares"]}}</td>
+            <td>{{rows["time"]}}</td>
+            <td>{{rows["status"]}}</td>
         </tr>
     </table>
 {% endblock %}
