@@ -174,8 +174,6 @@ def register():
         except ValueError:
             return apology("Username already exists")
 
-        session["user_id"] = rows[0]["id"]
-
 
         return redirect("/login")
 # GET request: Render the registration page
