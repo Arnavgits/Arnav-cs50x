@@ -64,17 +64,17 @@ def buy():
         stock_name = stock["name"]
         user_id = session["user_id"]
         rows = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
-        current_cash = rows[0]["cash"]
-        total_cost = stock["price"] * shares
+        current_cash = usd(rows[0]["cash"])
+        total_cost = usd(stock["price"] * shares)
 
         if total_cost > current_cash:
             return apology("not enough cash")
 
-        db.execute("UPDATE users SET cash = cash - ? WHERE id = ?", usd(total_cost), user_id)
+        db.execute("UPDATE users SET cash = cash - ? WHERE id = ?", total_cost, user_id)
 
         db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock_name, shares, usd(stock["price"]))
 
-        return render_template("buy.html", stock=stock, shares=shares, total_cost=usd(total_cost))
+        return render_template("buy.html", stock=stock, shares=shares, total_cost=total_cost)
 
     return render_template("buy.html")
 
