@@ -244,4 +244,12 @@ def sell():
 @login_required
 def change_password():
     user_id = session["user_id"]
-    
+
+    # retrieve users password from users table
+    exisiting_password =db.execute("Select ")
+    # retrieve netered password(new, old, confirm) from form
+
+    # check for errors and give apology accordingly
+
+    # update the new password
+
