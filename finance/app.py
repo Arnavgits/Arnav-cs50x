@@ -257,6 +257,9 @@ def change_password():
     if not confirm_password:
         return apology("Not entered confirm password")
 
+    if new_password != confirm_password:
+        return apology("Both password are different")
+
     # check for errors and give apology accordingly
 
     # should i use check_password-hash or hash the new password and then compare
