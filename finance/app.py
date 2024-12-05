@@ -260,6 +260,10 @@ def change_password():
     if new_password != confirm_password:
         return apology("Both password are different")
 
+    new_hashed_password = generate_password_hash(new_password)
+
+    db.execute("")
+
     # check for errors and give apology accordingly
 
     # should i use check_password-hash or hash the new password and then compare
