@@ -248,6 +248,9 @@ def change_password():
     if request.method == "POST":
 
         # retrieve netered password(new, old, confirm) from form
+        old_password = request.form.get("old-password")
+        if not old_password:
+            return apology("Enter correc old password")
 
         new_password = request.form.get("new_password")
         if not new_password:
