@@ -13,8 +13,8 @@
             <td>Date and time</td>
             <td>status</td>
         </tr>
+        {% for row in rows %}
         <tr>
-            {% for row in rows %}
             <td>{{row.stock_symbol}}</td>
             <td>{{row.price}}</td>
             <td>{{row.shares}}</td>
