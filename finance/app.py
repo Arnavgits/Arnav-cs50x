@@ -66,7 +66,7 @@ def buy():
         rows = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
         current_cash = rows[0]["cash"]
         stock_price = float(stock["price"])
-        total_cost = stock["price"] * shares
+        total_cost = stock_price * shares
 
          if isinstance(current_cash, str):
             current_cash = float(current_cash)
