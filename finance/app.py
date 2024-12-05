@@ -245,28 +245,27 @@ def sell():
 def change_password():
     user_id = session["user_id"]
 
-    # retrieve users password from users table
-    exisiting_hashed_password = db.execute("SELECT hash FROM users WHERE id = ?", user_id)
+    if request.method = "POST":
 
-    # retrieve netered password(new, old, confirm) from form
-    new_password = request.form.get("new_password")
-    if not new_password:
-        return apology("Enter new password")
+        # retrieve netered password(new, old, confirm) from form
 
-    confirm_password = request.form.get("confirm_password")
-    if not confirm_password:
-        return apology("Not entered confirm password")
+        new_password = request.form.get("new_password")
+        if not new_password:
+            return apology("Enter new password")
 
-    if new_password != confirm_password:
-        return apology("Both password are different")
+        confirm_password = request.form.get("confirm_password")
+        if not confirm_password:
+            return apology("Not entered confirm password")
 
-    new_hashed_password = generate_password_hash(new_password)
+        if new_password != confirm_password:
+            return apology("Both password are different")
 
-    db.execute("UPDATE users SET hash = ? WHERE id = ?", new_hashed_password, user_id)
+        new_hashed_password = generate_password_hash(new_password)
 
-    # check for errors and give apology accordingly
+        db.execute("UPDATE users SET hash = ? WHERE id = ?", new_hashed_password, user_id)
 
-    # should i use check_password-hash or hash the new password and then compare
+    
+        # check for errors and give apology accordingly
 
-    # update the new password
+        # update the new password
 
