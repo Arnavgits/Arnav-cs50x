@@ -245,7 +245,7 @@ def sell():
 def change_password():
     user_id = session["user_id"]
 
-    if request.method = "POST":
+    if request.method == "POST":
 
         # retrieve netered password(new, old, confirm) from form
 
@@ -265,7 +265,7 @@ def change_password():
         db.execute("UPDATE users SET hash = ? WHERE id = ?", new_hashed_password, user_id)
 
         flash("Password has been updated")
-        
+
         return redirect("/")
 
 
