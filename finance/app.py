@@ -262,7 +262,7 @@ def change_password():
 
     new_hashed_password = generate_password_hash(new_password)
 
-    db.execute("")
+    db.execute("UPDATE users SET hash = ? WHERE id = ?", new_hashed_password, user_id)
 
     # check for errors and give apology accordingly
 
