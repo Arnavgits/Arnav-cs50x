@@ -217,7 +217,7 @@ def sell():
             symbol,
         )
 
-            # Check if user owns shares of the stock
+        # Check if user owns shares of the stock
         if not owned_shares or owned_shares[0]["total_shares"] is None or owned_shares[0]["total_shares"] <= 0:
             return apology(f"You don't own any shares of {symbol}")
 
