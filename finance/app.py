@@ -240,3 +240,8 @@ def sell():
 
     return render_template("sell.html", stocks=stocks)
 
+@app.route("/change_password", methods=["GET", "POST"])
+@login_required
+def change_password():
+    user_id = session["user_id"]
+    
