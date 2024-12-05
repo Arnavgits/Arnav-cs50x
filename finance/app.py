@@ -85,8 +85,6 @@ def history():
         # RETRIEVE stock_symbol, price, no. of shares, date and time
     rows = db.execute("SELECT stock_symbol, price, shares, time, CASE WHEN shares > 0 THEN 'Bought' WHEN shares < 0 THEN 'Sold' ELSE 'invalid' END AS status FROM transactions WHERE user_id = ? ORDER BY time DESC", user_id)
 
-    db.execute("UPDATE transactions SET status = CASE WHEN shares > 0 THEN 'Bought' WHEN shares < 0 THEN 'Sold' ELSE 'invalid'")
-
     return render_template("history.html", rows=rows)
 
 @app.route("/login", methods=["GET", "POST"])
