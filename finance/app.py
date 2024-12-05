@@ -248,9 +248,16 @@ def change_password():
     if request.method == "POST":
 
         # retrieve netered password(new, old, confirm) from form
-        old_password = request.form.get("old-password")
+        old_password = request.form.get("old_password")
         if not old_password:
-            return apology("Enter correc old password")
+            return apology("Enter correct old password")
+
+        rows = db.execute("SELECT hash FROM users WHERE id = ?", user_id)
+
+        if not check_password_hash(
+            rows[0]["hash"], request.form.get("old_password")
+        ):
+            return apology("invalid username and/or password", 403)
 
         new_password = request.form.get("new_password")
         if not new_password:
