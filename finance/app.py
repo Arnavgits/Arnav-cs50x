@@ -65,7 +65,7 @@ def buy():
         user_id = session["user_id"]
         rows = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
         current_cash = usd(rows[0]["cash"])
-        total_cost = usd(stock["price"] * shares)
+        total_cost = stock["price"] * shares
 
         if total_cost > current_cash:
             return apology("not enough cash")
@@ -74,7 +74,7 @@ def buy():
 
         db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock_name, shares, usd(stock["price"]))
 
-        return render_template("buy.html", stock=stock, shares=shares, total_cost=total_cost)
+        return render_template("buy.html", stock=stock, shares=shares, total_cost=usd(total_cost))
 
     return render_template("buy.html")
 
