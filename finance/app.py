@@ -151,7 +151,7 @@ def quote():
         if not stock:
             return apology("no such symbol found")
          # Pass stock details to the template
-        return render_template("quote.html", stock=stock)
+        return render_template("quoted.html", stock=stock)
 
     # If GET, just show the form
     return render_template("quote.html")
