@@ -150,7 +150,7 @@ def quote():
         if not stock:
             return apology("no such symbol found")
 
-        return render_template("quoted.html", stock=stock)
+    return render_template("quoted.html", stock=stock)
 
 
 @app.route("/register", methods=["GET", "POST"])
