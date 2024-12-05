@@ -83,7 +83,7 @@ def history():
     """Show history of transactions"""
     user_id = session["user_id"]
         # RETRIEVE stock_symbol, price, no. of shares, date and time
-    rows = db.execute("SELECT stock_symbol, price, shares, time, status FROM transactions WHERE user_id = ?", user_id)
+    rows = db.execute("SELECT stock_symbol, price, shares, time, CASE WHEN shares > 0 THEN 'Bought' WHEN shares < 0 THEN 'Sold' ELSE 'invalid' END AS status FROM transactions WHERE user_id = ? ORDER BY time DESC", user_id)
 
     db.execute("UPDATE transactions SET status = CASE WHEN shares > 0 THEN 'Bought' WHEN shares < 0 THEN 'Sold' ELSE 'invalid'")
 
