@@ -88,7 +88,7 @@ def history():
 
         db.execute("UPDATE transactions SET status = CASE WHEN ? > 0 THEN 'Bought' WHEN ? < 0 THEN 'Sold' ELSE 'invalid'", rows["shares"], rows["shares"])
 
-        return render_template("history.html", rows=rows)
+    return render_template("history.html", rows=rows)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
