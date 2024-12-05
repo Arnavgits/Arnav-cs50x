@@ -152,8 +152,6 @@ def quote():
             return apology("no such symbol found")
          # Pass stock details to the template
 
-         stock["price"] = usd(stock["price"])
-        
         return render_template("quoted.html", stock=stock)
 
     # If GET, just show the form
