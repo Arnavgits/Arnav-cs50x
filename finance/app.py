@@ -246,10 +246,20 @@ def change_password():
     user_id = session["user_id"]
 
     # retrieve users password from users table
-    exisiting_password =db.execute("Select ")
+    exisiting_hashed_password = db.execute("SELECT hash FROM users WHERE id = ?", user_id)
+
     # retrieve netered password(new, old, confirm) from form
+    new_password = request.form.get("new_password")
+    if not new_password:
+        return apology("Enter new password")
+
+    confirm_password = request.form.get("confirm_password")
+    if not confirm_password:
+        return apology("Not entered confirm password")
 
     # check for errors and give apology accordingly
+
+    # should i use check_password-hash or hash the new password and then compare
 
     # update the new password
 
