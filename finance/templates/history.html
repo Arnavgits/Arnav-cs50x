@@ -7,9 +7,16 @@
 {% block main %}
     <table>
         <tr>
+            <td>symbol</td>
+            <td>price</td>
+            <td>shares</td>
+            <td>Date and time</td>
+            <td>status</td>
+        </tr>
+        <tr>
             {% for row in rows %}
             <td>{{row.stock_symbol}}</td>
-            <td>{{roiw.price}}</td>
+            <td>{{row.price}}</td>
             <td>{{row.shares}}</td>
             <td>{{row.time}}</td>
             <td>{{row.status}}</td>
