@@ -68,7 +68,7 @@ def buy():
         stock_price = float(stock["price"])
         total_cost = stock_price * shares
 
-         if isinstance(current_cash, str):
+        if isinstance(current_cash, str):
             current_cash = float(current_cash)
 
         if total_cost > current_cash:
