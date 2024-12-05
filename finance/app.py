@@ -264,8 +264,10 @@ def change_password():
 
         db.execute("UPDATE users SET hash = ? WHERE id = ?", new_hashed_password, user_id)
 
+        flash("Password has been updated")
+        
         return redirect("/")
-    alert()
+
 
     return render_template("change_password.html")
         # check for errors and give apology accordingly
