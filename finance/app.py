@@ -70,9 +70,9 @@ def buy():
         if total_cost > current_cash:
             return apology("not enough cash")
 
-        db.execute("UPDATE users SET cash = cash - ? WHERE id = ?", total_cost, user_id)
+        db.execute("UPDATE users SET cash = cash - ? WHERE id = ?", usd(total_cost), user_id)
 
-        db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock_name, shares, stock["price"])
+        db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock_name, shares, usd(stock["price"]))
 
     return render_template("buy.html")
 
@@ -225,9 +225,9 @@ def sell():
 
         total_gain = shares_to_sell * stock["price"]
 
-        db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", total_gain, user_id)
+        db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", usd(total_gain), user_id)
 
-        db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock["name"], -shares_to_sell, stock["price"])
+        db.execute("INSERT INTO transactions (user_id, stock_symbol, stock_name, shares, price) VALUES (?, ?, ?, ?, ?)", user_id, symbol, stock["name"], -shares_to_sell, usd(stock["price"]))
 
         # redirect to homepage
         return redirect("/")
